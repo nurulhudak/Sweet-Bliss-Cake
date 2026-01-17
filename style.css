@@ -262,6 +262,16 @@ nav ul li ul li a:hover{
 /* ===============================
    RESPONSIVE (MOBILE)
 ================================ */
+@media (max-width: 768px) {
+  .top-bar {
+    top: 0; /* stick to very top on mobile */
+  }
+
+  header {
+    top: 50px; /* optional, adjust if you want space between top-bar and header */
+    padding: 15px 20px; /* smaller padding for mobile */
+  }
+}
 
 @media (max-width: 768px) {
   .occasion-hero {
@@ -1766,4 +1776,5 @@ footer{
   background:rgba(255,255,255,0.35);
   margin-top:0;
 }
+
 
