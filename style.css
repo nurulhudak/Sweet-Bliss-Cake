@@ -262,20 +262,31 @@ nav ul li ul li a:hover{
 /* ===============================
    RESPONSIVE (MOBILE)
 ================================ */
+
 @media (max-width: 768px) {
+
+  /* ================= TOP BAR ================= */
   .top-bar {
-    top: 0; /* stick to very top on mobile */
+    top: 0; /* stick to very top */
+    padding: 8px 10px; /* smaller padding for mobile */
   }
 
+  .top-bar-actions {
+    position: static;  /* make it inline, not absolute */
+    margin-top: 5px;
+    justify-content: center;
+  }
+
+  /* ================= HEADER ================= */
   header {
-    top: 50px; /* optional, adjust if you want space between top-bar and header */
-    padding: 15px 20px; /* smaller padding for mobile */
+    position: sticky;
+    top: 40px; /* move below top-bar (match top-bar height) */
+    padding: 15px 20px; /* smaller padding */
   }
-}
 
-@media (max-width: 768px) {
+  /* ================= HERO SECTION ================= */
   .occasion-hero {
-    padding: 40px 6%; /* from global */
+    padding: 40px 6%;
   }
 
   .hero-wrapper {
@@ -292,11 +303,11 @@ nav ul li ul li a:hover{
   }
 
   .occasion-hero h2 {
-    font-size: 26px; /* from global */
+    font-size: 26px;
   }
 
   .occasion-hero p {
-    font-size: 14px; /* from global */
+    font-size: 14px;
   }
 }
 
@@ -1776,5 +1787,6 @@ footer{
   background:rgba(255,255,255,0.35);
   margin-top:0;
 }
+
 
 
