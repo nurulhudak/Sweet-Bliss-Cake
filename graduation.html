@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Graduation | Sweet Bliss Cake</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="promo">✨ Get Your Cake Today | Same Day Delivery ✨</div>
+ <div class="top-bar-actions">
+<a href="cart.html" class="cart-btn">
+  <img src="https://img.icons8.com/?size=100&id=CHIch3K0zCjb&format=png&color=1A1A1A"
+       alt="Cart"
+       class="cart-icon">
+  <span class="cart-count" id="cart-count">0</span>
+</a>
+</div>
+</div>
+
+<header>
+  <div class="logo">
+    Sweet Bliss
+    <span>Ready-made Cakes</span>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li>
+        <a href="categories.html">Categories ▾</a>
+        <ul>
+          <li><a href="spongecake.html">Sponge Cake</a></li>
+          <li><a href="cupcake.html">Cupcake</a></li>
+          <li><a href="jellycake.html">Jelly Cake</a></li>
+          <li><a href="bentocake.html">Bento Cake</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="occasion.html">Occasion ▾</a>
+        <ul>
+          <li><a href="birthday.html">Birthday</a></li>
+          <li><a href="wedding.html">Wedding</a></li>
+          <li><a href="anniversary.html">Anniversary</a></li>
+          <li><a href="graduation.html">Graduation</a></li>
+          <li><a href="kids.html">Kids</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="theme.html">Theme ▾</a>
+        <ul>
+          <li><a href="sanrio.html">Sanrio & Friends</a></li>
+          <li><a href="disney.html">Disney</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="vintage.html">Vintage Cake</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="accessories.html">Accessories ▾</a>
+        <ul>
+          <li><a href="topper.html">Topper</a></li>
+          <li><a href="candle.html">Candle</a></li>
+          <li><a href="giftcard.html">Gift Card</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="occasion-hero">
+  <div class="hero-wrapper">
+
+     <div class="hero-content">
+    <h2>CONGRATULATIONS GRADUATION CAKES</h2>
+<p>
+  Mark a proud milestone with our thoughtfully designed graduation cakes,
+  perfect for convocations, school completions, and academic celebrations.
+  <br>Each cake is freshly prepared with attention to detail and flavour.
+  <br><strong>Advance orders recommended for same-day delivery.</strong>
+</p>
+    </div>
+
+ <div class="hero-image">
+      <img src="graduation-hero.jpg" alt="Graduation Cakes by Sweet Bliss">
+    </div>
+
+  </div>
+</section>
+
+<section class="occasion-section">
+  <h2>Graduation Cakes</h2>
+  <p class="occasion-desc">
+    Stylish, classy, and photo-worthy cakes for graduation celebrations.
+    Choose from modern designs, pastel themes, and iconic graduation elements like caps, scrolls, and stars.
+  </p>
+
+<!-- SORT DROPDOWN -->
+<div class="section clearfix">
+  <div class="four columns section_select medium-down--one-whole">
+    <select class="sort_by" id="sort-by" data-default-sort="manual">
+      <option value="manual">Featured</option>
+      <option value="price-ascending">Price: Low to High</option>
+      <option value="price-descending">Price: High to Low</option>
+    </select>
+  </div>
+</div>
+
+  <div class="product-grid">
+
+    <!-- Cake 1 -->
+    <div class="product-card" onclick="openCakeDetail('grad1')" data-price="150.00">
+      <div class="product-image">
+        <img src="grad1.jpg" alt="Classic Graduation Cap Cake">
+      </div>
+      <div class="product-details">
+        <span class="title">Classic Grad Cap Cake</span>
+        <span class="brand">Sweet Bliss</span>
+        <div class="rating">★★★★★ <small>(64 reviews)</small></div>
+        <div class="price"><small><em>from</em></small> RM 150.00</div>
+        <button class="add-cake">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cake 2 -->
+    <div class="product-card" onclick="openCakeDetail('grad2')" data-price="165.00">
+      <div class="product-image">
+        <img src="grad2.jpg" alt="Minimalist Graduation Cake">
+      </div>
+      <div class="product-details">
+        <span class="title">Minimalist Graduation Cake</span>
+        <span class="brand">Sweet Bliss</span>
+        <div class="rating">★★★★☆ <small>(49 reviews)</small></div>
+        <div class="price"><small><em>from</em></small> RM 165.00</div>
+        <button class="add-cake">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cake 3 -->
+    <div class="product-card" onclick="openCakeDetail('grad3')" data-price="195.00">
+      <div class="product-image">
+        <img src="grad3.jpg" alt="Golden Glam Graduation Cake">
+      </div>
+      <div class="product-details">
+        <span class="title">Golden Glam Cake</span>
+        <span class="brand">Sweet Bliss</span>
+        <div class="rating">★★★★★ <small>(82 reviews)</small></div>
+        <div class="price"><small><em>from</em></small> RM 195.00</div>
+        <button class="add-cake">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cake 4 -->
+    <div class="product-card" onclick="openCakeDetail('grad4')" data-price="180.00">
+      <div class="product-image">
+        <img src="grad4.jpg" alt="Pastel Graduation Cake">
+      </div>
+      <div class="product-details">
+        <span class="title">Pastel Congrats Cake</span>
+        <span class="brand">Sweet Bliss</span>
+        <div class="rating">★★★★★ <small>(71 reviews)</small></div>
+        <div class="price"><small><em>from</em></small> RM 180.00</div>
+        <button class="add-cake">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cake 5 -->
+    <div class="product-card" onclick="openCakeDetail('grad5')" data-price="240.00">
+      <div class="product-image">
+        <img src="grad5.jpg" alt="Luxury Graduation Cake">
+      </div>
+      <div class="product-details">
+        <span class="title">Luxury Grad Cake</span>
+        <span class="brand">Sweet Bliss</span>
+        <div class="rating">★★★★★ <small>(95 reviews)</small></div>
+        <div class="price"><small><em>from</em></small> RM 240.00</div>
+        <button class="add-cake">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cake 6 -->
+    <div class="product-card" onclick="openCakeDetail('grad6')" data-price="170.00">
+      <div class="product-image">
+        <img src="grad6.png" alt="Stars Graduation Cake">
+      </div>
+      <div class="product-details">
+        <span class="title">Stars & Shine Cake</span>
+        <span class="brand">Sweet Bliss</span>
+        <div class="rating">★★★★☆ <small>(44 reviews)</small></div>
+        <div class="price"><small><em>from</em></small> RM 170.00</div>
+        <button class="add-cake">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cake 7 -->
+    <div class="product-card" onclick="openCakeDetail('grad7')" data-price="210.00">
+      <div class="product-image">
+        <img src="grad7.jpg" alt="Black & Gold Graduation Cake">
+      </div>
+      <div class="product-details">
+        <span class="title">Black & Gold Grad Cake</span>
+        <span class="brand">Sweet Bliss</span>
+        <div class="rating">★★★★★ <small>(68 reviews)</small></div>
+        <div class="price"><small><em>from</em></small> RM 210.00</div>
+        <button class="add-cake">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cake 8 -->
+    <div class="product-card" onclick="openCakeDetail('grad8')" data-price="150.00">
+      <div class="product-image">
+        <img src="grad8.jpg" alt="Cute Graduation Bento Cake">
+      </div>
+      <div class="product-details">
+        <span class="title">Graduation Bento Cake</span>
+        <span class="brand">Sweet Bliss</span>
+        <div class="rating">★★★★☆ <small>(38 reviews)</small></div>
+        <div class="price"><small><em>from</em></small> RM 150.00</div>
+        <button class="add-cake">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cake 9 -->
+    <div class="product-card" onclick="openCakeDetail('grad9')" data-price="220.00">
+      <div class="product-image">
+        <img src="grad9.jpg" alt="Floral Graduation Cake">
+      </div>
+      <div class="product-details">
+        <span class="title">Floral Graduation Cake</span>
+        <span class="brand">Sweet Bliss</span>
+        <div class="rating">★★★★★ <small>(59 reviews)</small></div>
+        <div class="price"><small><em>from</em></small> RM 220.00</div>
+        <button class="add-cake">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cake 10 -->
+    <div class="product-card" onclick="openCakeDetail('grad10')" data-price="185.00">
+      <div class="product-image">
+        <img src="grad10.jpg" alt="Modern Graduation Cake">
+      </div>
+      <div class="product-details">
+        <span class="title">Modern Congrats Cake</span>
+        <span class="brand">Sweet Bliss</span>
+        <div class="rating">★★★★☆ <small>(41 reviews)</small></div>
+        <div class="price"><small><em>from</em></small> RM 185.00</div>
+        <button class="add-cake">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cake 11 -->
+    <div class="product-card" onclick="openCakeDetail('grad11')" data-price="150.00">
+      <div class="product-image">
+        <img src="grad11.jpg" alt="Mini Graduation Cake">
+      </div>
+      <div class="product-details">
+        <span class="title">Mini Graduation Cake</span>
+        <span class="brand">Sweet Bliss</span>
+        <div class="rating">★★★★☆ <small>(33 reviews)</small></div>
+        <div class="price"><small><em>from</em></small> RM 150.00</div>
+        <button class="add-cake">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cake 12 -->
+    <div class="product-card" onclick="openCakeDetail('grad12')" data-price="300.00">
+      <div class="product-image">
+        <img src="grad12.jpg" alt="Premium Graduation Cake">
+      </div>
+      <div class="product-details">
+        <span class="title">Premium Graduation Cake</span>
+        <span class="brand">Sweet Bliss</span>
+        <div class="rating">★★★★★ <small>(101 reviews)</small></div>
+        <div class="price"><small><em>from</em></small> RM 300.00</div>
+        <button class="add-cake">Add to Cart</button>
+      </div>
+    </div>
+
+</div>
+
+  </section>
+  
+<!-- DESCRIPTION SECTION -->
+<section class="cake-description">
+  <div class="description-wrapper">
+    <h2>Celebrate the Graduate</h2>
+
+    <p>
+      Make the graduation moment unforgettable with our stylish graduation cakes — from classy minimalist designs to bold black & gold themes.
+      Add a personalised message, select a delivery date, and we’ll make sure it arrives ready for photos and celebration!
+    </p>
+
+    <ul>
+      <li>Classic Grad Cap Cake</li>
+      <li>Minimalist Graduation Cake</li>
+      <li>Golden Glam Cake</li>
+      <li>Pastel Congrats Cake</li>
+      <li>Luxury Grad Cake</li>
+      <li>Stars & Shine Cake</li>
+      <li>Black & Gold Grad Cake</li>
+      <li>Graduation Bento Cake</li>
+      <li>Floral Graduation Cake</li>
+      <li>Modern Congrats Cake</li>
+      <li>Mini Graduation Cake</li>
+      <li>Premium Graduation Cake</li>
+    </ul>
+
+    <p>
+      Choose your favourite design, add a heartfelt congratulatory message, and pick your delivery slot — we’ll handle the rest.
+    </p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<div class="container collection-faq-wrap">
+  <h2 class="title faq--heading">Frequently Asked Questions</h2>
+
+  <dl class="faqAccordion">
+
+    <dt>
+      <button type="button" aria-controls="panel-01" aria-expanded="false">
+        What message should I write on a graduation cake?
+      </button>
+    </dt>
+    <dd id="panel-01" aria-hidden="true">
+      <p>
+        Popular messages include “Congrats Grad!”, “Class of 2026”, “You Did It!”, “Well Done!”, or the graduate’s name with their course or school.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-02" aria-expanded="false">
+        Can I customise the cake with a name or university?
+      </button>
+    </dt>
+    <dd id="panel-02" aria-hidden="true">
+      <p>
+        Yes! You can add a name, year, school/university, and even a short quote. Just type it in the wish card message box.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-03" aria-expanded="false">
+        What graduation themes are most popular?
+      </button>
+    </dt>
+    <dd id="panel-03" aria-hidden="true">
+      <p>
+        Top picks include graduation caps, scrolls, black & gold themes, minimalist “Congrats” cakes, and floral modern designs.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-04" aria-expanded="false">
+        Is same-day delivery available for graduation cakes?
+      </button>
+    </dt>
+    <dd id="panel-04" aria-hidden="true">
+      <p>
+        Yes, same-day delivery is available for early orders. Please order before 5PM to secure the slot.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-05" aria-expanded="false">
+        What size cake is suitable for a graduation party?
+      </button>
+    </dt>
+    <dd id="panel-05" aria-hidden="true">
+      <p>
+        For small family celebrations, 8" is great. For bigger parties, we recommend 9" or premium designs for a stronger “wow” moment.
+      </p>
+    </dd>
+
+  </dl>
+</div>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What message should I write on a graduation cake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Popular messages include “Congrats Grad!”, “Class of 2026”, “You Did It!”, “Well Done!”, or the graduate’s name with their course or school."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customise the cake with a name or university?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! You can add a name, year, school/university, and even a short quote. Just type it in the wish card message box."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What graduation themes are most popular?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top picks include graduation caps, scrolls, black & gold themes, minimalist “Congrats” cakes, and floral modern designs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is same-day delivery available for graduation cakes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, same-day delivery is available for early orders. Please order before 5PM to secure the slot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What size cake is suitable for a graduation party?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For small family celebrations, 8\" is great. For bigger parties, we recommend 9\" or premium designs for a stronger “wow” moment."
+      }
+    }
+  ]
+}
+</script>
+
+<section class="info-bar">
+  <div class="info-bar-inner">
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-sameday.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Same-Day Delivery</strong>
+        <small>Order before 5PM</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-calendar.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Choose Your Slot</strong>
+        <small>Flexible delivery</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-thumbsup.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Trusted Sellers</strong>
+        <small>Top-rated bakers</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-cake.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Premium Cakes</strong>
+        <small>Fresh & quality</small>
+      </span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================== CAKE DETAIL PAGE (Add-on) ================== -->
+<section class="cake-detail" id="cakesDetail">
+  <div class="detail-layout">
+
+    <div><img id="detailImg" src="" alt="Cake Image"></div>
+
+    <div>
+      <h3 id="detailTitle"></h3>
+      <p id="detailPrice"></p>
+
+      <div class="acc_title" id="descToggle">
+  <span>Product Description</span>
+  <span class="acc_icon">+</span>
+</div>
+
+<div class="description bottom des_slide" id="descContent">
+  <p class="desc-main">
+    Six layers of pastel rainbow-colored vanilla cake filled high with a sweet and sour strawberry mousseline.
+  </p>
+
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Mixed Berry Spread, Berry Yoghurt, White Chocolate, Permitted Flavoring and Coloring</p>
+  </div>
+
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>Large – 1.5 kg – 9" × 2.7"</p>
+  </div>
+</div>
+
+
+      <!-- DELIVERY DATE -->
+      <div class="option-group">
+        <h4>SELECT YOUR DELIVERY DATE</h4>
+        <div class="date-grid" id="dateButtons">
+          <button class="date-box" data-offset="0"></button>
+          <button class="date-box active" data-offset="1"></button>
+          <button class="date-box" data-offset="2"></button>
+        </div>
+
+        <button class="full-calendar-btn" onclick="toggleCalendar()">VIEW FULL CALENDAR</button>
+        <input type="date" id="calendarInput">
+      </div>
+
+      <!-- CANDLES -->
+      <div class="option-group">
+        <h4>NUMBER OF CANDLES</h4>
+        <select>
+          <option>No Candle</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+      </div>
+
+      <!-- WISH CARD -->
+      <div class="option-group">
+        <h4>WISH CARD MESSAGE</h4>
+        <div class="wish-grid" id="wishBoxes">
+          <div class="wish-box" data-msg="Happy Birthday! 🎂 Wishing you joy, laughter and lots of cake on your special day.">🎂 Birthday</div>
+          <div class="wish-box" data-msg="Congratulations on your wedding day 💍 May your love grow stronger every year.">💍 Wedding</div>
+          <div class="wish-box" data-msg="Happy Anniversary ❤️ Wishing you many more years of love and happiness together.">❤️ Anniversary</div>
+          <div class="wish-box" data-msg="Congratulations! 🎉 Wishing you success and happiness always.">🎉 Congratulations</div>
+        </div>
+        <textarea id="cardMessage" rows="4"></textarea>
+      </div>
+
+     <button class="full-calendar-btn" style="background:#fb3eb9;margin-top:20px;" onclick="addToCartDetail()">ADD TO CART</button>
+
+      <div class="back-btn" onclick="backToGallery()">← Back</div>
+    </div>
+
+<!-- ================== CUSTOMER REVIEWS ================== -->
+<div class="review-section">
+  <h3>Customer Reviews</h3>
+
+  <div class="review-summary">
+    <!-- SCORE -->
+<div class="review-score">
+  <div class="stars" id="avgStars">★★★★★</div>
+
+  <p><strong><span id="avgRating">0.00</span> out of 5</strong></p>
+  <small>Based on <span id="totalReviews">0</span> reviews</small>
+</div>
+
+
+<!-- BARS -->
+<div class="review-bars" id="reviewBars">
+  <div class="bar-row">
+    <span>5★</span>
+    <div class="bar"><div class="fill" id="bar5"></div></div>
+    <span id="count5">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>4★</span>
+    <div class="bar"><div class="fill" id="bar4"></div></div>
+    <span id="count4">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>3★</span>
+    <div class="bar"><div class="fill" id="bar3"></div></div>
+    <span id="count3">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>2★</span>
+    <div class="bar"><div class="fill" id="bar2"></div></div>
+    <span id="count2">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>1★</span>
+    <div class="bar"><div class="fill" id="bar1"></div></div>
+    <span id="count1">0</span>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  /* ===== CART ===== */
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function updateCartCount() {
+    const cartCount = document.getElementById("cart-count");
+    if(cartCount) cartCount.textContent = cart.length;
+  }
+  updateCartCount();
+
+  /* ===== REVIEW BARS FUNCTION ===== */
+function updateReviewBars(reviews){
+  const c5 = reviews[5] || 0;
+  const c4 = reviews[4] || 0;
+  const c3 = reviews[3] || 0;
+  const c2 = reviews[2] || 0;
+  const c1 = reviews[1] || 0;
+
+  const total = c5 + c4 + c3 + c2 + c1;
+
+  // ===== UPDATE BAR WIDTH + COUNT =====
+  const safeTotal = total || 1;
+
+  for(let star = 5; star >= 1; star--){
+    const count = reviews[star] || 0;
+    const percent = Math.round((count / safeTotal) * 100);
+
+    const bar = document.getElementById(`bar${star}`);
+    const label = document.getElementById(`count${star}`);
+
+    if(bar) bar.style.width = percent + "%";
+    if(label) label.textContent = count;
+  }
+
+  // ===== CALCULATE AVERAGE RATING =====
+  const avg = total
+    ? ((5*c5 + 4*c4 + 3*c3 + 2*c2 + 1*c1) / total)
+    : 0;
+
+  // ===== UPDATE TEXT =====
+  const avgRatingEl = document.getElementById("avgRating");
+  const totalReviewsEl = document.getElementById("totalReviews");
+  if(avgRatingEl) avgRatingEl.textContent = avg.toFixed(2);
+  if(totalReviewsEl) totalReviewsEl.textContent = total;
+
+  // ===== UPDATE STARS DISPLAY (FULL/EMPTY) =====
+  const avgStarsEl = document.getElementById("avgStars");
+  if(avgStarsEl){
+    const full = Math.round(avg); // contoh: 4.86 -> 5
+    avgStarsEl.textContent = "★★★★★☆☆☆☆☆".slice(5 - full, 10 - full);
+  }
+}
+
+  /* ===== SORT PRODUCTS ===== */
+  const select = document.getElementById('sort-by');
+  const grid = document.querySelector('.product-grid');
+
+  if(select && grid){
+    select.addEventListener('change', function() {
+      const value = this.value;
+      const cards = Array.from(grid.querySelectorAll('.product-card'));
+      let sorted;
+
+      if(value === 'price-ascending'){
+        sorted = cards.sort((a,b)=>
+          parseFloat(a.dataset.price.replace(/[^0-9.]/g,'')) -
+          parseFloat(b.dataset.price.replace(/[^0-9.]/g,''))
+        );
+      } else if(value === 'price-descending'){
+        sorted = cards.sort((a,b)=>
+          parseFloat(b.dataset.price.replace(/[^0-9.]/g,'')) -
+          parseFloat(a.dataset.price.replace(/[^0-9.]/g,''))
+        );
+      } else {
+        sorted = cards;
+      }
+
+      grid.innerHTML = '';
+      sorted.forEach(card => grid.appendChild(card));
+    });
+  }
+
+  /* ===== CAKE DETAIL POPUP ===== */
+  const detailSection = document.getElementById('cakesDetail');
+  const detailImg = document.getElementById('detailImg');
+  const detailTitle = document.getElementById('detailTitle');
+  const detailPrice = document.getElementById('detailPrice');
+
+  window.openCakeDetail = function(cakeId) {
+    const cake = cakeData.find(c => c.id === cakeId);
+    if (!cake) return;
+
+    detailImg.src = cake.img;
+    detailTitle.textContent = cake.title;
+    detailPrice.textContent = cake.price;
+    document.getElementById('descContent').innerHTML = cake.description;
+
+    /* ✅ UPDATE REVIEW BARS ikut cake yang diklik */
+    updateReviewBars(cake.reviews || {5:0,4:0,3:0,2:0,1:0});
+
+    detailSection.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+    // Reset accordion
+    const acc = document.getElementById('descToggle');
+    const content = document.getElementById('descContent');
+    acc.classList.remove('active');
+    content.style.display = 'none';
+  };
+
+  window.backToGallery = function() {
+    detailSection.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  };
+
+  /* ===== ACCORDION TOGGLE ===== */
+  const accToggle = document.getElementById('descToggle');
+  const accContent = document.getElementById('descContent');
+  if (accToggle && accContent) {
+    accToggle.addEventListener('click', () => {
+      accToggle.classList.toggle('active');
+      accContent.style.display = accContent.style.display === 'block' ? 'none' : 'block';
+    });
+  }
+
+  /* ===== DELIVERY DATE LOGIC (AUTO) ===== */
+  const dateButtons = document.querySelectorAll('.date-box');
+  const calendarInput = document.getElementById('calendarInput');
+
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
+  dateButtons.forEach((btn, index) => {
+    const offset = parseInt(btn.dataset.offset);
+    const date = new Date(today);
+    date.setDate(today.getDate() + offset);
+
+    // LABEL AUTO
+    let label = '';
+    if(offset === 0) label = 'TODAY';
+    else if(offset === 1) label = 'TOMORROW';
+    else label = `IN ${offset} DAYS`;
+
+    // FORMAT TARIKH
+    const dateText = date.toLocaleDateString('en-GB', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    }).toUpperCase();
+
+    btn.innerHTML = `
+      <span class="label">${label}</span>
+      <span class="date">${dateText}</span>
+    `;
+    btn.dataset.date = date.toISOString().split('T')[0];
+
+    btn.addEventListener('click', () => {
+      dateButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      if(calendarInput) calendarInput.value = btn.dataset.date;
+    });
+
+    // AUTO SELECT FIRST DATE
+    if(index === 0){
+      btn.classList.add('active');
+      if(calendarInput) calendarInput.value = btn.dataset.date;
+    }
+  });
+
+  if(calendarInput){
+    calendarInput.addEventListener('change', () => {
+      dateButtons.forEach(b => b.classList.remove('active'));
+    });
+  }
+
+  window.toggleCalendar = function(){
+    if(!calendarInput) return;
+    calendarInput.style.display =
+      calendarInput.style.display === 'block' ? 'none' : 'block';
+  };
+
+  /* ===== WISH CARD MESSAGE ===== */
+  const wishBoxes = document.querySelectorAll('.wish-box');
+  const cardMessage = document.getElementById('cardMessage');
+
+  wishBoxes.forEach(box=>{
+    box.addEventListener('click', ()=>{
+      wishBoxes.forEach(b=>b.classList.remove('active'));
+      box.classList.add('active');
+      if(cardMessage) cardMessage.value = box.dataset.msg;
+    });
+  });
+
+});
+</script>
+
+<script>
+/* ===== CAKE DATA (12 GRADUATION CAKES) + REVIEWS ===== */
+const cakeData = [
+  {
+    id: "grad1",
+    title: "Classic Grad Cap Cake",
+    price: "RM 150.00",
+    img: "grad1.jpg",
+    description: `
+  <p class="desc-main">
+    Classic graduation cake topped with a signature graduation cap and scroll,
+    finished with smooth cream frosting for a timeless convocation look.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Vanilla Cream</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.3 kg – 8"</p>
+  </div>
+`,
+    reviews: {5: 48, 4: 13, 3: 2, 2: 1, 1: 0}
+  },
+
+  {
+    id: "grad2",
+    title: "Minimalist Graduation Cake",
+    price: "RM 165.00",
+    img: "grad2.jpg",
+    description: `
+      <p class="desc-main">
+    Minimalist graduation cake with clean white finishing,
+    topped with a graduation cap and scroll for a neat and elegant celebration.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Vanilla</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.4 kg – 9"</p>
+  </div>
+    `,
+    reviews: {5: 31, 4: 14, 3: 3, 2: 1, 1: 0}
+  },
+
+  {
+    id: "grad3",
+    title: "Golden Glam Cake",
+    price: "RM 195.00",
+    img: "grad3.jpg",
+    description: `
+       <p class="desc-main">
+    Luxurious black and gold graduation cake with bold textures
+    and elegant gold accents, perfect for a premium graduation celebration.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, White Chocolate</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.5 kg – 9"</p>
+  </div>
+    `,
+    reviews: {5: 60, 4: 18, 3: 3, 2: 1, 1: 0}
+  },
+
+  {
+    id: "grad4",
+    title: "Pastel Congrats Cake",
+    price: "RM 180.00",
+    img: "grad4.jpg",
+    description: `
+      <p class="desc-main">
+    Soft pastel graduation cake decorated with floral piping and a graduation cap,
+    creating a sweet and elegant look perfect for photo moments.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Vanilla Cream</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.4 kg – 9"</p>
+  </div>
+    `,
+    reviews: {5: 52, 4: 15, 3: 3, 2: 1, 1: 0}
+  },
+
+  {
+    id: "grad5",
+    title: "Luxury Grad Cake",
+    price: "RM 240.00",
+    img: "grad5.jpg",
+    description: `
+      <p class="desc-main">
+    Premium graduation cake featuring gold drip details,
+    luxury decorations, and elegant finishing for a grand celebration.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Chocolate Cream</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.6 kg – 9"</p>
+  </div>
+    `,
+    reviews: {5: 74, 4: 18, 3: 2, 2: 0, 1: 1}
+  },
+
+  {
+    id: "grad6",
+    title: "Stars & Shine Cake",
+    price: "RM 170.00",
+    img: "grad6.png",
+    description: `
+      <p class="desc-main">
+    Graduation cake decorated with sparkling star toppers and a graduation cap,
+    symbolising success, dreams, and a bright future ahead.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Vanilla</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.3 kg – 8"</p>
+  </div>
+    `,
+    reviews: {5: 28, 4: 11, 3: 3, 2: 2, 1: 0}
+  },
+
+  {
+    id: "grad7",
+    title: "Black & Gold Grad Cake",
+    price: "RM 210.00",
+    img: "grad7.jpg",
+    description: `
+      <p class="desc-main">
+    Modern black graduation cake with gold detailing,
+    finished with bold textures for a confident and stylish convocation theme.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Chocolate</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.5 kg – 9"</p>
+  </div>
+    `,
+    reviews: {5: 45, 4: 16, 3: 5, 2: 1, 1: 1}
+  },
+
+  {
+    id: "grad8",
+    title: "Graduation Bento Cake",
+    price: "RM 150.00",
+    img: "grad8.jpg",
+    description: `
+      <p class="desc-main">
+    Cute bento-size graduation cake with simple decorations,
+    perfect as a thoughtful gift or small celebration surprise.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Vanilla Cream</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>0.7 kg – Bento Size</p>
+  </div>
+    `,
+    reviews: {5: 23, 4: 10, 3: 4, 2: 1, 1: 0}
+  },
+
+  {
+    id: "grad9",
+    title: "Floral Graduation Cake",
+    price: "RM 220.00",
+    img: "grad9.jpg",
+    description: `
+      <p class="desc-main">
+    Elegant graduation cake decorated with soft floral elements,
+    ideal for graceful celebrations and family gatherings.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Vanilla</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.6 kg – 9"</p>
+  </div>
+    `,
+    reviews: {5: 40, 4: 13, 3: 4, 2: 1, 1: 1}
+  },
+
+  {
+    id: "grad10",
+    title: "Modern Congrats Cake",
+    price: "RM 185.00",
+    img: "grad10.jpg",
+    description: `
+      <p class="desc-main">
+    Modern graduation cake with clean typography-style “Congrats” topper,
+    finished in elegant tones for a contemporary celebration look.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Vanilla Cream</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.4 kg – 9"</p>
+  </div>
+    `,
+    reviews: {5: 29, 4: 12, 3: 3, 2: 1, 1: 1}
+  },
+
+  {
+    id: "grad11",
+    title: "Mini Graduation Cake",
+    price: "RM 150.00",
+    img: "grad11.jpg",
+    description: `
+       <p class="desc-main">
+    Adorable mini graduation cake finished in soft pastel tones,
+    topped with a graduation cap, scroll, and delicate floral details.
+    Perfect for a thoughtful surprise or intimate celebration.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Vanilla</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>0.9 kg – 6"</p>
+  </div>
+    `,
+    reviews: {5: 18, 4: 9, 3: 4, 2: 1, 1: 1}
+  },
+
+  {
+    id: "grad12",
+    title: "Premium Graduation Cake",
+    price: "RM 300.00",
+    img: "grad12.jpg",
+    description: `
+      <p class="desc-main">
+    Elegant multi-tier graduation cake decorated in soft blue and silver tones,
+    featuring pearl details, star accents, and graduation elements.
+    A stunning centrepiece for grand graduation celebrations.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, White Chocolate, Vanilla Cream</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.8 kg – 9"</p>
+  </div>
+    `,
+    reviews: {5: 82, 4: 15, 3: 3, 2: 1, 1: 1}
+  }
+];
+</script>
+
+<script>
+function addToCartDetail() {
+  const title = document.getElementById("detailTitle").textContent;
+  const price = document.getElementById("detailPrice").textContent;
+  const img = document.getElementById("detailImg").src;
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Check if item already exists
+  const existing = cart.find(item => item.title === title);
+
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({
+      title,
+      price,
+      img,
+      qty: 1
+    });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  // Update cart counter
+  const cartCount = document.getElementById("cart-count");
+  if (cartCount) cartCount.textContent = cart.length;
+
+  alert("Added to cart! Your Sweet Bliss moment just got sweeter 🌸");
+}
+</script>
+
+
+<footer>
+© 2025 Sweet Bliss Cake | Recommended Browser: Google Chrome |
+Resolution: 1920 × 1080 <br>
+Last Updated: January 2026
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const faqButtons = document.querySelectorAll(".faqAccordion dt button");
+
+  faqButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const panelId = button.getAttribute("aria-controls");
+      const panel = document.getElementById(panelId);
+
+      const isOpen = button.getAttribute("aria-expanded") === "true";
+
+      // close all first
+      faqButtons.forEach(btn => {
+        btn.setAttribute("aria-expanded", "false");
+        const p = document.getElementById(btn.getAttribute("aria-controls"));
+        if (p){
+          p.style.display = "none";
+          p.setAttribute("aria-hidden", "true");
+        }
+      });
+
+      // if it was closed, open it (if it was open, it stays closed)
+      if (!isOpen) {
+        button.setAttribute("aria-expanded", "true");
+        panel.style.display = "block";
+        panel.setAttribute("aria-hidden", "false");
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Anniversary | Sweet Bliss Cake</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="promo">✨ Get Your Cake Today | Same Day Delivery ✨</div>
+ <div class="top-bar-actions">
+<a href="cart.html" class="cart-btn">
+  <img src="https://img.icons8.com/?size=100&id=CHIch3K0zCjb&format=png&color=1A1A1A"
+       alt="Cart"
+       class="cart-icon">
+  <span class="cart-count" id="cart-count">0</span>
+</a>
+</div>
+</div>
+
+<header>
+  <div class="logo">
+    Sweet Bliss
+    <span>Ready-made Cakes</span>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li>
+        <a href="categories.html">Categories ▾</a>
+        <ul>
+          <li><a href="spongecake.html">Sponge Cake</a></li>
+          <li><a href="cupcake.html">Cupcake</a></li>
+          <li><a href="jellycake.html">Jelly Cake</a></li>
+          <li><a href="bentocake.html">Bento Cake</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="occasion.html">Occasion ▾</a>
+        <ul>
+          <li><a href="birthday.html">Birthday</a></li>
+          <li><a href="wedding.html">Wedding</a></li>
+          <li><a href="anniversary.html">Anniversary</a></li>
+          <li><a href="graduation.html">Graduation</a></li>
+          <li><a href="kids.html">Kids</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="theme.html">Theme ▾</a>
+        <ul>
+          <li><a href="sanrio.html">Sanrio & Friends</a></li>
+          <li><a href="disney.html">Disney</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="vintage.html">Vintage Cake</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="accessories.html">Accessories ▾</a>
+        <ul>
+          <li><a href="topper.html">Topper</a></li>
+          <li><a href="candle.html">Candle</a></li>
+          <li><a href="giftcard.html">Gift Card</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="occasion-hero">
+  <div class="hero-wrapper">
+
+     <div class="hero-content">
+     <h2>Romantic Anniversary Cakes</h2>
+<p>
+Delicately crafted cakes inspired by love and cherished moments.
+<br>Ideal for anniversaries, engagements, and special milestones.
+<br><strong>A sweet way to celebrate your journey together.</strong>
+</p>
+    </div>
+
+ <div class="hero-image">
+      <img src="anniversary-hero.jpg" alt="Anniversary Cakes by Sweet Bliss">
+    </div>
+
+  </div>
+</section>
+
+<section class="occasion-section">
+
+  <h2>Anniversary Cakes</h2>
+  <p class="occasion-desc">
+    Romantic, elegant, and meaningful cakes designed to celebrate love and togetherness.
+  </p>
+
+<!-- SORT DROPDOWN -->
+<div class="section clearfix">
+  <div class="four columns section_select medium-down--one-whole">
+    <select class="sort_by" id="sort-by" data-default-sort="manual">
+      <option value="manual">Featured</option>
+      <option value="price-ascending">Price: Low to High</option>
+      <option value="price-descending">Price: High to Low</option>
+    </select>
+  </div>
+</div>
+
+  <div class="product-grid">
+
+<!-- Cake 1 -->
+<div class="product-card" onclick="openCakeDetail('anniv1')" data-price="180.00">
+  <div class="product-image">
+    <img src="anniv1.jpg" alt="Blush Heart Anniversary Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Blush Heart Anniversary Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(64 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 180.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 2 -->
+<div class="product-card" onclick="openCakeDetail('anniv2')" data-price="780.00">
+  <div class="product-image">
+    <img src="anniv2.jpg" alt="Just Married Signature Tier Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Just Married Signature Tier Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(49 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 780.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 3 -->
+<div class="product-card" onclick="openCakeDetail('anniv3')" data-price="160.00">
+  <div class="product-image">
+    <img src="anniv3.jpg" alt="Sweet Heart Anniversary Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Sweet Heart Anniversary Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(82 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 160.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 4 -->
+<div class="product-card" onclick="openCakeDetail('anniv4')" data-price="920.00">
+  <div class="product-image">
+    <img src="anniv4.jpg" alt="Black Gold Luxe Anniversary Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Black Gold Luxe Anniversary Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(71 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 920.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 5 -->
+<div class="product-card" onclick="openCakeDetail('anniv5')" data-price="150.00">
+  <div class="product-image">
+    <img src="anniv5.jpg" alt="Love You Bento Anniversary Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Love You Bento Anniversary Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(95 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 150.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 6 -->
+<div class="product-card" onclick="openCakeDetail('anniv6')" data-price="650.00">
+  <div class="product-image">
+    <img src="anniv6.jpg" alt="Pure Bloom Anniversary Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Pure Bloom Anniversary Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(44 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 650.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 7 -->
+<div class="product-card" onclick="openCakeDetail('anniv7')" data-price="480.00">
+  <div class="product-image">
+    <img src="anniv7.jpg" alt="Golden Blossom Anniversary Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Golden Blossom Anniversary Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(68 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 480.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 8 -->
+<div class="product-card" onclick="openCakeDetail('anniv8')" data-price="220.00">
+  <div class="product-image">
+    <img src="anniv8.jpg" alt="Vintage Heart Layer Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Vintage Heart Layer Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(38 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 220.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 9 -->
+<div class="product-card" onclick="openCakeDetail('anniv9')" data-price="540.00">
+  <div class="product-image">
+    <img src="anniv9.jpg" alt="Classic White Rose Anniversary Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Classic White Rose Anniversary Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(59 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 540.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 10 -->
+<div class="product-card" onclick="openCakeDetail('anniv10')" data-price="360.00">
+  <div class="product-image">
+    <img src="anniv10.jpg" alt="Forever Gold Heart Anniversary Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Forever Gold Heart Anniversary Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(41 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 360.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 11 -->
+<div class="product-card" onclick="openCakeDetail('anniv11')" data-price="189.00">
+  <div class="product-image">
+    <img src="anniv11.jpg" alt="Sweetheart Mini Couple Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Sweetheart Mini Couple Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(33 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 189.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 12 -->
+<div class="product-card" onclick="openCakeDetail('anniv12')" data-price="890.00">
+  <div class="product-image">
+    <img src="anniv12.jpg" alt="Royal Elegance Anniversary Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Royal Elegance Anniversary Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(101 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 890.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+</div>
+
+  </section>
+  
+<!-- DESCRIPTION SECTION -->
+<section class="cake-description">
+  <div class="description-wrapper">
+    <h2>Celebrate Your Love Story</h2>
+
+    <p>
+      Make your anniversary celebration truly unforgettable with our beautifully crafted anniversary cakes —
+      from elegant minimalist designs to luxurious black & gold themes.
+      Add a personalised message, select your preferred delivery date,
+      and we’ll make sure it arrives perfectly for your special moment.
+    </p>
+
+    <ul>
+      <li>Classic Love Anniversary Cake</li>
+      <li>Minimalist White Anniversary Cake</li>
+      <li>Golden Romance Anniversary Cake</li>
+      <li>Pastel Love Anniversary Cake</li>
+      <li>Luxury Couple Anniversary Cake</li>
+      <li>Hearts & Shine Anniversary Cake</li>
+      <li>Black & Gold Anniversary Cake</li>
+      <li>Anniversary Bento Cake</li>
+      <li>Elegant Floral Anniversary Cake</li>
+      <li>Modern Love Anniversary Cake</li>
+      <li>Mini Couple Anniversary Cake</li>
+      <li>Premium Anniversary Celebration Cake</li>
+    </ul>
+
+    <p>
+      Choose your favourite design, add a meaningful anniversary message,
+      and pick your delivery slot — we’ll take care of the rest, so you can focus on celebrating love.
+    </p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<div class="container collection-faq-wrap">
+  <h2 class="title faq--heading">Frequently Asked Questions</h2>
+
+  <dl class="faqAccordion">
+
+    <dt>
+      <button type="button" aria-controls="panel-01" aria-expanded="false">
+        What message should I write on an anniversary cake?
+      </button>
+    </dt>
+    <dd id="panel-01" aria-hidden="true">
+      <p>
+        Popular messages include “Happy Anniversary”, “Forever & Always”, “Still in Love”,
+        “Cheers to Our Love”, or the couple’s names with their anniversary year.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-02" aria-expanded="false">
+        Can I customise the cake with names or anniversary years?
+      </button>
+    </dt>
+    <dd id="panel-02" aria-hidden="true">
+      <p>
+        Yes! You can personalise your cake with names, anniversary years,
+        and even a short romantic quote. Simply enter it in the wish card message box.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-03" aria-expanded="false">
+        What anniversary cake designs are most popular?
+      </button>
+    </dt>
+    <dd id="panel-03" aria-hidden="true">
+      <p>
+        Customer favourites include minimalist white cakes, floral designs,
+        heart-themed cakes, black & gold luxury styles, and elegant couple cakes.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-04" aria-expanded="false">
+        Is same-day delivery available for anniversary cakes?
+      </button>
+    </dt>
+    <dd id="panel-04" aria-hidden="true">
+      <p>
+        Yes, same-day delivery is available for early orders.
+        Please place your order before 5PM to secure the delivery slot.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-05" aria-expanded="false">
+        What cake size is suitable for an anniversary celebration?
+      </button>
+    </dt>
+    <dd id="panel-05" aria-hidden="true">
+      <p>
+        For intimate celebrations, an 8" cake is perfect.
+        For larger gatherings or milestone anniversaries, we recommend a 9" or premium design.
+      </p>
+    </dd>
+
+  </dl>
+</div>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What message should I write on an anniversary cake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Popular messages include “Happy Anniversary”, “Forever & Always”, “Still in Love”, “Cheers to Our Love”, or the couple’s names with their anniversary year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customise the cake with names or anniversary years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! You can personalise your cake with names, anniversary years, and even a short romantic quote. Simply enter it in the wish card message box."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What anniversary cake designs are most popular?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Customer favourites include minimalist white cakes, floral designs, heart-themed cakes, black & gold luxury styles, and elegant couple cakes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is same-day delivery available for anniversary cakes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, same-day delivery is available for early orders. Please place your order before 5PM to secure the delivery slot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What cake size is suitable for an anniversary celebration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For intimate celebrations, an 8-inch cake is perfect. For larger gatherings or milestone anniversaries, we recommend a 9-inch or premium design."
+      }
+    }
+  ]
+}
+</script>
+
+
+<section class="info-bar">
+  <div class="info-bar-inner">
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-sameday.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Same-Day Delivery</strong>
+        <small>Order before 5PM</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-calendar.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Choose Your Slot</strong>
+        <small>Flexible delivery</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-thumbsup.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Trusted Sellers</strong>
+        <small>Top-rated bakers</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-cake.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Premium Cakes</strong>
+        <small>Fresh & quality</small>
+      </span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================== CAKE DETAIL PAGE (Add-on) ================== -->
+<section class="cake-detail" id="cakesDetail">
+  <div class="detail-layout">
+
+    <div><img id="detailImg" src="" alt="Cake Image"></div>
+
+    <div>
+      <h3 id="detailTitle"></h3>
+      <p id="detailPrice"></p>
+
+      <div class="acc_title" id="descToggle">
+  <span>Product Description</span>
+  <span class="acc_icon">+</span>
+</div>
+
+<div class="description bottom des_slide" id="descContent">
+  <p class="desc-main">
+    Six layers of pastel rainbow-colored vanilla cake filled high with a sweet and sour strawberry mousseline.
+  </p>
+
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Mixed Berry Spread, Berry Yoghurt, White Chocolate, Permitted Flavoring and Coloring</p>
+  </div>
+
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>Large – 1.5 kg – 9" × 2.7"</p>
+  </div>
+</div>
+
+
+      <!-- DELIVERY DATE -->
+      <div class="option-group">
+        <h4>SELECT YOUR DELIVERY DATE</h4>
+        <div class="date-grid" id="dateButtons">
+          <button class="date-box" data-offset="0"></button>
+          <button class="date-box active" data-offset="1"></button>
+          <button class="date-box" data-offset="2"></button>
+        </div>
+
+        <button class="full-calendar-btn" onclick="toggleCalendar()">VIEW FULL CALENDAR</button>
+        <input type="date" id="calendarInput">
+      </div>
+
+      <!-- CANDLES -->
+      <div class="option-group">
+        <h4>NUMBER OF CANDLES</h4>
+        <select>
+          <option>No Candle</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+      </div>
+
+      <!-- WISH CARD -->
+      <div class="option-group">
+        <h4>WISH CARD MESSAGE</h4>
+        <div class="wish-grid" id="wishBoxes">
+          <div class="wish-box" data-msg="Happy Anniversary ❤️ Forever & always.">❤️ Anniversary</div>
+<div class="wish-box" data-msg="Cheers to another beautiful year together 🥂">🥂 Cheers</div>
+<div class="wish-box" data-msg="Still in love, still us ✨ Happy Anniversary!">✨ Love</div>
+<div class="wish-box" data-msg="To many more years of happiness together 💕">💕 Forever</div>
+        </div>
+        <textarea id="cardMessage" rows="4"></textarea>
+      </div>
+
+     <button class="full-calendar-btn" style="background:#fb3eb9;margin-top:20px;" onclick="addToCartDetail()">ADD TO CART</button>
+
+      <div class="back-btn" onclick="backToGallery()">← Back</div>
+    </div>
+
+<!-- ================== CUSTOMER REVIEWS ================== -->
+<div class="review-section">
+  <h3>Customer Reviews</h3>
+
+  <div class="review-summary">
+    <!-- SCORE -->
+<div class="review-score">
+  <div class="stars" id="avgStars">★★★★★</div>
+
+  <p><strong><span id="avgRating">0.00</span> out of 5</strong></p>
+  <small>Based on <span id="totalReviews">0</span> reviews</small>
+</div>
+
+
+<!-- BARS -->
+<div class="review-bars" id="reviewBars">
+  <div class="bar-row">
+    <span>5★</span>
+    <div class="bar"><div class="fill" id="bar5"></div></div>
+    <span id="count5">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>4★</span>
+    <div class="bar"><div class="fill" id="bar4"></div></div>
+    <span id="count4">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>3★</span>
+    <div class="bar"><div class="fill" id="bar3"></div></div>
+    <span id="count3">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>2★</span>
+    <div class="bar"><div class="fill" id="bar2"></div></div>
+    <span id="count2">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>1★</span>
+    <div class="bar"><div class="fill" id="bar1"></div></div>
+    <span id="count1">0</span>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  /* ===== CART ===== */
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function updateCartCount() {
+    const cartCount = document.getElementById("cart-count");
+    if(cartCount) cartCount.textContent = cart.length;
+  }
+  updateCartCount();
+
+  /* ===== REVIEW BARS FUNCTION ===== */
+function updateReviewBars(reviews){
+  const c5 = reviews[5] || 0;
+  const c4 = reviews[4] || 0;
+  const c3 = reviews[3] || 0;
+  const c2 = reviews[2] || 0;
+  const c1 = reviews[1] || 0;
+
+  const total = c5 + c4 + c3 + c2 + c1;
+
+  // ===== UPDATE BAR WIDTH + COUNT =====
+  const safeTotal = total || 1;
+
+  for(let star = 5; star >= 1; star--){
+    const count = reviews[star] || 0;
+    const percent = Math.round((count / safeTotal) * 100);
+
+    const bar = document.getElementById(`bar${star}`);
+    const label = document.getElementById(`count${star}`);
+
+    if(bar) bar.style.width = percent + "%";
+    if(label) label.textContent = count;
+  }
+
+  // ===== CALCULATE AVERAGE RATING =====
+  const avg = total
+    ? ((5*c5 + 4*c4 + 3*c3 + 2*c2 + 1*c1) / total)
+    : 0;
+
+  // ===== UPDATE TEXT =====
+  const avgRatingEl = document.getElementById("avgRating");
+  const totalReviewsEl = document.getElementById("totalReviews");
+  if(avgRatingEl) avgRatingEl.textContent = avg.toFixed(2);
+  if(totalReviewsEl) totalReviewsEl.textContent = total;
+
+  // ===== UPDATE STARS DISPLAY (FULL/EMPTY) =====
+  const avgStarsEl = document.getElementById("avgStars");
+  if(avgStarsEl){
+    const full = Math.round(avg); // contoh: 4.86 -> 5
+    avgStarsEl.textContent = "★★★★★☆☆☆☆☆".slice(5 - full, 10 - full);
+  }
+}
+
+  /* ===== SORT PRODUCTS ===== */
+  const select = document.getElementById('sort-by');
+  const grid = document.querySelector('.product-grid');
+
+  if(select && grid){
+    select.addEventListener('change', function() {
+      const value = this.value;
+      const cards = Array.from(grid.querySelectorAll('.product-card'));
+      let sorted;
+
+      if(value === 'price-ascending'){
+        sorted = cards.sort((a,b)=>
+          parseFloat(a.dataset.price.replace(/[^0-9.]/g,'')) -
+          parseFloat(b.dataset.price.replace(/[^0-9.]/g,''))
+        );
+      } else if(value === 'price-descending'){
+        sorted = cards.sort((a,b)=>
+          parseFloat(b.dataset.price.replace(/[^0-9.]/g,'')) -
+          parseFloat(a.dataset.price.replace(/[^0-9.]/g,''))
+        );
+      } else {
+        sorted = cards;
+      }
+
+      grid.innerHTML = '';
+      sorted.forEach(card => grid.appendChild(card));
+    });
+  }
+
+  /* ===== CAKE DETAIL POPUP ===== */
+  const detailSection = document.getElementById('cakesDetail');
+  const detailImg = document.getElementById('detailImg');
+  const detailTitle = document.getElementById('detailTitle');
+  const detailPrice = document.getElementById('detailPrice');
+
+  window.openCakeDetail = function(cakeId) {
+    const cake = cakeData.find(c => c.id === cakeId);
+    if (!cake) return;
+
+    detailImg.src = cake.img;
+    detailTitle.textContent = cake.title;
+    detailPrice.textContent = cake.price;
+    document.getElementById('descContent').innerHTML = cake.description;
+
+    /* ✅ UPDATE REVIEW BARS ikut cake yang diklik */
+    updateReviewBars(cake.reviews || {5:0,4:0,3:0,2:0,1:0});
+
+    detailSection.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+    // Reset accordion
+    const acc = document.getElementById('descToggle');
+    const content = document.getElementById('descContent');
+    acc.classList.remove('active');
+    content.style.display = 'none';
+  };
+
+  window.backToGallery = function() {
+    detailSection.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  };
+
+  /* ===== ACCORDION TOGGLE ===== */
+  const accToggle = document.getElementById('descToggle');
+  const accContent = document.getElementById('descContent');
+  if (accToggle && accContent) {
+    accToggle.addEventListener('click', () => {
+      accToggle.classList.toggle('active');
+      accContent.style.display = accContent.style.display === 'block' ? 'none' : 'block';
+    });
+  }
+
+  /* ===== DELIVERY DATE LOGIC (AUTO) ===== */
+  const dateButtons = document.querySelectorAll('.date-box');
+  const calendarInput = document.getElementById('calendarInput');
+
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
+  dateButtons.forEach((btn, index) => {
+    const offset = parseInt(btn.dataset.offset);
+    const date = new Date(today);
+    date.setDate(today.getDate() + offset);
+
+    // LABEL AUTO
+    let label = '';
+    if(offset === 0) label = 'TODAY';
+    else if(offset === 1) label = 'TOMORROW';
+    else label = `IN ${offset} DAYS`;
+
+    // FORMAT TARIKH
+    const dateText = date.toLocaleDateString('en-GB', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    }).toUpperCase();
+
+    btn.innerHTML = `
+      <span class="label">${label}</span>
+      <span class="date">${dateText}</span>
+    `;
+    btn.dataset.date = date.toISOString().split('T')[0];
+
+    btn.addEventListener('click', () => {
+      dateButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      if(calendarInput) calendarInput.value = btn.dataset.date;
+    });
+
+    // AUTO SELECT FIRST DATE
+    if(index === 0){
+      btn.classList.add('active');
+      if(calendarInput) calendarInput.value = btn.dataset.date;
+    }
+  });
+
+  if(calendarInput){
+    calendarInput.addEventListener('change', () => {
+      dateButtons.forEach(b => b.classList.remove('active'));
+    });
+  }
+
+  window.toggleCalendar = function(){
+    if(!calendarInput) return;
+    calendarInput.style.display =
+      calendarInput.style.display === 'block' ? 'none' : 'block';
+  };
+
+  /* ===== WISH CARD MESSAGE ===== */
+  const wishBoxes = document.querySelectorAll('.wish-box');
+  const cardMessage = document.getElementById('cardMessage');
+
+  wishBoxes.forEach(box=>{
+    box.addEventListener('click', ()=>{
+      wishBoxes.forEach(b=>b.classList.remove('active'));
+      box.classList.add('active');
+      if(cardMessage) cardMessage.value = box.dataset.msg;
+    });
+  });
+
+});
+</script>
+
+<script>
+/* ===== CAKE DATA (12 ANNIVERSARY CAKES) + REVIEWS ===== */
+const cakeData = [
+
+  {
+    id: "anniv1",
+    title: "Blush Heart Anniversary Cake",
+    price: "RM 180.00",
+    img: "anniv1.jpg",
+    description: `
+      <p class="desc-main">
+        A romantic heart-shaped cake in soft blush tones,
+        perfect for celebrating love-filled anniversaries.
+      </p>
+      <div class="desc-section">
+        <h4>Ingredients</h4>
+        <p>Flour, Eggs, Sugar, Butter, Vanilla Cream</p>
+      </div>
+      <div class="desc-section">
+        <h4>Weight & Dimensions</h4>
+        <p>1.3 kg – 8"</p>
+      </div>
+    `,
+    reviews: {5:64, 4:18, 3:4, 2:1, 1:0}
+  },
+
+  {
+    id: "anniv2",
+    title: "Just Married Signature Tier Cake",
+    price: "RM 780.00",
+    img: "anniv2.jpg",
+    description: `
+      <p class="desc-main">
+        A signature multi-tier cake designed for newlyweds
+        and milestone anniversary celebrations with elegant detailing.
+      </p>
+      <div class="desc-section">
+        <h4>Ingredients</h4>
+        <p>Flour, Eggs, Sugar, Butter, Vanilla Cream, White Chocolate</p>
+      </div>
+      <div class="desc-section">
+        <h4>Weight & Dimensions</h4>
+        <p>2.2 kg – 2 Tier (9” & 6”)</p>
+      </div>
+    `,
+    reviews: {5:49, 4:12, 3:2, 2:0, 1:0}
+  },
+
+  {
+    id: "anniv3",
+    title: "Sweet Heart Anniversary Cake",
+    price: "RM 160.00",
+    img: "anniv3.jpg",
+    description: `
+      <p class="desc-main">
+        A sweet and charming heart-themed cake,
+        ideal for simple yet meaningful anniversary surprises.
+      </p>
+      <div class="desc-section">
+        <h4>Ingredients</h4>
+        <p>Flour, Eggs, Sugar, Butter, Vanilla</p>
+      </div>
+      <div class="desc-section">
+        <h4>Weight & Dimensions</h4>
+        <p>1.2 kg – 8"</p>
+      </div>
+    `,
+    reviews: {5:82, 4:20, 3:4, 2:1, 1:0}
+  },
+
+  {
+    id: "anniv4",
+    title: "Black Gold Luxe Anniversary Cake",
+    price: "RM 920.00",
+    img: "anniv4.jpg",
+    description: `
+      <p class="desc-main">
+        A bold black and gold luxury cake designed as
+        a statement centrepiece for premium celebrations.
+      </p>
+      <div class="desc-section">
+        <h4>Ingredients</h4>
+        <p>Flour, Eggs, Sugar, Butter, Dark Chocolate</p>
+      </div>
+      <div class="desc-section">
+        <h4>Weight & Dimensions</h4>
+        <p>2.8 kg – 3 Tier</p>
+      </div>
+    `,
+    reviews: {5:71, 4:14, 3:2, 2:0, 1:0}
+  },
+
+  {
+    id: "anniv5",
+    title: "Love You Bento Anniversary Cake",
+    price: "RM 150.00",
+    img: "anniv5.jpg",
+    description: `
+      <p class="desc-main">
+        A cute bento-style cake with playful heart details,
+        perfect for intimate anniversary surprises.
+      </p>
+      <div class="desc-section">
+        <h4>Ingredients</h4>
+        <p>Flour, Eggs, Sugar, Butter, Vanilla Cream</p>
+      </div>
+      <div class="desc-section">
+        <h4>Weight & Dimensions</h4>
+        <p>0.7 kg – Bento Size</p>
+      </div>
+    `,
+    reviews: {5:95, 4:22, 3:3, 2:0, 1:0}
+  },
+
+  {
+    id: "anniv6",
+    title: "Pure Bloom Anniversary Cake",
+    price: "RM 650.00",
+    img: "anniv6.jpg",
+    description: `
+      <p class="desc-main">
+        A graceful floral cake inspired by purity and romance,
+        ideal for elegant anniversary celebrations.
+      </p>
+      <div class="desc-section">
+        <h4>Ingredients</h4>
+        <p>Flour, Eggs, Sugar, Butter, Vanilla</p>
+      </div>
+      <div class="desc-section">
+        <h4>Weight & Dimensions</h4>
+        <p>2.0 kg – 2 Tier</p>
+      </div>
+    `,
+    reviews: {5:44, 4:12, 3:3, 2:1, 1:0}
+  },
+
+  {
+    id: "anniv7",
+    title: "Golden Blossom Anniversary Cake",
+    price: "RM 480.00",
+    img: "anniv7.jpg",
+    description: `
+      <p class="desc-main">
+        A floral-inspired cake with golden accents,
+        symbolising growth, love, and beautiful memories.
+      </p>
+      <div class="desc-section">
+        <h4>Ingredients</h4>
+        <p>Flour, Eggs, Sugar, Butter, White Chocolate</p>
+      </div>
+      <div class="desc-section">
+        <h4>Weight & Dimensions</h4>
+        <p>1.8 kg – 9"</p>
+      </div>
+    `,
+    reviews: {5:68, 4:18, 3:4, 2:1, 1:0}
+  },
+
+  {
+    id: "anniv8",
+    title: "Vintage Heart Layer Cake",
+    price: "RM 220.00",
+    img: "anniv8.jpg",
+    description: `
+      <p class="desc-main">
+        A vintage-inspired heart cake layered with
+        classic piping for a nostalgic romantic feel.
+      </p>
+      <div class="desc-section">
+        <h4>Ingredients</h4>
+        <p>Flour, Eggs, Sugar, Butter, Vanilla Cream</p>
+      </div>
+      <div class="desc-section">
+        <h4>Weight & Dimensions</h4>
+        <p>1.4 kg – 8"</p>
+      </div>
+    `,
+    reviews: {5:38, 4:15, 3:3, 2:1, 1:0}
+  },
+
+  {
+    id: "anniv9",
+    title: "Classic White Rose Anniversary Cake",
+    price: "RM 540.00",
+    img: "anniv9.jpg",
+    description: `
+      <p class="desc-main">
+        A timeless white cake adorned with delicate roses,
+        perfect for classic and elegant anniversaries.
+      </p>
+      <div class="desc-section">
+        <h4>Ingredients</h4>
+        <p>Flour, Eggs, Sugar, Butter, Vanilla</p>
+      </div>
+      <div class="desc-section">
+        <h4>Weight & Dimensions</h4>
+        <p>2.0 kg – 2 Tier</p>
+      </div>
+    `,
+    reviews: {5:59, 4:16, 3:4, 2:1, 1:0}
+  },
+
+  {
+    id: "anniv10",
+    title: "Forever Gold Heart Anniversary Cake",
+    price: "RM 360.00",
+    img: "anniv10.jpg",
+    description: `
+      <p class="desc-main">
+        A modern heart-shaped cake accented with gold,
+        symbolising everlasting love and commitment.
+      </p>
+      <div class="desc-section">
+        <h4>Ingredients</h4>
+        <p>Flour, Eggs, Sugar, Butter, Vanilla Cream</p>
+      </div>
+      <div class="desc-section">
+        <h4>Weight & Dimensions</h4>
+        <p>1.5 kg – 9"</p>
+      </div>
+    `,
+    reviews: {5:41, 4:14, 3:3, 2:1, 1:0}
+  },
+
+  {
+    id: "anniv11",
+    title: "Sweetheart Mini Couple Cake",
+    price: "RM 189.00",
+    img: "anniv11.jpg",
+    description: `
+      <p class="desc-main">
+        A charming mini cake featuring a cute couple design,
+        perfect for sweet and intimate celebrations.
+      </p>
+      <div class="desc-section">
+        <h4>Ingredients</h4>
+        <p>Flour, Eggs, Sugar, Butter, Vanilla</p>
+      </div>
+      <div class="desc-section">
+        <h4>Weight & Dimensions</h4>
+        <p>0.9 kg – 6"</p>
+      </div>
+    `,
+    reviews: {5:33, 4:10, 3:3, 2:1, 1:0}
+  },
+
+  {
+    id: "anniv12",
+    title: "Royal Elegance Anniversary Cake",
+    price: "RM 890.00",
+    img: "anniv12.jpg",
+    description: `
+      <p class="desc-main">
+        A royal-inspired multi-tier cake with sculpted textures
+        and fresh florals, designed for grand celebrations.
+      </p>
+      <div class="desc-section">
+        <h4>Ingredients</h4>
+        <p>Flour, Eggs, Sugar, Butter, White Chocolate, Vanilla Cream</p>
+      </div>
+      <div class="desc-section">
+        <h4>Weight & Dimensions</h4>
+        <p>3.0 kg – 3 Tier</p>
+      </div>
+    `,
+    reviews: {5:101, 4:18, 3:4, 2:1, 1:0}
+  }
+
+];
+</script>
+
+<script>
+function addToCartDetail() {
+  const title = document.getElementById("detailTitle").textContent;
+  const price = document.getElementById("detailPrice").textContent;
+  const img = document.getElementById("detailImg").src;
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Check if item already exists
+  const existing = cart.find(item => item.title === title);
+
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({
+      title,
+      price,
+      img,
+      qty: 1
+    });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  // Update cart counter
+  const cartCount = document.getElementById("cart-count");
+  if (cartCount) cartCount.textContent = cart.length;
+
+  alert("Added to cart! Your Sweet Bliss moment just got sweeter 🌸");
+}
+</script>
+
+
+<footer>
+© 2025 Sweet Bliss Cake | Recommended Browser: Google Chrome |
+Resolution: 1920 × 1080 <br>
+Last Updated: January 2026
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const faqButtons = document.querySelectorAll(".faqAccordion dt button");
+
+  faqButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const panelId = button.getAttribute("aria-controls");
+      const panel = document.getElementById(panelId);
+
+      const isOpen = button.getAttribute("aria-expanded") === "true";
+
+      // close all first
+      faqButtons.forEach(btn => {
+        btn.setAttribute("aria-expanded", "false");
+        const p = document.getElementById(btn.getAttribute("aria-controls"));
+        if (p){
+          p.style.display = "none";
+          p.setAttribute("aria-hidden", "true");
+        }
+      });
+
+      // if it was closed, open it (if it was open, it stays closed)
+      if (!isOpen) {
+        button.setAttribute("aria-expanded", "true");
+        panel.style.display = "block";
+        panel.setAttribute("aria-hidden", "false");
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Homepage | Sweet Bliss Cake</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="top-bar">
+✨ Get Your Cake Today | Same Day Delivery ✨
+</div>
+
+<header>
+  <div class="logo">
+    Sweet Bliss
+    <span>Ready-made Cakes</span>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li>
+        <a href="categories.html">Categories ▾</a>
+        <ul>
+          <li><a href="spongecake.html">Sponge Cake</a></li>
+          <li><a href="cupcake.html">Cupcake</a></li>
+          <li><a href="jellycake.html">Jelly Cake</a></li>
+          <li><a href="bentocake.html">Bento Cake</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="occasion.html">Occasion ▾</a>
+        <ul>
+          <li><a href="birthday.html">Birthday</a></li>
+          <li><a href="wedding.html">Wedding</a></li>
+          <li><a href="anniversary.html">Anniversary</a></li>
+          <li><a href="celebration.html">Celebration</a></li>
+          <li><a href="graduation.html">Graduation</a></li>
+          <li><a href="kids.html">Kids</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="theme.html">Theme ▾</a>
+        <ul>
+          <li><a href="sanrio.html">Sanrio & Friends</a></li>
+          <li><a href="disney.html">Disney</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="vintage.html">Vintage Cake</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="accessories.html">Accessories ▾</a>
+        <ul>
+          <li><a href="topper.html">Topper</a></li>
+          <li><a href="candle.html">Candle</a></li>
+          <li><a href="giftcard.html">Gift Card</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="hero modern-hero">
+
+  <div class="hero-wrapper">
+
+    
+    <div class="hero-text">
+      <h1>
+        The <span>Happiness</span><br>
+        Inside Every<br>
+        Little <span>Sweet</span>
+      </h1>
+
+      <p>
+        From freshly baked cakes to delightful desserts, every creation
+        is made with love to celebrate your special moments.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#promotion" class="btn primary">Order Now</a>
+        <a href="business-card.pdf" class="btn secondary"    target="_blank">Our Business Card
+      </a>
+      </div>
+
+      <div class="hero-icons">
+        <div>🍰 <span>Quality</span></div>
+        <div>💖 <span>Passion</span></div>
+        <div>🔥 <span>Warmth</span></div>
+      </div>
+    </div>
+
+    
+    <div class="hero-visual">
+      <img src="logo.png" alt="Sweet Bliss Cakes">
+    </div>
+
+  </div>
+</section>
+
+<section id="promotion" class="promotion">
+<div class="promo-audio">
+  <p>🎵 Enjoy our bakery vibes while browsing!</p>
+  
+  <audio controls>
+    <source src="bakery-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<h2>Special Promotions</h2>
+  <p class="promo-subtitle">
+    Enjoy our limited-time offers and make every celebration sweeter.
+  </p>
+
+  <div class="promo-cards">
+
+    <div class="promo-card">
+      <span class="promo-tag">HOT DEAL</span>
+      <h3>Buy 2 Free 1</h3>
+      <p>Selected ready-made cakes available for a limited time only.</p>
+    </div>
+
+    <div class="promo-card featured">
+      <span class="promo-tag">BEST SELLER</span>
+      <h3>Birthday Combo Set</h3>
+      <p>Cake + topper + candle at a special bundled price.</p>
+    </div>
+
+    <div class="promo-card">
+      <span class="promo-tag">NEW</span>
+      <h3>Free Same Day Delivery</h3>
+      <p>For orders above RM150 within selected areas.</p>
+    </div>
+
+  </div>
+
+<script>
+  // ambil semua promo-card
+  const cards = document.querySelectorAll('.promo-card');
+
+  function animateCards() {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    cards.forEach(card => {
+      const cardTop = card.getBoundingClientRect().top;
+
+      if(cardTop < triggerBottom){
+        card.classList.add('animate'); // tambah class animate bila muncul
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animateCards);
+  window.addEventListener('load', animateCards); // animate terus bila page load
+</script>
+
+</section>
+
+<section id="about" class="about cozy-about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <h3>Our Story</h3>
+      <p>
+        Sweet Bliss Cake began with a passion for creating delicious, handcrafted cakes. 
+        Our founder started this bakery to share love and sweetness with the world. 
+        Supported by local farmers and suppliers, we ensure quality in every bite.
+      </p>
+      <p>
+        From birthdays to weddings, our cakes have been part of countless celebrations, 
+        making every moment special.
+      </p>
+      <p class="owner">Nurulhuda Kamarul Zaman<br><span>Owner, Sweet Bliss</span></p>
+    </div>
+
+    <div class="about-image">
+      <img src="chef.jpg" alt="Our Chef">
+    </div>
+  </div>
+</section>
+
+<section id="vision-mission" class="vision-mission">
+  <h2>Our Vision & Mission</h2>
+  <p class="vision-subtitle">
+    Committed to spreading sweetness and joy through our creations.
+  </p>
+
+  <div class="vm-cards">
+
+    <div class="vm-card">
+      <h3>Our Vision</h3>
+      <p>To become the leading bakery known for beautifully crafted, ready-made cakes that make every celebration memorable.</p>
+    </div>
+
+    <div class="vm-card">
+      <h3>Our Mission</h3>
+      <ul>
+        <li>Deliver high-quality, handcrafted cakes.</li>
+        <li>Ensure customer satisfaction with every order.</li>
+        <li>Maintain freshness and consistency in all products.</li>
+        <li>Bring creativity and joy to every celebration.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="cake-video" class="cake-video">
+  <h2>Watch Us Create Magic</h2>
+  <p class="video-subtitle">
+    A little glimpse into how we decorate our delicious cakes with love and creativity.
+  </p>
+
+  <div class="video-container">
+    <video controls>
+      <source src="a-brief-moment.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+</main>
+
+<footer>
+© 2025 Sweet Bliss Cake | Recommended Browser: Google Chrome |
+Resolution: 1920 × 1080 <br>
+Last Updated: January 2026
+</footer>
+
+</body>
+</html>

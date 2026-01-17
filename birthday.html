@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Birthday | Sweet Bliss Cake</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="promo">✨ Get Your Cake Today | Same Day Delivery ✨</div>
+ <div class="top-bar-actions">
+<a href="cart.html" class="cart-btn">
+  <img src="https://img.icons8.com/?size=100&id=CHIch3K0zCjb&format=png&color=1A1A1A"
+       alt="Cart"
+       class="cart-icon">
+  <span class="cart-count" id="cart-count">0</span>
+</a>
+</div>
+</div>
+
+<header>
+  <div class="logo">
+    Sweet Bliss
+    <span>Ready-made Cakes</span>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li>
+        <a href="categories.html">Categories ▾</a>
+        <ul>
+          <li><a href="spongecake.html">Sponge Cake</a></li>
+          <li><a href="cupcake.html">Cupcake</a></li>
+          <li><a href="jellycake.html">Jelly Cake</a></li>
+          <li><a href="bentocake.html">Bento Cake</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="occasion.html">Occasion ▾</a>
+        <ul>
+          <li><a href="birthday.html">Birthday</a></li>
+          <li><a href="wedding.html">Wedding</a></li>
+          <li><a href="anniversary.html">Anniversary</a></li>
+          <li><a href="graduation.html">Graduation</a></li>
+          <li><a href="kids.html">Kids</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="theme.html">Theme ▾</a>
+        <ul>
+          <li><a href="sanrio.html">Sanrio & Friends</a></li>
+          <li><a href="disney.html">Disney</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="vintage.html">Vintage Cake</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="accessories.html">Accessories ▾</a>
+        <ul>
+          <li><a href="topper.html">Topper</a></li>
+          <li><a href="candle.html">Candle</a></li>
+          <li><a href="giftcard.html">Gift Card</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="occasion-hero">
+  <div class="hero-wrapper">
+
+     <div class="hero-content">
+      <h2>Make Every Birthday Unforgettable</h2>
+<p>
+Designed to bring smiles, laughter, and unforgettable moments to every birthday.
+<br>Perfect for kids, teens, and adults celebrating another year of joy.
+<br><strong>Freshly baked with care and attention to every detail.</strong>
+</p>
+    </div>
+
+ <div class="hero-image">
+      <img src="birthday-hero.jpg" alt="Birthday Cakes by Sweet Bliss">
+    </div>
+
+  </div>
+</section>
+
+<section class="occasion-section">
+  <h2>Birthday Cakes</h2>
+<p class="occasion-desc">
+Fun, colourful, and photo-worthy birthday cakes for unforgettable celebrations.
+From cute kids designs to elegant adult themes.
+</p>
+
+<!-- SORT DROPDOWN -->
+<div class="section clearfix">
+  <div class="four columns section_select medium-down--one-whole">
+    <select class="sort_by" id="sort-by" data-default-sort="manual">
+      <option value="manual">Featured</option>
+      <option value="price-ascending">Price: Low to High</option>
+      <option value="price-descending">Price: High to Low</option>
+    </select>
+  </div>
+</div>
+
+  <div class="product-grid">
+
+   <!-- Cake 1 -->
+<div class="product-card" onclick="openCakeDetail('bday1')" data-price="150.00">
+  <div class="product-image">
+    <img src="bday1.jpg" alt="Classic Vanilla Birthday Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Classic Vanilla Birthday Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(48 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 150.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 2 -->
+<div class="product-card" onclick="openCakeDetail('bday2')" data-price="165.00">
+  <div class="product-image">
+    <img src="bday2.jpg" alt="Emerald Floral Birthday Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Emerald Floral Birthday Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(54 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 165.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 3 -->
+<div class="product-card" onclick="openCakeDetail('bday3')" data-price="195.00">
+  <div class="product-image">
+    <img src="bday3.jpg" alt="Luxury Gold Celebration Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Luxury Gold Celebration Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(80 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 195.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 4 -->
+<div class="product-card" onclick="openCakeDetail('bday4')" data-price="380.00">
+  <div class="product-image">
+    <img src="bday4.jpg" alt="Pastel Mermaid Celebration Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Pastel Mermaid Celebration Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(73 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 380.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 5 -->
+<div class="product-card" onclick="openCakeDetail('bday5')" data-price="480.00">
+  <div class="product-image">
+    <img src="bday5.jpg" alt="Luxury Fashion Birthday Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Luxury Fashion Birthday Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(97 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 480.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 6 -->
+<div class="product-card" onclick="openCakeDetail('bday6')" data-price="170.00">
+  <div class="product-image">
+    <img src="bday6.jpg" alt="Dreamy Moon & Stars Birthday Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Dreamy Moon & Stars Birthday Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(50 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 170.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 7 -->
+<div class="product-card" onclick="openCakeDetail('bday7')" data-price="260.00">
+  <div class="product-image">
+    <img src="bday7.jpg" alt="Black & Gold Luxe Birthday Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Black & Gold Luxe Birthday Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(70 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 260.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 8 -->
+<div class="product-card" onclick="openCakeDetail('bday8')" data-price="280.00">
+  <div class="product-image">
+    <img src="bday8.jpg" alt="Bento Cake & Flower Gift Set">
+  </div>
+  <div class="product-details">
+    <span class="title">Bento Cake & Flower Gift Set</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(43 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 280.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 9 -->
+<div class="product-card" onclick="openCakeDetail('bday9')" data-price="260.00">
+  <div class="product-image">
+    <img src="bday9.jpg" alt="Blue Blossom Floral Birthday Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Blue Blossom Floral Birthday Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(65 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 260.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 10 -->
+<div class="product-card" onclick="openCakeDetail('bday10')" data-price="230.00">
+  <div class="product-image">
+    <img src="bday10.jpg" alt="Pink Butterfly Birthday Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Pink Butterfly Birthday Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(52 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 230.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 11 -->
+<div class="product-card" onclick="openCakeDetail('bday11')" data-price="165.00">
+  <div class="product-image">
+    <img src="bday11.jpg" alt="Mini Chocolate Drip Birthday Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Mini Chocolate Drip Birthday Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(39 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 165.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 12 -->
+<div class="product-card" onclick="openCakeDetail('bday12')" data-price="300.00">
+  <div class="product-image">
+    <img src="bday12.jpg" alt="Elegant Ribbon Heart Birthday Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Elegant Ribbon Heart Birthday Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(104 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 300.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+</div>
+
+  </section>
+  
+<!-- DESCRIPTION SECTION -->
+<section class="cake-description">
+  <div class="description-wrapper">
+    <h2>Celebrate the Birthday</h2>
+
+    <p>
+      Make every birthday unforgettable with our beautifully crafted birthday cakes — 
+      from cute pastel designs to elegant and luxurious creations for all ages.
+      Add a personalised birthday message, choose your delivery date, and we’ll make sure
+      your cake arrives fresh, beautiful, and celebration-ready!
+    </p>
+
+  <ul>
+  <li>Classic Vanilla Birthday Cake</li>
+  <li>Emerald Floral Birthday Cake</li>
+  <li>Luxury Gold Celebration Cake</li>
+  <li>Pastel Mermaid Celebration Cake</li>
+  <li>Luxury Fashion Birthday Cake</li>
+  <li>Dreamy Moon & Stars Birthday Cake</li>
+  <li>Black & Gold Luxe Birthday Cake</li>
+  <li>Bento Cake & Flower Gift Set</li>
+  <li>Blue Blossom Floral Birthday Cake</li>
+  <li>Pink Butterfly Birthday Cake</li>
+  <li>Mini Chocolate Drip Birthday Cake</li>
+  <li>Elegant Ribbon Heart Birthday Cake</li>
+</ul>
+
+    <p>
+      Whether it’s for kids, teens, or adults, our birthday cakes are designed to bring joy,
+      smiles, and picture-perfect moments to every celebration.
+    </p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<div class="container collection-faq-wrap">
+  <h2 class="title faq--heading">Frequently Asked Questions</h2>
+
+  <dl class="faqAccordion">
+
+    <dt>
+      <button type="button" aria-controls="panel-01" aria-expanded="false">
+        How much cake do I need for a birthday party?
+      </button>
+    </dt>
+    <dd id="panel-01" aria-hidden="true">
+      <p>
+        Estimate based on the number of guests and whether the cake is the main dessert.
+        A standard 8-inch round cake typically serves 10–20 people.
+        We recommend ordering slightly bigger to ensure everyone gets a slice.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-02" aria-expanded="false">
+        What birthday cake flavours and designs are popular?
+      </button>
+    </dt>
+    <dd id="panel-02" aria-hidden="true">
+      <p>
+        It depends on age and celebration style. Young adults often prefer trendy designs
+        such as minimalist, floral, or geometric cakes with flavours like red velvet,
+        salted caramel, or matcha. Milestone birthdays usually feature richer flavours
+        such as chocolate, caramel, or fruit-based cakes.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-03" aria-expanded="false">
+        Do you offer cakes for allergies or dietary needs?
+      </button>
+    </dt>
+    <dd id="panel-03" aria-hidden="true">
+      <p>
+        Yes, dietary needs are important. Please inform us if you require gluten-free,
+        nut-free, dairy-free, or vegan options so we can recommend suitable choices.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-04" aria-expanded="false">
+        How much should I budget for a birthday cake?
+      </button>
+    </dt>
+    <dd id="panel-04" aria-hidden="true">
+      <p>
+        Simply share your budget with us. Our bakers can suggest designs, sizes,
+        or alternatives that fit your budget without compromising quality.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-05" aria-expanded="false">
+        Should I choose a cake or cupcakes for a birthday party?
+      </button>
+    </dt>
+    <dd id="panel-05" aria-hidden="true">
+      <p>
+        If the cake is not the main dessert, smaller portions or cupcakes are a great option.
+        They are easy to serve and perfect for casual birthday celebrations.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-06" aria-expanded="false">
+        Can I add cake toppers or special decorations?
+      </button>
+    </dt>
+    <dd id="panel-06" aria-hidden="true">
+      <p>
+        Yes. Please let us know if the topper is heavy or if you plan to use fresh flowers.
+        We ensure all decorations are safe and suitable for food presentation.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-07" aria-expanded="false">
+        How do I choose the right cake size?
+      </button>
+    </dt>
+    <dd id="panel-07" aria-hidden="true">
+      <p>
+        Consider the number of guests, party style (formal or casual),
+        and whether the cake is a centerpiece or a side dessert.
+        When unsure, choosing a slightly larger size is always safer.
+      </p>
+    </dd>
+
+  </dl>
+</div>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much cake do I need for a birthday party?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard 8-inch round cake typically serves 10–20 people. We recommend ordering slightly bigger to ensure everyone gets a slice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What birthday cake flavours and designs are popular?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Popular choices include minimalist, floral, or geometric designs with flavours like red velvet, salted caramel, chocolate, or fruit-based cakes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer cakes for allergies or dietary needs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Please inform us if you need gluten-free, nut-free, dairy-free, or vegan cake options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much should I budget for a birthday cake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Share your budget with us and we will recommend suitable cake sizes and designs within your price range."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I choose a cake or cupcakes for a birthday party?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cupcakes or mini portions are great if the cake is not the main dessert, especially for casual parties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I add cake toppers or special decorations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Please confirm if toppers are heavy or if fresh flowers are used to ensure food safety."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I choose the right cake size?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose based on guest count, party style, and whether the cake is a main centerpiece or a side dessert."
+      }
+    }
+  ]
+}
+</script>
+
+<section class="info-bar">
+  <div class="info-bar-inner">
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-sameday.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Same-Day Delivery</strong>
+        <small>Order before 5PM</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-calendar.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Choose Your Slot</strong>
+        <small>Flexible delivery</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-thumbsup.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Trusted Sellers</strong>
+        <small>Top-rated bakers</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-cake.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Premium Cakes</strong>
+        <small>Fresh & quality</small>
+      </span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================== CAKE DETAIL PAGE (Add-on) ================== -->
+<section class="cake-detail" id="cakesDetail">
+  <div class="detail-layout">
+
+    <div><img id="detailImg" src="" alt="Cake Image"></div>
+
+    <div>
+      <h3 id="detailTitle"></h3>
+      <p id="detailPrice"></p>
+
+      <div class="acc_title" id="descToggle">
+  <span>Product Description</span>
+  <span class="acc_icon">+</span>
+</div>
+
+<div class="description bottom des_slide" id="descContent">
+  <p class="desc-main">
+    Six layers of pastel rainbow-colored vanilla cake filled high with a sweet and sour strawberry mousseline.
+  </p>
+
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Mixed Berry Spread, Berry Yoghurt, White Chocolate, Permitted Flavoring and Coloring</p>
+  </div>
+
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>Large – 1.5 kg – 9" × 2.7"</p>
+  </div>
+</div>
+
+
+      <!-- DELIVERY DATE -->
+      <div class="option-group">
+        <h4>SELECT YOUR DELIVERY DATE</h4>
+        <div class="date-grid" id="dateButtons">
+          <button class="date-box" data-offset="0"></button>
+          <button class="date-box active" data-offset="1"></button>
+          <button class="date-box" data-offset="2"></button>
+        </div>
+
+        <button class="full-calendar-btn" onclick="toggleCalendar()">VIEW FULL CALENDAR</button>
+        <input type="date" id="calendarInput">
+      </div>
+
+      <!-- CANDLES -->
+      <div class="option-group">
+        <h4>NUMBER OF CANDLES</h4>
+        <select>
+          <option>No Candle</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+      </div>
+
+      <!-- WISH CARD -->
+<div class="option-group">
+  <h4>WISH CARD MESSAGE</h4>
+
+  <div class="wish-grid" id="wishBoxes">
+    <div class="wish-box" data-msg="Happy Birthday! 🎂 Wishing you a day filled with laughter, love, and sweet moments.">
+      🎂 Happy Birthday
+    </div>
+
+    <div class="wish-box" data-msg="Cheers to another amazing year! 🎉 May all your wishes come true today and always.">
+      🎉 Another Year
+    </div>
+
+    <div class="wish-box" data-msg="Happy Birthday 🎈 May your day be as special, bright, and wonderful as you are.">
+      🎈 Special Day
+    </div>
+
+    <div class="wish-box" data-msg="To someone amazing — Happy Birthday! 💖 Wishing you happiness, success, and lots of cake.">
+      💖 From the Heart
+    </div>
+
+    <div class="wish-box" data-msg="Happy Birthday 🥳 Enjoy every moment, every smile, and every slice of cake today!">
+      🥳 Celebrate
+    </div>
+  </div>
+
+  <textarea id="cardMessage" rows="4" placeholder="Or write your own birthday message here..."></textarea>
+</div>
+
+
+     <button class="full-calendar-btn" style="background:#fb3eb9;margin-top:20px;" onclick="addToCartDetail()">ADD TO CART</button>
+
+      <div class="back-btn" onclick="backToGallery()">← Back</div>
+    </div>
+
+<!-- ================== CUSTOMER REVIEWS ================== -->
+<div class="review-section">
+  <h3>Customer Reviews</h3>
+
+  <div class="review-summary">
+    <!-- SCORE -->
+<div class="review-score">
+  <div class="stars" id="avgStars">★★★★★</div>
+
+  <p><strong><span id="avgRating">0.00</span> out of 5</strong></p>
+  <small>Based on <span id="totalReviews">0</span> reviews</small>
+</div>
+
+
+<!-- BARS -->
+<div class="review-bars" id="reviewBars">
+  <div class="bar-row">
+    <span>5★</span>
+    <div class="bar"><div class="fill" id="bar5"></div></div>
+    <span id="count5">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>4★</span>
+    <div class="bar"><div class="fill" id="bar4"></div></div>
+    <span id="count4">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>3★</span>
+    <div class="bar"><div class="fill" id="bar3"></div></div>
+    <span id="count3">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>2★</span>
+    <div class="bar"><div class="fill" id="bar2"></div></div>
+    <span id="count2">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>1★</span>
+    <div class="bar"><div class="fill" id="bar1"></div></div>
+    <span id="count1">0</span>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  /* ===== CART ===== */
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function updateCartCount() {
+    const cartCount = document.getElementById("cart-count");
+    if(cartCount) cartCount.textContent = cart.length;
+  }
+  updateCartCount();
+
+  /* ===== REVIEW BARS FUNCTION ===== */
+function updateReviewBars(reviews){
+  const c5 = reviews[5] || 0;
+  const c4 = reviews[4] || 0;
+  const c3 = reviews[3] || 0;
+  const c2 = reviews[2] || 0;
+  const c1 = reviews[1] || 0;
+
+  const total = c5 + c4 + c3 + c2 + c1;
+
+  // ===== UPDATE BAR WIDTH + COUNT =====
+  const safeTotal = total || 1;
+
+  for(let star = 5; star >= 1; star--){
+    const count = reviews[star] || 0;
+    const percent = Math.round((count / safeTotal) * 100);
+
+    const bar = document.getElementById(`bar${star}`);
+    const label = document.getElementById(`count${star}`);
+
+    if(bar) bar.style.width = percent + "%";
+    if(label) label.textContent = count;
+  }
+
+  // ===== CALCULATE AVERAGE RATING =====
+  const avg = total
+    ? ((5*c5 + 4*c4 + 3*c3 + 2*c2 + 1*c1) / total)
+    : 0;
+
+  // ===== UPDATE TEXT =====
+  const avgRatingEl = document.getElementById("avgRating");
+  const totalReviewsEl = document.getElementById("totalReviews");
+  if(avgRatingEl) avgRatingEl.textContent = avg.toFixed(2);
+  if(totalReviewsEl) totalReviewsEl.textContent = total;
+
+  // ===== UPDATE STARS DISPLAY (FULL/EMPTY) =====
+  const avgStarsEl = document.getElementById("avgStars");
+  if(avgStarsEl){
+    const full = Math.round(avg); // contoh: 4.86 -> 5
+    avgStarsEl.textContent = "★★★★★☆☆☆☆☆".slice(5 - full, 10 - full);
+  }
+}
+
+  /* ===== SORT PRODUCTS ===== */
+  const select = document.getElementById('sort-by');
+  const grid = document.querySelector('.product-grid');
+
+  if(select && grid){
+    select.addEventListener('change', function() {
+      const value = this.value;
+      const cards = Array.from(grid.querySelectorAll('.product-card'));
+      let sorted;
+
+      if(value === 'price-ascending'){
+        sorted = cards.sort((a,b)=>
+          parseFloat(a.dataset.price.replace(/[^0-9.]/g,'')) -
+          parseFloat(b.dataset.price.replace(/[^0-9.]/g,''))
+        );
+      } else if(value === 'price-descending'){
+        sorted = cards.sort((a,b)=>
+          parseFloat(b.dataset.price.replace(/[^0-9.]/g,'')) -
+          parseFloat(a.dataset.price.replace(/[^0-9.]/g,''))
+        );
+      } else {
+        sorted = cards;
+      }
+
+      grid.innerHTML = '';
+      sorted.forEach(card => grid.appendChild(card));
+    });
+  }
+
+  /* ===== CAKE DETAIL POPUP ===== */
+  const detailSection = document.getElementById('cakesDetail');
+  const detailImg = document.getElementById('detailImg');
+  const detailTitle = document.getElementById('detailTitle');
+  const detailPrice = document.getElementById('detailPrice');
+
+  window.openCakeDetail = function(cakeId) {
+    const cake = cakeData.find(c => c.id === cakeId);
+    if (!cake) return;
+
+    detailImg.src = cake.img;
+    detailTitle.textContent = cake.title;
+    detailPrice.textContent = cake.price;
+    document.getElementById('descContent').innerHTML = cake.description;
+
+    /* ✅ UPDATE REVIEW BARS ikut cake yang diklik */
+    updateReviewBars(cake.reviews || {5:0,4:0,3:0,2:0,1:0});
+
+    detailSection.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+    // Reset accordion
+    const acc = document.getElementById('descToggle');
+    const content = document.getElementById('descContent');
+    acc.classList.remove('active');
+    content.style.display = 'none';
+  };
+
+  window.backToGallery = function() {
+    detailSection.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  };
+
+  /* ===== ACCORDION TOGGLE ===== */
+  const accToggle = document.getElementById('descToggle');
+  const accContent = document.getElementById('descContent');
+  if (accToggle && accContent) {
+    accToggle.addEventListener('click', () => {
+      accToggle.classList.toggle('active');
+      accContent.style.display = accContent.style.display === 'block' ? 'none' : 'block';
+    });
+  }
+
+  /* ===== DELIVERY DATE LOGIC (AUTO) ===== */
+  const dateButtons = document.querySelectorAll('.date-box');
+  const calendarInput = document.getElementById('calendarInput');
+
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
+  dateButtons.forEach((btn, index) => {
+    const offset = parseInt(btn.dataset.offset);
+    const date = new Date(today);
+    date.setDate(today.getDate() + offset);
+
+    // LABEL AUTO
+    let label = '';
+    if(offset === 0) label = 'TODAY';
+    else if(offset === 1) label = 'TOMORROW';
+    else label = `IN ${offset} DAYS`;
+
+    // FORMAT TARIKH
+    const dateText = date.toLocaleDateString('en-GB', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    }).toUpperCase();
+
+    btn.innerHTML = `
+      <span class="label">${label}</span>
+      <span class="date">${dateText}</span>
+    `;
+    btn.dataset.date = date.toISOString().split('T')[0];
+
+    btn.addEventListener('click', () => {
+      dateButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      if(calendarInput) calendarInput.value = btn.dataset.date;
+    });
+
+    // AUTO SELECT FIRST DATE
+    if(index === 0){
+      btn.classList.add('active');
+      if(calendarInput) calendarInput.value = btn.dataset.date;
+    }
+  });
+
+  if(calendarInput){
+    calendarInput.addEventListener('change', () => {
+      dateButtons.forEach(b => b.classList.remove('active'));
+    });
+  }
+
+  window.toggleCalendar = function(){
+    if(!calendarInput) return;
+    calendarInput.style.display =
+      calendarInput.style.display === 'block' ? 'none' : 'block';
+  };
+
+  /* ===== WISH CARD MESSAGE ===== */
+  const wishBoxes = document.querySelectorAll('.wish-box');
+  const cardMessage = document.getElementById('cardMessage');
+
+  wishBoxes.forEach(box=>{
+    box.addEventListener('click', ()=>{
+      wishBoxes.forEach(b=>b.classList.remove('active'));
+      box.classList.add('active');
+      if(cardMessage) cardMessage.value = box.dataset.msg;
+    });
+  });
+
+});
+</script>
+
+<script>
+/* ===== CAKE DATA (12 BIRTHDAY CAKES) + REVIEWS ===== */
+const cakeData = [
+
+ {
+  id: "bday1",
+  title: "Classic Vanilla Birthday Cake",
+  price: "RM 150.00",
+  img: "bday1.jpg",
+  description: `
+    <p class="desc-main">
+      A timeless classic vanilla birthday cake finished with smooth buttercream frosting
+      and elegant hand-piped borders. Designed with a clean white look and “Happy Birthday”
+      piping, this cake is perfect for traditional and elegant celebrations.
+    </p>
+
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Eggs, Sugar, Butter, Vanilla Essence, Fresh Cream</p>
+    </div>
+
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>1.3 kg – 8"</p>
+    </div>
+  `,
+  reviews: { 5: 48, 4: 13, 3: 2, 2: 1, 1: 0 }
+},
+
+{
+  id: "bday2",
+  title: "Emerald Floral Birthday Cake",
+  price: "RM 165.00",
+  img: "bday2.jpg",
+  description: `
+    <p class="desc-main">
+      An elegant emerald green buttercream birthday cake adorned with delicate
+      hand-piped floral details and soft pastel accents. Featuring a smooth
+      minimalist finish, this cake is perfect for modern, nature-inspired
+      celebrations with a touch of sophistication.
+    </p>
+
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Eggs, Sugar, Butter, Vanilla Essence, Fresh Cream, Natural Food Colouring</p>
+    </div>
+
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>1.4 kg – 9"</p>
+    </div>
+  `,
+  reviews: { 5: 36, 4: 14, 3: 3, 2: 1, 1: 0 }
+},
+
+{
+  id: "bday3",
+  title: "Luxury Gold Celebration Cake",
+  price: "RM 195.00",
+  img: "bday3.jpg",
+  description: `
+    <p class="desc-main">
+      A luxurious two-tier birthday cake featuring a smooth white buttercream
+      finish accented with elegant gold detailing. Decorated with gold spheres,
+      soft feather accents, and a bold “Happy Birthday” topper, this cake is
+      perfect for milestone birthdays and sophisticated celebrations.
+    </p>
+
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Eggs, Sugar, Butter, Vanilla Essence, Fresh Cream, Premium Food Colouring</p>
+    </div>
+
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>1.8 kg – Two-tier (6&quot; & 8&quot;)</p>
+    </div>
+  `,
+  reviews: { 5: 61, 4: 16, 3: 2, 2: 1, 1: 0 }
+},
+
+{
+  id: "bday4",
+  title: "Pastel Mermaid Celebration Cake",
+  price: "RM 380.00",
+  img: "bday4.jpg",
+  description: `
+    <p class="desc-main">
+      A dreamy two-tier pastel mermaid-themed birthday cake featuring soft
+      ombré buttercream tones and exquisite sea-inspired decorations.
+      Adorned with mermaid tails, seashells, pearls, and starfish accents,
+      this cake is perfect for elegant birthdays and fairytale celebrations.
+    </p>
+
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Eggs, Sugar, Butter, Vanilla Essence, Fresh Cream, Premium Food Colouring</p>
+    </div>
+
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>2.0 kg – Two-tier (6&quot; & 8&quot;)</p>
+    </div>
+  `,
+  reviews: { 5: 55, 4: 14, 3: 3, 2: 1, 1: 0 }
+},
+
+{
+  id: "bday5",
+  title: "Luxury Fashion Birthday Cake",
+  price: "RM 480.00",
+  img: "bday5.jpg",
+  description: `
+    <p class="desc-main">
+      An exquisite luxury fashion-inspired birthday cake featuring elegant
+      pastel tones and intricate handcrafted details. Decorated with designer-style
+      handbags, perfume bottles, florals, and gold accents, this statement cake
+      is perfect for milestone birthdays and glamorous celebrations.
+    </p>
+
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Eggs, Sugar, Butter, Vanilla Essence, Fresh Cream, Premium Food Colouring</p>
+    </div>
+
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>2.5 kg – Two to Three-tier (Custom Design)</p>
+    </div>
+  `,
+  reviews: { 5: 78, 4: 17, 3: 2, 2: 0, 1: 1 }
+},
+
+{
+  id: "bday6",
+  title: "Dreamy Moon & Stars Birthday Cake",
+  price: "RM 170.00",
+  img: "bday6.jpg",
+  description: `
+    <p class="desc-main">
+      A charming pastel blue birthday cake inspired by the night sky,
+      featuring delicate moon, cloud, and star decorations.
+      Finished with smooth buttercream swirls, this cake creates a
+      dreamy and calming vibe perfect for kids’ birthdays and sweet celebrations.
+    </p>
+
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Eggs, Sugar, Butter, Vanilla Essence, Fresh Cream</p>
+    </div>
+
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>1.3 kg – 8"</p>
+    </div>
+  `,
+  reviews: { 5: 34, 4: 11, 3: 3, 2: 2, 1: 0 }
+},
+
+{
+  id: "bday7",
+  title: "Black & Gold Luxe Birthday Cake",
+  price: "RM 260.00",
+  img: "bday7.jpg",
+  description: `
+    <p class="desc-main">
+      A striking black buttercream birthday cake enhanced with luxurious gold drip,
+      metallic spheres, and star accents. Finished with an elegant gold “Happy Birthday”
+      topper, this modern statement cake is perfect for milestone birthdays and
+      sophisticated celebrations.
+    </p>
+
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Eggs, Sugar, Butter, Chocolate Ganache, Vanilla Essence</p>
+    </div>
+
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>1.6 kg – 9"</p>
+    </div>
+  `,
+  reviews: { 5: 48, 4: 16, 3: 4, 2: 1, 1: 1 }
+},
+
+{
+  id: "bday8",
+  title: "Bento Cake & Flower Gift Set",
+  price: "RM 280.00",
+  img: "bday8.jpg",
+  description: `
+    <p class="desc-main">
+      A charming bento-sized birthday cake beautifully paired with a vibrant
+      fresh flower arrangement. Featuring delicate pink buttercream piping
+      and elegant floral presentation, this gift set is perfect for birthdays,
+      surprises, and heartfelt celebrations.
+    </p>
+
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Eggs, Sugar, Butter, Vanilla Essence, Fresh Cream</p>
+    </div>
+
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>0.7 kg – Bento Size (Cake) + Flower Gift Box</p>
+    </div>
+  `,
+  reviews: { 5: 29, 4: 10, 3: 3, 2: 1, 1: 0 }
+},
+
+{
+  id: "bday9",
+  title: "Blue Blossom Floral Birthday Cake",
+  price: "RM 260.00",
+  img: "bday9.jpg",
+  description: `
+    <p class="desc-main">
+      A graceful pastel blue birthday cake adorned with delicate white floral
+      arrangements and soft buttercream piping. Finished with pearl accents
+      and an elegant gold “Happy Birthday” topper, this cake is perfect for
+      refined celebrations and timeless birthday moments.
+    </p>
+
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Eggs, Sugar, Butter, Vanilla Essence, Fresh Cream</p>
+    </div>
+
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>1.6 kg – 9"</p>
+    </div>
+  `,
+  reviews: { 5: 46, 4: 13, 3: 4, 2: 1, 1: 1 }
+},
+
+{
+  id: "bday10",
+  title: "Pink Butterfly Birthday Cake",
+  price: "RM 230.00",
+  img: "bday10.jpg",
+  description: `
+    <p class="desc-main">
+      A soft pastel pink birthday cake adorned with delicate butterfly accents,
+      elegant pearl details, and modern gold abstract candles. Finished with
+      textured buttercream swirls, this cake offers a romantic and stylish look
+      perfect for trendy and feminine birthday celebrations.
+    </p>
+
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Eggs, Sugar, Butter, Vanilla Essence, Fresh Cream</p>
+    </div>
+
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>1.5 kg – 9"</p>
+    </div>
+  `,
+  reviews: { 5: 35, 4: 12, 3: 3, 2: 1, 1: 1 }
+},
+
+{
+  id: "bday11",
+  title: "Mini Chocolate Drip Birthday Cake",
+  price: "RM 165.00",
+  img: "bday11.jpg",
+  description: `
+    <p class="desc-main">
+      A rich mini chocolate birthday cake finished with glossy dark chocolate drip
+      and elegant cream toppings. Decorated with chocolate accents and pearl details,
+      this compact cake is perfect for intimate celebrations, surprises, or sweet
+      personal moments.
+    </p>
+
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Eggs, Sugar, Butter, Cocoa Powder, Chocolate Ganache, Fresh Cream</p>
+    </div>
+
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>0.9 kg – 6"</p>
+    </div>
+  `,
+  reviews: { 5: 24, 4: 9, 3: 4, 2: 1, 1: 1 }
+},
+
+{
+  id: "bday12",
+  title: "Elegant Ribbon Heart Birthday Cake",
+  price: "RM 300.00",
+  img: "bday12.jpg",
+  description: `
+    <p class="desc-main">
+      An elegant white buttercream birthday cake decorated with delicate black
+      heart piping and finished with luxurious black ribbon bows. Featuring
+      smooth swirled borders and a refined monochrome aesthetic, this cake is
+      perfect for sophisticated birthdays, anniversaries, and stylish celebrations.
+    </p>
+
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Eggs, Sugar, Butter, White Chocolate, Vanilla Essence, Fresh Cream</p>
+    </div>
+
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>1.8 kg – 9"</p>
+    </div>
+  `,
+  reviews: { 5: 84, 4: 15, 3: 3, 2: 1, 1: 1 }
+}
+
+];
+</script>
+
+<script>
+function addToCartDetail() {
+  const title = document.getElementById("detailTitle").textContent;
+  const price = document.getElementById("detailPrice").textContent;
+  const img = document.getElementById("detailImg").src;
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Check if item already exists
+  const existing = cart.find(item => item.title === title);
+
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({
+      title,
+      price,
+      img,
+      qty: 1
+    });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  // Update cart counter
+  const cartCount = document.getElementById("cart-count");
+  if (cartCount) cartCount.textContent = cart.length;
+
+  alert("Added to cart! Your Sweet Bliss moment just got sweeter 🌸");
+}
+</script>
+
+
+<footer>
+© 2025 Sweet Bliss Cake | Recommended Browser: Google Chrome |
+Resolution: 1920 × 1080 <br>
+Last Updated: January 2026
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const faqButtons = document.querySelectorAll(".faqAccordion dt button");
+
+  faqButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const panelId = button.getAttribute("aria-controls");
+      const panel = document.getElementById(panelId);
+
+      const isOpen = button.getAttribute("aria-expanded") === "true";
+
+      faqButtons.forEach(btn => {
+        btn.setAttribute("aria-expanded", "false");
+        const p = document.getElementById(btn.getAttribute("aria-controls"));
+        if (p){
+          p.style.display = "none";
+          p.setAttribute("aria-hidden", "true");
+        }
+      });
+
+      if (!isOpen) {
+        button.setAttribute("aria-expanded", "true");
+        panel.style.display = "block";
+        panel.setAttribute("aria-hidden", "false");
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

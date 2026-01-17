@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cupcake | Sweet Bliss Cake</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="promo">✨ Get Your Cake Today | Same Day Delivery ✨</div>
+ <div class="top-bar-actions">
+<a href="cart.html" class="cart-btn">
+  <img src="https://img.icons8.com/?size=100&id=CHIch3K0zCjb&format=png&color=1A1A1A"
+       alt="Cart"
+       class="cart-icon">
+  <span class="cart-count" id="cart-count">0</span>
+</a>
+</div>
+</div>
+
+<header>
+  <div class="logo">
+    Sweet Bliss
+    <span>Ready-made Cakes</span>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li>
+        <a href="categories.html">Categories ▾</a>
+        <ul>
+          <li><a href="spongecake.html">Sponge Cake</a></li>
+          <li><a href="cupcake.html">Cupcake</a></li>
+          <li><a href="jellycake.html">Jelly Cake</a></li>
+          <li><a href="bentocake.html">Bento Cake</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="occasion.html">Occasion ▾</a>
+        <ul>
+          <li><a href="birthday.html">Birthday</a></li>
+          <li><a href="wedding.html">Wedding</a></li>
+          <li><a href="anniversary.html">Anniversary</a></li>
+          <li><a href="graduation.html">Graduation</a></li>
+          <li><a href="kids.html">Kids</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="theme.html">Theme ▾</a>
+        <ul>
+          <li><a href="sanrio.html">Sanrio & Friends</a></li>
+          <li><a href="disney.html">Disney</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="vintage.html">Vintage Cake</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="accessories.html">Accessories ▾</a>
+        <ul>
+          <li><a href="topper.html">Topper</a></li>
+          <li><a href="candle.html">Candle</a></li>
+          <li><a href="giftcard.html">Gift Card</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="occasion-hero">
+  <div class="hero-wrapper">
+
+    <div class="hero-content">
+      <h2>Cupcakes</h2>
+<p>Treat yourself to our delightful cupcakes!  
+Great for parties, celebrations, or a small indulgence.  
+Made with <strong>100% halal ingredients</strong> and topped with rich, flavorful frosting.</p>
+
+
+    </div>
+
+<div class="hero-image">
+  <img src="cupcake-hero.jpg" alt="Cupcakes by Sweet Bliss">
+</div>
+
+  </div>
+</section>
+
+<section class="occasion-section">
+    <h2>Cupcakes</h2>
+<p class="occasion-desc">
+  Fun and flavorful cupcakes perfect for parties, celebrations, or a small treat!  
+  Beautifully topped and made to bring joy with every bite.
+</p>
+
+
+<!-- SORT DROPDOWN -->
+<div class="section clearfix">
+  <div class="four columns section_select medium-down--one-whole">
+    <select class="sort_by" id="sort-by" data-default-sort="manual">
+      <option value="manual">Featured</option>
+      <option value="price-ascending">Price: Low to High</option>
+      <option value="price-descending">Price: High to Low</option>
+    </select>
+  </div>
+</div>
+
+<div class="product-grid">
+
+<!-- Cupcake 1 -->
+<div class="product-card" onclick="openCakeDetail('cupcake1')" data-price="38.00">
+  <div class="product-image"><img src="cupcake1.jpg"></div>
+  <div class="product-details">
+    <span class="title">Vanilla Sprinkle Cupcakes</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(56 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 38.00 / box</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cupcake 2 -->
+<div class="product-card" onclick="openCakeDetail('cupcake2')" data-price="40.00">
+  <div class="product-image"><img src="cupcake2.jpg"></div>
+  <div class="product-details">
+    <span class="title">Chocolate Fudge Cupcakes</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(73 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 40.00 / box</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cupcake 3 -->
+<div class="product-card" onclick="openCakeDetail('cupcake3')" data-price="42.00">
+  <div class="product-image"><img src="cupcake3.jpg"></div>
+  <div class="product-details">
+    <span class="title">Strawberry Cream Cupcakes</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(61 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 42.00 / box</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cupcake 4 -->
+<div class="product-card" onclick="openCakeDetail('cupcake4')" data-price="42.00">
+  <div class="product-image"><img src="cupcake4.jpg"></div>
+  <div class="product-details">
+    <span class="title">Pandan Coconut Cupcakes</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(68 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 42.00 / box</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cupcake 5 -->
+<div class="product-card" onclick="openCakeDetail('cupcake5')" data-price="45.00">
+  <div class="product-image"><img src="cupcake5.jpg"></div>
+  <div class="product-details">
+    <span class="title">Matcha White Chocolate Cupcakes</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(54 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 45.00 / box</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cupcake 6 -->
+<div class="product-card" onclick="openCakeDetail('cupcake6')" data-price="45.00">
+  <div class="product-image"><img src="cupcake6.jpg"></div>
+  <div class="product-details">
+    <span class="title">Lemon Buttercream Cupcakes</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(70 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 45.00 / box</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cupcake 7 -->
+<div class="product-card" onclick="openCakeDetail('cupcake7')" data-price="48.00">
+  <div class="product-image"><img src="cupcake7.jpg"></div>
+  <div class="product-details">
+    <span class="title">Coffee Mocha Cupcakes</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(58 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 48.00 / box</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cupcake 8 -->
+<div class="product-card" onclick="openCakeDetail('cupcake8')" data-price="48.00">
+  <div class="product-image"><img src="cupcake8.jpg"></div>
+  <div class="product-details">
+    <span class="title">Salted Caramel Cupcakes</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(81 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 48.00 / box</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cupcake 9 -->
+<div class="product-card" onclick="openCakeDetail('cupcake9')" data-price="48.00">
+  <div class="product-image"><img src="cupcake9.jpg"></div>
+  <div class="product-details">
+    <span class="title">Orange Citrus Cupcakes</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(49 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 48.00 / box</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cupcake 10 -->
+<div class="product-card" onclick="openCakeDetail('cupcake10')" data-price="50.00">
+  <div class="product-image"><img src="cupcake10.jpg"></div>
+  <div class="product-details">
+    <span class="title">Hazelnut Chocolate Cupcakes</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(92 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 50.00 / box</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cupcake 11 -->
+<div class="product-card" onclick="openCakeDetail('cupcake11')" data-price="52.00">
+  <div class="product-image"><img src="cupcake11.jpg"></div>
+  <div class="product-details">
+    <span class="title">Mixed Berry Cupcakes</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(87 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 52.00 / box</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cupcake 12 -->
+<div class="product-card" onclick="openCakeDetail('cupcake12')" data-price="55.00">
+  <div class="product-image"><img src="cupcake12.jpg"></div>
+  <div class="product-details">
+    <span class="title">Vanilla Almond Premium Cupcakes</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(105 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 55.00 / box</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+
+</div>
+
+  </section>
+  
+<section class="cake-description">
+  <div class="description-wrapper">
+    <h2>Delightful & Freshly Baked Cupcakes</h2>
+
+    <p>
+      Our cupcakes are freshly baked with soft, moist cake bases and topped with rich,
+      creamy frosting. Made using <strong>100% halal ingredients</strong>, they are perfect
+      for parties, celebrations, gifts, or a sweet personal treat.
+    </p>
+
+    <ul>
+      <li>Vanilla Sprinkle Cupcakes</li>
+      <li>Chocolate Fudge Cupcakes</li>
+      <li>Strawberry Cream Cupcakes</li>
+      <li>Pandan Coconut Cupcakes</li>
+      <li>Matcha White Chocolate Cupcakes</li>
+      <li>Lemon Buttercream Cupcakes</li>
+      <li>Coffee Mocha Cupcakes</li>
+      <li>Salted Caramel Cupcakes</li>
+      <li>Orange Citrus Cupcakes</li>
+      <li>Hazelnut Chocolate Cupcakes</li>
+      <li>Mixed Berry Cupcakes</li>
+      <li>Vanilla Almond Premium Cupcakes</li>
+    </ul>
+
+    <p>
+      Choose your favourite flavours, add a message if you like,
+      and enjoy cupcakes baked fresh for every Sweet Bliss moment.
+    </p>
+  </div>
+</section>
+
+
+<div class="container collection-faq-wrap">
+  <h2 class="title faq--heading">Frequently Asked Questions</h2>
+
+  <dl class="faqAccordion">
+
+    <dt>
+      <button type="button" aria-controls="panel-01" aria-expanded="false">
+        How many cupcakes come in one box?
+      </button>
+    </dt>
+    <dd id="panel-01" aria-hidden="true">
+      <p>
+        Most cupcake boxes come with 6 pieces. Some premium flavours may include
+        larger-sized cupcakes — please refer to the product details.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-02" aria-expanded="false">
+        How long do cupcakes stay fresh?
+      </button>
+    </dt>
+    <dd id="panel-02" aria-hidden="true">
+      <p>
+        Cupcakes are best enjoyed within 1–2 days. Keep them refrigerated and
+        bring them to room temperature before serving for the best taste.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-03" aria-expanded="false">
+        Are Sweet Bliss cupcakes suitable for parties and events?
+      </button>
+    </dt>
+    <dd id="panel-03" aria-hidden="true">
+      <p>
+        Yes! Cupcakes are perfect for birthdays, office events, celebrations,
+        and gatherings as they are easy to serve and enjoy.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-04" aria-expanded="false">
+        Are your cupcakes made with halal ingredients?
+      </button>
+    </dt>
+    <dd id="panel-04" aria-hidden="true">
+      <p>
+        Yes, all Sweet Bliss cupcakes are made using 100% halal ingredients
+        and prepared with quality and care.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-05" aria-expanded="false">
+        Can I mix different cupcake flavours in one order?
+      </button>
+    </dt>
+    <dd id="panel-05" aria-hidden="true">
+      <p>
+        Selected cupcake boxes allow mixed flavours.
+        Please check the product description or contact us for custom orders.
+      </p>
+    </dd>
+
+  </dl>
+</div>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many cupcakes come in one box?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most cupcake boxes come with 6 pieces. Some premium flavours may include larger-sized cupcakes — please refer to the product details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do cupcakes stay fresh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cupcakes are best enjoyed within 1–2 days. Keep them refrigerated and bring them to room temperature before serving for the best taste."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Sweet Bliss cupcakes suitable for parties and events?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Cupcakes are perfect for birthdays, office events, celebrations, and gatherings as they are easy to serve and enjoy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are your cupcakes made with halal ingredients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, all Sweet Bliss cupcakes are made using 100% halal ingredients and prepared with quality and care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I mix different cupcake flavours in one order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Selected cupcake boxes allow mixed flavours. Please check the product description or contact us for custom orders."
+      }
+    }
+  ]
+}
+</script>
+
+
+<section class="info-bar">
+  <div class="info-bar-inner">
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-sameday.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Same-Day Delivery</strong>
+        <small>Order before 5PM</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-calendar.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Choose Your Slot</strong>
+        <small>Flexible delivery</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-thumbsup.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Trusted Sellers</strong>
+        <small>Top-rated bakers</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-cake.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Premium Cakes</strong>
+        <small>Fresh & quality</small>
+      </span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================== CAKE DETAIL PAGE (Add-on) ================== -->
+<section class="cake-detail" id="cakesDetail">
+  <div class="detail-layout">
+
+    <div><img id="detailImg" src="" alt="Cake Image"></div>
+
+    <div>
+      <h3 id="detailTitle"></h3>
+      <p id="detailPrice"></p>
+
+      <div class="acc_title" id="descToggle">
+  <span>Product Description</span>
+  <span class="acc_icon">+</span>
+</div>
+
+<div class="description bottom des_slide" id="descContent">
+  <p class="desc-main">
+    Six layers of pastel rainbow-colored vanilla cake filled high with a sweet and sour strawberry mousseline.
+  </p>
+
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Mixed Berry Spread, Berry Yoghurt, White Chocolate, Permitted Flavoring and Coloring</p>
+  </div>
+
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>Large – 1.5 kg – 9" × 2.7"</p>
+  </div>
+</div>
+
+
+      <!-- DELIVERY DATE -->
+      <div class="option-group">
+        <h4>SELECT YOUR DELIVERY DATE</h4>
+        <div class="date-grid" id="dateButtons">
+          <button class="date-box" data-offset="0"></button>
+          <button class="date-box active" data-offset="1"></button>
+          <button class="date-box" data-offset="2"></button>
+        </div>
+
+        <button class="full-calendar-btn" onclick="toggleCalendar()">VIEW FULL CALENDAR</button>
+        <input type="date" id="calendarInput">
+      </div>
+
+      <!-- CANDLES -->
+      <div class="option-group">
+        <h4>NUMBER OF CANDLES</h4>
+        <select>
+          <option>No Candle</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+      </div>
+
+      <!-- WISH CARD -->
+      <div class="option-group">
+        <h4>WISH CARD MESSAGE</h4>
+        <div class="wish-grid" id="wishBoxes">
+          <div class="wish-box" data-msg="Happy Birthday! 🎂 Wishing you joy, laughter and lots of cake on your special day.">🎂 Birthday</div>
+          <div class="wish-box" data-msg="Congratulations on your wedding day 💍 May your love grow stronger every year.">💍 Wedding</div>
+          <div class="wish-box" data-msg="Happy Anniversary ❤️ Wishing you many more years of love and happiness together.">❤️ Anniversary</div>
+          <div class="wish-box" data-msg="Congratulations! 🎉 Wishing you success and happiness always.">🎉 Congratulations</div>
+        </div>
+        <textarea id="cardMessage" rows="4"></textarea>
+      </div>
+
+     <button class="full-calendar-btn" style="background:#fb3eb9;margin-top:20px;" onclick="addToCartDetail()">ADD TO CART</button>
+
+      <div class="back-btn" onclick="backToGallery()">← Back</div>
+    </div>
+
+<!-- ================== CUSTOMER REVIEWS ================== -->
+<div class="review-section">
+  <h3>Customer Reviews</h3>
+
+  <div class="review-summary">
+    <!-- SCORE -->
+<div class="review-score">
+  <div class="stars" id="avgStars">★★★★★</div>
+
+  <p><strong><span id="avgRating">0.00</span> out of 5</strong></p>
+  <small>Based on <span id="totalReviews">0</span> reviews</small>
+</div>
+
+
+<!-- BARS -->
+<div class="review-bars" id="reviewBars">
+  <div class="bar-row">
+    <span>5★</span>
+    <div class="bar"><div class="fill" id="bar5"></div></div>
+    <span id="count5">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>4★</span>
+    <div class="bar"><div class="fill" id="bar4"></div></div>
+    <span id="count4">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>3★</span>
+    <div class="bar"><div class="fill" id="bar3"></div></div>
+    <span id="count3">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>2★</span>
+    <div class="bar"><div class="fill" id="bar2"></div></div>
+    <span id="count2">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>1★</span>
+    <div class="bar"><div class="fill" id="bar1"></div></div>
+    <span id="count1">0</span>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  /* ===== CART ===== */
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function updateCartCount() {
+    const cartCount = document.getElementById("cart-count");
+    if(cartCount) cartCount.textContent = cart.length;
+  }
+  updateCartCount();
+
+  /* ===== REVIEW BARS FUNCTION ===== */
+function updateReviewBars(reviews){
+  const c5 = reviews[5] || 0;
+  const c4 = reviews[4] || 0;
+  const c3 = reviews[3] || 0;
+  const c2 = reviews[2] || 0;
+  const c1 = reviews[1] || 0;
+
+  const total = c5 + c4 + c3 + c2 + c1;
+
+  // ===== UPDATE BAR WIDTH + COUNT =====
+  const safeTotal = total || 1;
+
+  for(let star = 5; star >= 1; star--){
+    const count = reviews[star] || 0;
+    const percent = Math.round((count / safeTotal) * 100);
+
+    const bar = document.getElementById(`bar${star}`);
+    const label = document.getElementById(`count${star}`);
+
+    if(bar) bar.style.width = percent + "%";
+    if(label) label.textContent = count;
+  }
+
+  // ===== CALCULATE AVERAGE RATING =====
+  const avg = total
+    ? ((5*c5 + 4*c4 + 3*c3 + 2*c2 + 1*c1) / total)
+    : 0;
+
+  // ===== UPDATE TEXT =====
+  const avgRatingEl = document.getElementById("avgRating");
+  const totalReviewsEl = document.getElementById("totalReviews");
+  if(avgRatingEl) avgRatingEl.textContent = avg.toFixed(2);
+  if(totalReviewsEl) totalReviewsEl.textContent = total;
+
+  // ===== UPDATE STARS DISPLAY (FULL/EMPTY) =====
+  const avgStarsEl = document.getElementById("avgStars");
+  if(avgStarsEl){
+    const full = Math.round(avg); // contoh: 4.86 -> 5
+    avgStarsEl.textContent = "★★★★★☆☆☆☆☆".slice(5 - full, 10 - full);
+  }
+}
+
+  /* ===== SORT PRODUCTS ===== */
+  const select = document.getElementById('sort-by');
+  const grid = document.querySelector('.product-grid');
+
+  if(select && grid){
+    select.addEventListener('change', function() {
+      const value = this.value;
+      const cards = Array.from(grid.querySelectorAll('.product-card'));
+      let sorted;
+
+      if(value === 'price-ascending'){
+        sorted = cards.sort((a,b)=>
+          parseFloat(a.dataset.price.replace(/[^0-9.]/g,'')) -
+          parseFloat(b.dataset.price.replace(/[^0-9.]/g,''))
+        );
+      } else if(value === 'price-descending'){
+        sorted = cards.sort((a,b)=>
+          parseFloat(b.dataset.price.replace(/[^0-9.]/g,'')) -
+          parseFloat(a.dataset.price.replace(/[^0-9.]/g,''))
+        );
+      } else {
+        sorted = cards;
+      }
+
+      grid.innerHTML = '';
+      sorted.forEach(card => grid.appendChild(card));
+    });
+  }
+
+  /* ===== CAKE DETAIL POPUP ===== */
+  const detailSection = document.getElementById('cakesDetail');
+  const detailImg = document.getElementById('detailImg');
+  const detailTitle = document.getElementById('detailTitle');
+  const detailPrice = document.getElementById('detailPrice');
+
+  window.openCakeDetail = function(cakeId) {
+    const cake = cakeData.find(c => c.id === cakeId);
+    if (!cake) return;
+
+    detailImg.src = cake.img;
+    detailTitle.textContent = cake.title;
+    detailPrice.textContent = cake.price;
+    document.getElementById('descContent').innerHTML = cake.description;
+
+    /* ✅ UPDATE REVIEW BARS ikut cake yang diklik */
+    updateReviewBars(cake.reviews || {5:0,4:0,3:0,2:0,1:0});
+
+    detailSection.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+    // Reset accordion
+    const acc = document.getElementById('descToggle');
+    const content = document.getElementById('descContent');
+    acc.classList.remove('active');
+    content.style.display = 'none';
+  };
+
+  window.backToGallery = function() {
+    detailSection.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  };
+
+  /* ===== ACCORDION TOGGLE ===== */
+  const accToggle = document.getElementById('descToggle');
+  const accContent = document.getElementById('descContent');
+  if (accToggle && accContent) {
+    accToggle.addEventListener('click', () => {
+      accToggle.classList.toggle('active');
+      accContent.style.display = accContent.style.display === 'block' ? 'none' : 'block';
+    });
+  }
+
+  /* ===== DELIVERY DATE LOGIC (AUTO) ===== */
+  const dateButtons = document.querySelectorAll('.date-box');
+  const calendarInput = document.getElementById('calendarInput');
+
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
+  dateButtons.forEach((btn, index) => {
+    const offset = parseInt(btn.dataset.offset);
+    const date = new Date(today);
+    date.setDate(today.getDate() + offset);
+
+    // LABEL AUTO
+    let label = '';
+    if(offset === 0) label = 'TODAY';
+    else if(offset === 1) label = 'TOMORROW';
+    else label = `IN ${offset} DAYS`;
+
+    // FORMAT TARIKH
+    const dateText = date.toLocaleDateString('en-GB', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    }).toUpperCase();
+
+    btn.innerHTML = `
+      <span class="label">${label}</span>
+      <span class="date">${dateText}</span>
+    `;
+    btn.dataset.date = date.toISOString().split('T')[0];
+
+    btn.addEventListener('click', () => {
+      dateButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      if(calendarInput) calendarInput.value = btn.dataset.date;
+    });
+
+    // AUTO SELECT FIRST DATE
+    if(index === 0){
+      btn.classList.add('active');
+      if(calendarInput) calendarInput.value = btn.dataset.date;
+    }
+  });
+
+  if(calendarInput){
+    calendarInput.addEventListener('change', () => {
+      dateButtons.forEach(b => b.classList.remove('active'));
+    });
+  }
+
+  window.toggleCalendar = function(){
+    if(!calendarInput) return;
+    calendarInput.style.display =
+      calendarInput.style.display === 'block' ? 'none' : 'block';
+  };
+
+  /* ===== WISH CARD MESSAGE ===== */
+  const wishBoxes = document.querySelectorAll('.wish-box');
+  const cardMessage = document.getElementById('cardMessage');
+
+  wishBoxes.forEach(box=>{
+    box.addEventListener('click', ()=>{
+      wishBoxes.forEach(b=>b.classList.remove('active'));
+      box.classList.add('active');
+      if(cardMessage) cardMessage.value = box.dataset.msg;
+    });
+  });
+
+});
+</script>
+
+<script>
+/* ===== CAKE DATA (12 KIDS CAKES) + REVIEWS ===== */
+const cakeData = [
+  {
+    id: "cupcake1",
+    title: "Vanilla Sprinkle Cupcakes",
+    price: "RM 38.00",
+    img: "cupcake1.jpg",
+    description: `
+      <p class="desc-main">Soft vanilla cupcakes topped with pastel buttercream and rainbow sprinkles.</p>
+      <div class="desc-section">
+        <h4>Flavour & Topping</h4>
+        <p>Vanilla, Buttercream, Rainbow Sprinkles</p>
+      </div>
+      <div class="desc-section">
+        <h4>Box Size</h4>
+        <p>6 pieces – Standard Cupcake</p>
+      </div>
+    `,
+    reviews: {5: 45, 4: 9, 3: 2, 2: 0, 1: 0}
+  },
+
+  {
+    id: "cupcake2",
+    title: "Chocolate Fudge Cupcakes",
+    price: "RM 40.00",
+    img: "cupcake2.jpg",
+    description: `
+      <p class="desc-main">Rich chocolate cupcakes with thick fudge frosting.</p>
+      <div class="desc-section">
+        <h4>Flavour & Topping</h4>
+        <p>Chocolate, Fudge Frosting</p>
+      </div>
+      <div class="desc-section">
+        <h4>Box Size</h4>
+        <p>6 pieces – Standard Cupcake</p>
+      </div>
+    `,
+    reviews: {5: 60, 4: 10, 3: 3, 2: 0, 1: 0}
+  },
+
+  {
+    id: "cupcake3",
+    title: "Strawberry Cream Cupcakes",
+    price: "RM 42.00",
+    img: "cupcake3.jpg",
+    description: `
+      <p class="desc-main">Light cupcakes filled and topped with strawberry cream.</p>
+      <div class="desc-section">
+        <h4>Flavour & Topping</h4>
+        <p>Strawberry, Fresh Cream</p>
+      </div>
+      <div class="desc-section">
+        <h4>Box Size</h4>
+        <p>6 pieces – Standard Cupcake</p>
+      </div>
+    `,
+    reviews: {5: 48, 4: 11, 3: 2, 2: 0, 1: 0}
+  },
+
+  {
+    id: "cupcake4",
+    title: "Pandan Coconut Cupcakes",
+    price: "RM 42.00",
+    img: "cupcake4.jpg",
+    description: `
+      <p class="desc-main">Fragrant pandan cupcakes topped with coconut cream.</p>
+      <div class="desc-section">
+        <h4>Flavour & Topping</h4>
+        <p>Pandan, Coconut Cream</p>
+      </div>
+      <div class="desc-section">
+        <h4>Box Size</h4>
+        <p>6 pieces – Standard Cupcake</p>
+      </div>
+    `,
+    reviews: {5: 55, 4: 10, 3: 3, 2: 0, 1: 0}
+  },
+
+  {
+    id: "cupcake5",
+    title: "Matcha White Chocolate Cupcakes",
+    price: "RM 45.00",
+    img: "cupcake5.jpg",
+    description: `
+      <p class="desc-main">Earthy matcha cupcakes paired with sweet white chocolate frosting.</p>
+      <div class="desc-section">
+        <h4>Flavour & Topping</h4>
+        <p>Matcha, White Chocolate</p>
+      </div>
+      <div class="desc-section">
+        <h4>Box Size</h4>
+        <p>6 pieces – Standard Cupcake</p>
+      </div>
+    `,
+    reviews: {5: 42, 4: 9, 3: 3, 2: 0, 1: 0}
+  },
+
+  {
+    id: "cupcake6",
+    title: "Lemon Buttercream Cupcakes",
+    price: "RM 45.00",
+    img: "cupcake6.jpg",
+    description: `
+      <p class="desc-main">Zesty lemon cupcakes topped with smooth buttercream.</p>
+      <div class="desc-section">
+        <h4>Flavour & Topping</h4>
+        <p>Lemon, Buttercream</p>
+      </div>
+      <div class="desc-section">
+        <h4>Box Size</h4>
+        <p>6 pieces – Standard Cupcake</p>
+      </div>
+    `,
+    reviews: {5: 58, 4: 10, 3: 2, 2: 0, 1: 0}
+  },
+
+  {
+    id: "cupcake7",
+    title: "Coffee Mocha Cupcakes",
+    price: "RM 48.00",
+    img: "cupcake7.jpg",
+    description: `
+      <p class="desc-main">Coffee-flavoured cupcakes with mocha frosting.</p>
+      <div class="desc-section">
+        <h4>Flavour & Topping</h4>
+        <p>Coffee, Mocha Cream</p>
+      </div>
+      <div class="desc-section">
+        <h4>Box Size</h4>
+        <p>6 pieces – Standard Cupcake</p>
+      </div>
+    `,
+    reviews: {5: 46, 4: 9, 3: 3, 2: 0, 1: 0}
+  },
+
+  {
+    id: "cupcake8",
+    title: "Salted Caramel Cupcakes",
+    price: "RM 48.00",
+    img: "cupcake8.jpg",
+    description: `
+      <p class="desc-main">Sweet caramel cupcakes balanced with a hint of sea salt.</p>
+      <div class="desc-section">
+        <h4>Flavour & Topping</h4>
+        <p>Caramel, Sea Salt</p>
+      </div>
+      <div class="desc-section">
+        <h4>Box Size</h4>
+        <p>6 pieces – Standard Cupcake</p>
+      </div>
+    `,
+    reviews: {5: 66, 4: 12, 3: 3, 2: 0, 1: 0}
+  },
+
+  {
+    id: "cupcake9",
+    title: "Orange Citrus Cupcakes",
+    price: "RM 48.00",
+    img: "cupcake9.jpg",
+    description: `
+      <p class="desc-main">Fresh orange cupcakes with citrus glaze.</p>
+      <div class="desc-section">
+        <h4>Flavour & Topping</h4>
+        <p>Orange, Citrus Glaze</p>
+      </div>
+      <div class="desc-section">
+        <h4>Box Size</h4>
+        <p>6 pieces – Standard Cupcake</p>
+      </div>
+    `,
+    reviews: {5: 39, 4: 8, 3: 2, 2: 0, 1: 0}
+  },
+
+  {
+    id: "cupcake10",
+    title: "Hazelnut Chocolate Cupcakes",
+    price: "RM 50.00",
+    img: "cupcake10.jpg",
+    description: `
+      <p class="desc-main">Chocolate cupcakes topped with creamy hazelnut frosting.</p>
+      <div class="desc-section">
+        <h4>Flavour & Topping</h4>
+        <p>Chocolate, Hazelnut Cream</p>
+      </div>
+      <div class="desc-section">
+        <h4>Box Size</h4>
+        <p>6 pieces – Standard Cupcake</p>
+      </div>
+    `,
+    reviews: {5: 78, 4: 11, 3: 3, 2: 0, 1: 0}
+  },
+
+  {
+    id: "cupcake11",
+    title: "Mixed Berry Cupcakes",
+    price: "RM 52.00",
+    img: "cupcake11.jpg",
+    description: `
+      <p class="desc-main">Cupcakes bursting with mixed berry flavours.</p>
+      <div class="desc-section">
+        <h4>Flavour & Topping</h4>
+        <p>Blueberry, Raspberry, Strawberry</p>
+      </div>
+      <div class="desc-section">
+        <h4>Box Size</h4>
+        <p>6 pieces – Standard Cupcake</p>
+      </div>
+    `,
+    reviews: {5: 70, 4: 12, 3: 3, 2: 0, 1: 0}
+  },
+
+  {
+    id: "cupcake12",
+    title: "Vanilla Almond Premium Cupcakes",
+    price: "RM 55.00",
+    img: "cupcake12.jpg",
+    description: `
+      <p class="desc-main">Premium vanilla cupcakes topped with roasted almond flakes.</p>
+      <div class="desc-section">
+        <h4>Flavour & Topping</h4>
+        <p>Vanilla, Almond</p>
+      </div>
+      <div class="desc-section">
+        <h4>Box Size</h4>
+        <p>6 pieces – Jumbo Cupcake</p>
+      </div>
+    `,
+    reviews: {5: 90, 4: 12, 3: 3, 2: 0, 1: 0}
+  }
+];
+</script>
+
+
+
+<script>
+function addToCartDetail() {
+  const title = document.getElementById("detailTitle").textContent;
+  const price = document.getElementById("detailPrice").textContent;
+  const img = document.getElementById("detailImg").src;
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Check if item already exists
+  const existing = cart.find(item => item.title === title);
+
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({
+      title,
+      price,
+      img,
+      qty: 1
+    });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  // Update cart counter
+  const cartCount = document.getElementById("cart-count");
+  if (cartCount) cartCount.textContent = cart.length;
+
+  alert("Added to cart! Your Sweet Bliss moment just got sweeter 🌸");
+}
+</script>
+
+
+<footer>
+© 2025 Sweet Bliss Cake | Recommended Browser: Google Chrome |
+Resolution: 1920 × 1080 <br>
+Last Updated: January 2026
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const faqButtons = document.querySelectorAll(".faqAccordion dt button");
+
+  faqButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const panelId = button.getAttribute("aria-controls");
+      const panel = document.getElementById(panelId);
+
+      const isOpen = button.getAttribute("aria-expanded") === "true";
+
+      // close all first
+      faqButtons.forEach(btn => {
+        btn.setAttribute("aria-expanded", "false");
+        const p = document.getElementById(btn.getAttribute("aria-controls"));
+        if (p){
+          p.style.display = "none";
+          p.setAttribute("aria-hidden", "true");
+        }
+      });
+
+      // if it was closed, open it (if it was open, it stays closed)
+      if (!isOpen) {
+        button.setAttribute("aria-expanded", "true");
+        panel.style.display = "block";
+        panel.setAttribute("aria-hidden", "false");
+      }
+    });
+  });
+});
+</script>
+
+
+</body>
+</html>

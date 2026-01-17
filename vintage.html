@@ -1,0 +1,1149 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vintage | Sweet Bliss Cake</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="promo">✨ Get Your Cake Today | Same Day Delivery ✨</div>
+ <div class="top-bar-actions">
+<a href="cart.html" class="cart-btn">
+  <img src="https://img.icons8.com/?size=100&id=CHIch3K0zCjb&format=png&color=1A1A1A"
+       alt="Cart"
+       class="cart-icon">
+  <span class="cart-count" id="cart-count">0</span>
+</a>
+</div>
+</div>
+
+<header>
+  <div class="logo">
+    Sweet Bliss
+    <span>Ready-made Cakes</span>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li>
+        <a href="categories.html">Categories ▾</a>
+        <ul>
+          <li><a href="spongecake.html">Sponge Cake</a></li>
+          <li><a href="cupcake.html">Cupcake</a></li>
+          <li><a href="jellycake.html">Jelly Cake</a></li>
+          <li><a href="bentocake.html">Bento Cake</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="occasion.html">Occasion ▾</a>
+        <ul>
+          <li><a href="birthday.html">Birthday</a></li>
+          <li><a href="wedding.html">Wedding</a></li>
+          <li><a href="anniversary.html">Anniversary</a></li>
+          <li><a href="graduation.html">Graduation</a></li>
+          <li><a href="kids.html">Kids</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="theme.html">Theme ▾</a>
+        <ul>
+          <li><a href="sanrio.html">Sanrio & Friends</a></li>
+          <li><a href="disney.html">Disney</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="vintage.html">Vintage Cake</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="accessories.html">Accessories ▾</a>
+        <ul>
+          <li><a href="topper.html">Topper</a></li>
+          <li><a href="candle.html">Candle</a></li>
+          <li><a href="giftcard.html">Gift Card</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="occasion-hero">
+  <div class="hero-wrapper">
+
+    <div class="hero-content">
+      <h2>VINTAGE</h2>
+<p>Celebrate birthdays and special occasions with our charming Vintage-themed cakes.  
+   Each cake features elegant designs, delicate details, and timeless decorations that bring a touch of nostalgia and sophistication to your celebration.</p>
+
+    </div>
+
+<div class="hero-image">
+  <img src="vint0.jpg" alt="Vintage by Sweet Bliss">
+</div>
+
+  </div>
+</section>
+
+<section class="occasion-section">
+    <h2>Vintage</h2>
+    <p class="occasion-desc">
+      Elegant and timeless Vintage-themed cakes, perfect for birthdays, anniversaries, and special celebrations.  
+      Each cake is thoughtfully designed with intricate patterns, classic touches, and beautiful decorations that make every moment unforgettable.
+    </p>
+
+<!-- SORT DROPDOWN -->
+<div class="section clearfix">
+  <div class="four columns section_select medium-down--one-whole">
+    <select class="sort_by" id="sort-by" data-default-sort="manual">
+      <option value="manual">Featured</option>
+      <option value="price-ascending">Price: Low to High</option>
+      <option value="price-descending">Price: High to Low</option>
+    </select>
+  </div>
+</div>
+
+<div class="product-grid">
+
+<!-- Cake 1 -->
+<div class="product-card" onclick="openCakeDetail('vint1')" data-price="155.00">
+  <div class="product-image">
+    <img src="vint1.jpg" alt="Vintage Classic Lace Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Vintage Classic Lace Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(97 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 155.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 2 -->
+<div class="product-card" onclick="openCakeDetail('vint2')" data-price="170.00">
+  <div class="product-image">
+    <img src="vint2.jpeg" alt="Strawberry Cloud Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Strawberry Cloud Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(9 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 170.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 3 -->
+<div class="product-card" onclick="openCakeDetail('vint3')" data-price="135.90">
+  <div class="product-image">
+    <img src="vint3.jpg" alt="Vintage Blush Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Vintage Blush Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(60 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 135.90</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 4 -->
+<div class="product-card" onclick="openCakeDetail('vint4')" data-price="230.00">
+  <div class="product-image">
+    <img src="vint4.jpg" alt="Floral Joy Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Floral Joy Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(135 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 230.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 5 -->
+<div class="product-card" onclick="openCakeDetail('vint5')" data-price="150.00">
+  <div class="product-image">
+    <img src="vint5.jpg" alt="Vintage Blue Lace Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Vintage Blue Lace Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(85 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 150.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 6 -->
+<div class="product-card" onclick="openCakeDetail('vint6')" data-price="120.00">
+  <div class="product-image">
+    <img src="vint6.jpg" alt="Vintage Ivory Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Vintage Ivory Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(79 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 120.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 7 -->
+<div class="product-card" onclick="openCakeDetail('vint7')" data-price="125.90">
+  <div class="product-image">
+    <img src="vint7.jpg" alt="Crimson Heart Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Crimson Heart Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(57 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 125.90</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 8 -->
+<div class="product-card" onclick="openCakeDetail('vint8')" data-price="366.00">
+  <div class="product-image">
+    <img src="vint8.jpg" alt="Vintage Rose Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Vintage Rose Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(94 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 366.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 9 -->
+<div class="product-card" onclick="openCakeDetail('vint9')" data-price="366.00">
+  <div class="product-image">
+    <img src="vint9.jpg" alt="PinkRose Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">PinkRose Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(84 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 410.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 10 -->
+<div class="product-card" onclick="openCakeDetail('vint10')" data-price="425.00">
+  <div class="product-image">
+    <img src="vint10.jpg" alt="Vintage Garden Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Vintage Garden Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(120 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 425.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 11 -->
+<div class="product-card" onclick="openCakeDetail('vint11')" data-price="205.00">
+  <div class="product-image">
+    <img src="vint11.jpg" alt="Sage Classic Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Sage Classic Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(62 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 205.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 12 -->
+<div class="product-card" onclick="openCakeDetail('vint12')" data-price="160.00">
+  <div class="product-image">
+    <img src="vint12.jpg" alt="Buttercream Bloom Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Buttercream Bloom Cak</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(52 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 160.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+
+</div>
+
+  </section>
+  
+<section class="cake-description">
+  <div class="description-wrapper">
+    <h2>Elegant Vintage Cakes</h2>
+
+    <p>
+      Make your celebration extra special with our timeless and elegant Vintage-themed cakes!  
+      Each cake is designed with delicate details, classic decorations, and a touch of nostalgia — perfect for birthdays, anniversaries, and special occasions.
+    </p>
+
+    <ul>
+      <li>Vintage Classic Lace Cake</li>
+      <li>Strawberry Cloud Cake</li>
+      <li>Vintage Blush Cake</li>
+      <li>Floral Joy Cake</li>
+      <li>Vintage Blue Lace Cake</li>
+      <li>Vintage Ivory Cake</li>
+      <li>Crimson Heart Cake</li>
+      <li>Vintage Rose Cake</li>
+      <li>Pinkrose Cake</li>
+      <li>Vintage Garden Cake</li>
+      <li>Sage Classic Cake</li>
+      <li>Buttercream Bloom Cake</li>
+    </ul>
+
+    <p>
+      Choose your favourite Vintage design, add a message, and select your delivery date — we’ll make sure the cake arrives ready to impress!
+    </p>
+  </div>
+</section>
+
+<div class="container collection-faq-wrap">
+  <h2 class="title faq--heading">Frequently Asked Questions</h2>
+
+  <dl class="faqAccordion">
+
+    <dt>
+      <button type="button" aria-controls="panel-01" aria-expanded="false">
+        What flavours are popular for Vintage-themed cakes?
+      </button>
+    </dt>
+    <dd id="panel-01" aria-hidden="true">
+      <p>
+        Classic flavours such as vanilla, chocolate, and strawberry are popular, along with delicate options like almond, buttercream, or caramel — perfect for a refined vintage style.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-02" aria-expanded="false">
+        Are Vintage cakes suitable for all ages?
+      </button>
+    </dt>
+    <dd id="panel-02" aria-hidden="true">
+      <p>
+        Yes. Vintage cakes can be enjoyed by everyone. We recommend softer cakes with balanced sweetness for children, while adults appreciate the sophisticated flavours and designs.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-03" aria-expanded="false">
+        What Vintage cake designs are ideal for special celebrations?
+      </button>
+    </dt>
+    <dd id="panel-03" aria-hidden="true">
+      <p>
+        Popular designs include floral patterns, lace textures, tiered cakes, gold accents, and classic antique-inspired details — perfect for birthdays, anniversaries, and weddings.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-04" aria-expanded="false">
+        Do you offer tips for decorating Vintage-themed cakes at home?
+      </button>
+    </dt>
+    <dd id="panel-04" aria-hidden="true">
+      <p>
+        Yes! Use soft buttercream or fondant, preheat your oven properly, allow the cake to cool completely, and add delicate details like edible flowers, pearls, or lace patterns for a refined look.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-05" aria-expanded="false">
+        How can I keep my Vintage cake decorations looking perfect?
+      </button>
+    </dt>
+    <dd id="panel-05" aria-hidden="true">
+      <p>
+        Ensure the cake cools fully before decorating. This prevents sliding or melting and keeps intricate details, flowers, and pearls looking pristine.
+      </p>
+    </dd>
+
+  </dl>
+</div>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What flavours are popular for Vintage-themed cakes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Classic flavours such as vanilla, chocolate, and strawberry are popular, along with delicate options like almond, buttercream, or caramel — perfect for a refined vintage style."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Vintage cakes suitable for all ages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Vintage cakes can be enjoyed by everyone. We recommend softer cakes with balanced sweetness for children, while adults appreciate the sophisticated flavours and designs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Vintage cake designs are ideal for special celebrations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Popular designs include floral patterns, lace textures, tiered cakes, gold accents, and classic antique-inspired details — perfect for birthdays, anniversaries, and weddings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer tips for decorating Vintage-themed cakes at home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Use soft buttercream or fondant, preheat your oven properly, allow the cake to cool completely, and add delicate details like edible flowers, pearls, or lace patterns for a refined look."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I keep my Vintage cake decorations looking perfect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ensure the cake cools fully before decorating. This prevents sliding or melting and keeps intricate details, flowers, and pearls looking pristine."
+      }
+    }
+  ]
+}
+</script>
+
+<section class="info-bar">
+  <div class="info-bar-inner">
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-sameday.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Same-Day Delivery</strong>
+        <small>Order before 5PM</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-calendar.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Choose Your Slot</strong>
+        <small>Flexible delivery</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-thumbsup.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Trusted Sellers</strong>
+        <small>Top-rated bakers</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-cake.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Premium Cakes</strong>
+        <small>Fresh & quality</small>
+      </span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================== CAKE DETAIL PAGE (Add-on) ================== -->
+<section class="cake-detail" id="cakesDetail">
+  <div class="detail-layout">
+
+    <div><img id="detailImg" src="" alt="Cake Image"></div>
+
+    <div>
+      <h3 id="detailTitle"></h3>
+      <p id="detailPrice"></p>
+
+      <div class="acc_title" id="descToggle">
+  <span>Product Description</span>
+  <span class="acc_icon">+</span>
+</div>
+
+<div class="description bottom des_slide" id="descContent">
+  <p class="desc-main">
+    Six layers of pastel rainbow-colored vanilla cake filled high with a sweet and sour strawberry mousseline.
+  </p>
+
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Mixed Berry Spread, Berry Yoghurt, White Chocolate, Permitted Flavoring and Coloring</p>
+  </div>
+
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>Large – 1.5 kg – 9" × 2.7"</p>
+  </div>
+</div>
+
+
+      <!-- DELIVERY DATE -->
+      <div class="option-group">
+        <h4>SELECT YOUR DELIVERY DATE</h4>
+        <div class="date-grid" id="dateButtons">
+          <button class="date-box" data-offset="0"></button>
+          <button class="date-box active" data-offset="1"></button>
+          <button class="date-box" data-offset="2"></button>
+        </div>
+
+        <button class="full-calendar-btn" onclick="toggleCalendar()">VIEW FULL CALENDAR</button>
+        <input type="date" id="calendarInput">
+      </div>
+
+      <!-- CANDLES -->
+      <div class="option-group">
+        <h4>NUMBER OF CANDLES</h4>
+        <select>
+          <option>No Candle</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+      </div>
+
+      <!-- WISH CARD -->
+      <div class="option-group">
+        <h4>WISH CARD MESSAGE</h4>
+        <div class="wish-grid" id="wishBoxes">
+          <div class="wish-box" data-msg="Happy Birthday! 🎂 Wishing you joy, laughter and lots of cake on your special day.">🎂 Birthday</div>
+          <div class="wish-box" data-msg="Congratulations on your wedding day 💍 May your love grow stronger every year.">💍 Wedding</div>
+          <div class="wish-box" data-msg="Happy Anniversary ❤️ Wishing you many more years of love and happiness together.">❤️ Anniversary</div>
+          <div class="wish-box" data-msg="Congratulations! 🎉 Wishing you success and happiness always.">🎉 Congratulations</div>
+        </div>
+        <textarea id="cardMessage" rows="4"></textarea>
+      </div>
+
+     <button class="full-calendar-btn" style="background:#fb3eb9;margin-top:20px;" onclick="addToCartDetail()">ADD TO CART</button>
+
+      <div class="back-btn" onclick="backToGallery()">← Back</div>
+    </div>
+
+<!-- ================== CUSTOMER REVIEWS ================== -->
+<div class="review-section">
+  <h3>Customer Reviews</h3>
+
+  <div class="review-summary">
+    <!-- SCORE -->
+<div class="review-score">
+  <div class="stars" id="avgStars">★★★★★</div>
+
+  <p><strong><span id="avgRating">0.00</span> out of 5</strong></p>
+  <small>Based on <span id="totalReviews">0</span> reviews</small>
+</div>
+
+
+<!-- BARS -->
+<div class="review-bars" id="reviewBars">
+  <div class="bar-row">
+    <span>5★</span>
+    <div class="bar"><div class="fill" id="bar5"></div></div>
+    <span id="count5">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>4★</span>
+    <div class="bar"><div class="fill" id="bar4"></div></div>
+    <span id="count4">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>3★</span>
+    <div class="bar"><div class="fill" id="bar3"></div></div>
+    <span id="count3">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>2★</span>
+    <div class="bar"><div class="fill" id="bar2"></div></div>
+    <span id="count2">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>1★</span>
+    <div class="bar"><div class="fill" id="bar1"></div></div>
+    <span id="count1">0</span>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  /* ===== CART ===== */
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function updateCartCount() {
+    const cartCount = document.getElementById("cart-count");
+    if(cartCount) cartCount.textContent = cart.length;
+  }
+  updateCartCount();
+
+  /* ===== REVIEW BARS FUNCTION ===== */
+function updateReviewBars(reviews){
+  const c5 = reviews[5] || 0;
+  const c4 = reviews[4] || 0;
+  const c3 = reviews[3] || 0;
+  const c2 = reviews[2] || 0;
+  const c1 = reviews[1] || 0;
+
+  const total = c5 + c4 + c3 + c2 + c1;
+
+  // ===== UPDATE BAR WIDTH + COUNT =====
+  const safeTotal = total || 1;
+
+  for(let star = 5; star >= 1; star--){
+    const count = reviews[star] || 0;
+    const percent = Math.round((count / safeTotal) * 100);
+
+    const bar = document.getElementById(`bar${star}`);
+    const label = document.getElementById(`count${star}`);
+
+    if(bar) bar.style.width = percent + "%";
+    if(label) label.textContent = count;
+  }
+
+  // ===== CALCULATE AVERAGE RATING =====
+  const avg = total
+    ? ((5*c5 + 4*c4 + 3*c3 + 2*c2 + 1*c1) / total)
+    : 0;
+
+  // ===== UPDATE TEXT =====
+  const avgRatingEl = document.getElementById("avgRating");
+  const totalReviewsEl = document.getElementById("totalReviews");
+  if(avgRatingEl) avgRatingEl.textContent = avg.toFixed(2);
+  if(totalReviewsEl) totalReviewsEl.textContent = total;
+
+  // ===== UPDATE STARS DISPLAY (FULL/EMPTY) =====
+  const avgStarsEl = document.getElementById("avgStars");
+  if(avgStarsEl){
+    const full = Math.round(avg); // contoh: 4.86 -> 5
+    avgStarsEl.textContent = "★★★★★☆☆☆☆☆".slice(5 - full, 10 - full);
+  }
+}
+
+  /* ===== SORT PRODUCTS ===== */
+  const select = document.getElementById('sort-by');
+  const grid = document.querySelector('.product-grid');
+
+  if(select && grid){
+    select.addEventListener('change', function() {
+      const value = this.value;
+      const cards = Array.from(grid.querySelectorAll('.product-card'));
+      let sorted;
+
+      if(value === 'price-ascending'){
+        sorted = cards.sort((a,b)=>
+          parseFloat(a.dataset.price.replace(/[^0-9.]/g,'')) -
+          parseFloat(b.dataset.price.replace(/[^0-9.]/g,''))
+        );
+      } else if(value === 'price-descending'){
+        sorted = cards.sort((a,b)=>
+          parseFloat(b.dataset.price.replace(/[^0-9.]/g,'')) -
+          parseFloat(a.dataset.price.replace(/[^0-9.]/g,''))
+        );
+      } else {
+        sorted = cards;
+      }
+
+      grid.innerHTML = '';
+      sorted.forEach(card => grid.appendChild(card));
+    });
+  }
+
+  /* ===== CAKE DETAIL POPUP ===== */
+  const detailSection = document.getElementById('cakesDetail');
+  const detailImg = document.getElementById('detailImg');
+  const detailTitle = document.getElementById('detailTitle');
+  const detailPrice = document.getElementById('detailPrice');
+
+  window.openCakeDetail = function(cakeId) {
+    const cake = cakeData.find(c => c.id === cakeId);
+    if (!cake) return;
+
+    detailImg.src = cake.img;
+    detailTitle.textContent = cake.title;
+    detailPrice.textContent = cake.price;
+    document.getElementById('descContent').innerHTML = cake.description;
+
+    /* ✅ UPDATE REVIEW BARS ikut cake yang diklik */
+    updateReviewBars(cake.reviews || {5:0,4:0,3:0,2:0,1:0});
+
+    detailSection.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+    // Reset accordion
+    const acc = document.getElementById('descToggle');
+    const content = document.getElementById('descContent');
+    acc.classList.remove('active');
+    content.style.display = 'none';
+  };
+
+  window.backToGallery = function() {
+    detailSection.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  };
+
+  /* ===== ACCORDION TOGGLE ===== */
+  const accToggle = document.getElementById('descToggle');
+  const accContent = document.getElementById('descContent');
+  if (accToggle && accContent) {
+    accToggle.addEventListener('click', () => {
+      accToggle.classList.toggle('active');
+      accContent.style.display = accContent.style.display === 'block' ? 'none' : 'block';
+    });
+  }
+
+  /* ===== DELIVERY DATE LOGIC (AUTO) ===== */
+  const dateButtons = document.querySelectorAll('.date-box');
+  const calendarInput = document.getElementById('calendarInput');
+
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
+  dateButtons.forEach((btn, index) => {
+    const offset = parseInt(btn.dataset.offset);
+    const date = new Date(today);
+    date.setDate(today.getDate() + offset);
+
+    // LABEL AUTO
+    let label = '';
+    if(offset === 0) label = 'TODAY';
+    else if(offset === 1) label = 'TOMORROW';
+    else label = `IN ${offset} DAYS`;
+
+    // FORMAT TARIKH
+    const dateText = date.toLocaleDateString('en-GB', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    }).toUpperCase();
+
+    btn.innerHTML = `
+      <span class="label">${label}</span>
+      <span class="date">${dateText}</span>
+    `;
+    btn.dataset.date = date.toISOString().split('T')[0];
+
+    btn.addEventListener('click', () => {
+      dateButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      if(calendarInput) calendarInput.value = btn.dataset.date;
+    });
+
+    // AUTO SELECT FIRST DATE
+    if(index === 0){
+      btn.classList.add('active');
+      if(calendarInput) calendarInput.value = btn.dataset.date;
+    }
+  });
+
+  if(calendarInput){
+    calendarInput.addEventListener('change', () => {
+      dateButtons.forEach(b => b.classList.remove('active'));
+    });
+  }
+
+  window.toggleCalendar = function(){
+    if(!calendarInput) return;
+    calendarInput.style.display =
+      calendarInput.style.display === 'block' ? 'none' : 'block';
+  };
+
+  /* ===== WISH CARD MESSAGE ===== */
+  const wishBoxes = document.querySelectorAll('.wish-box');
+  const cardMessage = document.getElementById('cardMessage');
+
+  wishBoxes.forEach(box=>{
+    box.addEventListener('click', ()=>{
+      wishBoxes.forEach(b=>b.classList.remove('active'));
+      box.classList.add('active');
+      if(cardMessage) cardMessage.value = box.dataset.msg;
+    });
+  });
+
+});
+</script>
+
+<script>
+/* ===== CAKE DATA (12 KIDS CAKES) + REVIEWS ===== */
+const cakeData = [
+  {
+    id: "vint1",
+    title: "Vintage Classic Lace Cake",
+    price: "RM 155.00",
+    img: "vint1.jpg",
+    description: `
+      <p class="desc-main"> A timeless vintage-inspired cake in soft ivory tones, finished with elegant lace piping for a classic look.</p>
+      <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Sugar, Eggs, Butter, Fresh cream, Vanilla essence, Food colouring, Edible decorations </p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>8 kg – 12"</p>
+  </div>
+    `,
+    reviews: {5: 52, 4: 12, 3: 2, 2: 1, 1: 0}
+  },
+  {
+    id: "vint2",
+    title: "Strawberry Cloud Cake",
+    price: "RM 170.00",
+    img: "vint2.jpeg",
+    description: `
+       <p class="desc-main">
+    A charming vintage cake topped with fresh strawberry-style decorations, offering a soft and romantic appearance.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Sugar, Eggs, Butter, Fresh cream, Vanilla essence, Food colouring, Edible decorations </p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.5 kg – 6"</p>
+  </div>
+    `,
+    reviews: {5: 33, 4: 14, 3: 4, 2: 1, 1: 0}
+  },
+  {
+    id: "vint3",
+    title: "vintage Blush Cake",
+    price: "RM 135.90",
+    img: "vint3.jpg",
+    description: `
+  <p class="desc-main">
+    A sweet vintage-style cake in blush pink tones with classic piping, perfect for elegant and joyful celebrations.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Sugar, Eggs, Butter, Fresh cream, Vanilla essence, Food colouring, Edible decorations</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.3kg – 6"</p>
+  </div>
+    `,
+    reviews: {5: 61, 4: 18, 3: 5, 2: 1, 1: 0}
+  },
+  {
+    id: "vint4",
+    title: "Floral Joy Cake",
+    price: "RM 230.00",
+    img: "vint4.jpg",
+    description: `
+  <p class="desc-main">
+   A delightful vintage cake decorated with soft floral details, creating a cheerful and timeless celebration piece.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Caster sugar, Free-range eggs, Unsalted butter, Cream cheese frosting, Lemon zest, Vanilla bean, 
+      Natural pink food colouring, Edible dried flowers and White chocolate chips</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.5 kg – 6"</p>
+  </div>
+    `,
+    reviews: {5: 45, 4: 16, 3: 3, 2: 1, 1: 0}
+  },
+  {
+    id: "vint5",
+    title: "Vintage Blue Lace Cake",
+    price: "RM 150.00",
+    img: "vint5.jpg",
+    description: `
+        <p class="desc-main">
+    A classic vintage-style cake in soft blue tones, decorated with elegant piping for a timeless and charming celebration.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Cake Flour, Caster Sugar, Free-Range Eggs, Unsalted Butter, Whipping Cream, Vanilla Bean Paste, Blue Pea Flower Extract, 
+      White Chocolate and Edible Pearl Decorations</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.5 kg – 6"</p>
+  </div>
+    `,
+    reviews: {5: 72, 4: 14, 3: 4, 2: 0, 1: 1}
+  },
+  {
+    id: "vint6",
+    title: "Vintage Ivory Cake",
+    price: "RM 120.00",
+    img: "vint6.jpg",
+    description: `
+    <p class="desc-main">
+    An elegant vintage cake featuring delicate ribbon-style piping, perfect for birthdays and refined celebrations.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Plain Flour, Icing Sugar, Farm-Fresh Eggs, European Unsalted Butter, Mascarpone Cheese, Fresh Milk, Madagascar Vanilla Extract, 
+      White Chocolate Ganache and Edible Sugar Pearls</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>2.5 kg – 7"</p>
+  </div>
+    `,
+    reviews: {5: 28, 4: 12, 3: 4, 2: 2, 1: 0}
+  },
+  {
+    id: "vint7",
+    title: "Crimson Heart Cake",
+    price: "RM 125.90",
+    img: "vint7.jpg",
+    description: `
+  <p class="desc-main">
+    A romantic vintage-inspired cake with rich red tones and classic heart details, ideal for special occasions.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Cocoa Powder, Cake Flour, Caster Sugar, Free-Range Eggs, Unsalted Butter, Dark Chocolate Ganache, Fresh Cream, Vanilla Bean Extract, 
+      Natural Red Food Colouring, Edible Sugar Pearls and Dried Rose Petals</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>3kg – 7"</p>
+  </div>
+    `,
+    reviews: {5: 40, 4: 15, 3: 6, 2: 1, 1: 1}
+  },
+  {
+    id: "vint8",
+    title: "Vintage Rose Cake",
+    price: "RM 366.00",
+    img: "vint8.jpg",
+    description: `
+  <p class="desc-main">
+    A soft lilac vintage cake adorned with pearl-style accents, 
+    creating a graceful and timeless look.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Caster Sugar, Free-Range Eggs, Unsalted Butter, Whipping Cream, White Chocolate, Vanilla Bean Extract, Rose Water, Natural Pink Food Colouring, 
+      Edible Rose Petals and Almond Crumble </p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>8kg – 12"</p>
+  </div>
+    `,
+    reviews: {5: 24, 4: 10, 3: 4, 2: 1, 1: 0}
+  },
+  {
+    id: "vint9",
+    title: "PinkRose Cake",
+    price: "RM 410.00",
+    img: "vint9.jpg",
+    description: `
+  <p class="desc-main">
+    A pink cake with rosy borders, cherries, and cute Sanrio character toppers. Pink and white piped frosting, red rosettes, and a glossy heart center.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, sugar, eggs, butter, fresh cream, vanilla essence, food colouring, edible floral decorations</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>9 kg – 12"</p>
+  </div>
+    `,
+    reviews: {5: 39, 4: 13, 3: 4, 2: 1, 1: 1}
+  },
+  {
+    id: "vint10",
+    title: "Vintage Garden Cake",
+    price: "RM 425.00",
+    img: "vint10.jpg",
+    description: `
+        <p class="desc-main">
+   A charming vintage cake with classic piping and floral details, ideal for parties and refined celebrations.</p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Caster Sugar, Free-Range Eggs, Unsalted Butter, Honey Syrup, Whipping Cream, Cream Cheese Frosting, Vanilla Bean Extract, 
+      Fresh Berry Compote, Natural Green Food Colouring, and Edible Floral Decorations</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>7.5 kg – 16"</p>
+  </div>
+    `,
+    reviews: {5: 26, 4: 11, 3: 2, 2: 1, 1: 1}
+  },
+  {
+    id: "vint11",
+    title: "Sage Classic Cake",
+    price: "RM 205.00",
+    img: "vint11.jpg",
+    description: `
+          <p class="desc-main">
+      A soft sage-green vintage cake with elegant layered piping, offering a timeless and graceful look..
+    </p>
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, SUgar, Eggs, Butter, Fresh cream, Vanilla essence, Food colouring, and Edible decorations </p>
+    </div>
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>Approx. 1.3 kg – 6"</p>
+    </div>
+    `,
+    reviews: {5: 18, 4: 9, 3: 4, 2: 1, 1: 1}
+  },
+  {
+    id: "vint12",
+    title: "Buttercream Bloom Cake",
+    price: "RM 160.00",
+    img: "vint12.jpg",
+    description: `
+    <p class="desc-main">
+      A delicate vintage-style cake in warm buttercream tones, finished with classic piping for a sweet and nostalgic feel.
+    </p>
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Flour, Sugar, Eggs, Butter, Fresh cream, Vanilla essence, Food colouring, and Edible decorations </p>
+    /div>
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>1.3 kg – 6"</p>
+    </div>
+    `,
+    reviews: {5: 80, 4: 16, 3: 4, 2: 1, 1: 1}
+  }
+];
+</script>
+
+
+<script>
+function addToCartDetail() {
+  const title = document.getElementById("detailTitle").textContent;
+  const price = document.getElementById("detailPrice").textContent;
+  const img = document.getElementById("detailImg").src;
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Check if item already exists
+  const existing = cart.find(item => item.title === title);
+
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({
+      title,
+      price,
+      img,
+      qty: 1
+    });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  // Update cart counter
+  const cartCount = document.getElementById("cart-count");
+  if (cartCount) cartCount.textContent = cart.length;
+
+  alert("Added to cart! Your Sweet Bliss moment just got sweeter 🌸");
+}
+</script>
+
+
+<footer>
+© 2025 Sweet Bliss Cake | Recommended Browser: Google Chrome |
+Resolution: 1920 × 1080 <br>
+Last Updated: January 2026
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const faqButtons = document.querySelectorAll(".faqAccordion dt button");
+
+  faqButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const panelId = button.getAttribute("aria-controls");
+      const panel = document.getElementById(panelId);
+
+      const isOpen = button.getAttribute("aria-expanded") === "true";
+
+      // close all first
+      faqButtons.forEach(btn => {
+        btn.setAttribute("aria-expanded", "false");
+        const p = document.getElementById(btn.getAttribute("aria-controls"));
+        if (p){
+          p.style.display = "none";
+          p.setAttribute("aria-hidden", "true");
+        }
+      });
+
+      // if it was closed, open it (if it was open, it stays closed)
+      if (!isOpen) {
+        button.setAttribute("aria-expanded", "true");
+        panel.style.display = "block";
+        panel.setAttribute("aria-hidden", "false");
+      }
+    });
+  });
+});
+</script>
+
+
+</body>
+</html>
+
+  

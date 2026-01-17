@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shopping Cart | Sweet Bliss Cake</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts (ikut global) -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- GLOBAL CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="promo">✨ Get Your Cake Today | Same Day Delivery ✨</div>
+ <div class="top-bar-actions">
+<a href="cart.html" class="cart-btn">
+  <img src="https://img.icons8.com/?size=100&id=CHIch3K0zCjb&format=png&color=1A1A1A"
+       alt="Cart"
+       class="cart-icon">
+  <span class="cart-count" id="cart-count">0</span>
+</a>
+</div>
+</div>
+
+<header>
+  <div class="logo">
+    Sweet Bliss
+    <span>Ready-made Cakes</span>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">home</a></li>
+
+      <li>
+        <a href="categories.html">Categories ▾</a>
+        <ul>
+          <li><a href="spongecake.html">Sponge Cake</a></li>
+          <li><a href="cupcake.html">Cupcake</a></li>
+          <li><a href="jellycake.html">Jelly Cake</a></li>
+          <li><a href="bentocake.html">Bento Cake</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="occasion.html">Occasion ▾</a>
+        <ul>
+          <li><a href="birthday.html">Birthday</a></li>
+          <li><a href="wedding.html">Wedding</a></li>
+          <li><a href="anniversary.html">Anniversary</a></li>
+          <li><a href="graduation.html">Graduation</a></li>
+          <li><a href="kids.html">Kids</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="theme.html">Theme ▾</a>
+        <ul>
+          <li><a href="sanrio.html">Sanrio & Friends</a></li>
+          <li><a href="disney.html">Disney</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="vintage.html">Vintage Cake</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="accessories.html">Accessories ▾</a>
+        <ul>
+          <li><a href="topper.html">Topper</a></li>
+          <li><a href="candle.html">Candle</a></li>
+          <li><a href="giftcard.html">Gift Card</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main class="checkout-container">
+
+  <!-- ===== CART SECTION ===== -->
+  <div class="cart-box">
+    <h2>Your Order</h2>
+
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price (RM)</th>
+          <th>Qty</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="cart-body"></tbody>
+    </table>
+
+    <div class="cart-total" id="cart-total">
+      Total: RM 0.00
+    </div>
+  </div>
+
+  <!-- ===== CHECKOUT FORM ===== -->
+  <div class="form-box">
+    <h2>Customer Details</h2>
+
+    <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+
+      <input type="hidden" name="access_key" value="7a06f685-be0b-4132-8157-b224423a60ea">
+      <input type="hidden" name="order_summary" id="order_summary">
+
+      <!-- Customer info -->
+      <label>Name</label>
+      <input type="text" name="name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Phone</label>
+      <input type="tel" name="phone" required>
+
+      <label>Order Notes</label>
+      <textarea name="message" placeholder="Delivery date, message on cake, etc."></textarea>
+
+      <!-- Payment Method -->
+      <h2>Payment Method</h2>
+
+      <label>
+        <input type="radio" name="payment_method" value="COD" checked>
+        Cash on Delivery (Pay when your cake arrives)
+      </label><br>
+
+      <label>
+        <input type="radio" name="payment_method" value="QR">
+        Pay via QR Code
+      </label>
+
+      <!-- QR Code Display -->
+      <div id="qr-payment" style="display:none; margin-top:10px;">
+        <p>Scan the QR code below to pay:</p>
+        <img src="qr.jpg" alt="Sweet Bliss QR Code" style="width:200px;">
+        <p>After payment, please complete the order form above.</p>
+      </div>
+
+      <!-- Upload payment proof -->
+      <div id="payment-evidence" style="display:none; margin-top:10px;">
+        <label>Upload Payment Proof (if you paid via QR Code)</label>
+        <input type="file" name="payment_proof" accept="image/*">
+        <p>Accepted formats: JPG, PNG. Max size: 5MB.</p>
+      </div>
+
+      <button class="submit-btn">Submit Order</button>
+    </form>
+  </div>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+© 2025 Sweet Bliss Cake | Recommended Browser: Google Chrome |
+Resolution: 1920 × 1080 <br>
+Last Updated: January 2026
+</footer>
+
+<!-- ===== SCRIPT ===== -->
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+const cartBody = document.getElementById("cart-body");
+const cartTotal = document.getElementById("cart-total");
+const orderInput = document.getElementById("order_summary");
+const cartCount = document.getElementById("cart-count");
+
+function saveCart() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+// Render cart items
+function renderCart() {
+  cartBody.innerHTML = "";
+  let total = 0;
+  let summary = "";
+
+  if(cart.length === 0){
+    cartBody.innerHTML = "<tr><td colspan='5'>Your cart is empty 🛒</td></tr>";
+    cartTotal.textContent = "Total: RM 0.00";
+    orderInput.value = "";
+    cartCount.textContent = "0";
+    return;
+  }
+
+  cart.forEach((item, index) => {
+    const qty = item.quantity || item.qty || 1;
+
+    const rawPrice = item.price || item.amount || "0"; 
+    const price = parseFloat(
+      String(rawPrice).replace(/[^0-9.]/g, "").replace(",", ".")
+    ) || 0;
+
+    const subtotal = price * qty;
+    total += subtotal;
+
+    const productName = item.name || item.title || "Unknown Product";
+
+    cartBody.innerHTML += `
+      <tr>
+        <td>${productName}</td>
+        <td>${price.toFixed(2)}</td>
+        <td>
+          <input type="number" min="1" value="${qty}"
+            onchange="updateQty(${index}, this.value)">
+        </td>
+        <td>${subtotal.toFixed(2)}</td>
+        <td>
+          <button class="remove-btn" onclick="removeItem(${index})">❌</button>
+        </td>
+      </tr>
+    `;
+
+    summary += `${productName} x ${qty} = RM ${subtotal.toFixed(2)}\n`;
+  });
+
+  const selectedPayment = document.querySelector('input[name="payment_method"]:checked')?.value || 'COD';
+  cartTotal.textContent = "Total: RM " + total.toFixed(2);
+  orderInput.value = summary + "\nTotal: RM " + total.toFixed(2) + "\nPayment Method: " + selectedPayment;
+  cartCount.textContent = cart.length;
+}
+
+// Update quantity
+function updateQty(index, value) {
+  const qty = parseInt(value) || 1;
+  cart[index].quantity = qty;
+  cart[index].qty = qty; 
+  saveCart();
+  renderCart();
+}
+
+// Remove item
+function removeItem(index) {
+  if (cart[index].quantity > 1 || cart[index].qty > 1) {
+    cart[index].quantity = (cart[index].quantity || cart[index].qty) - 1;
+    cart[index].qty = cart[index].quantity;
+  } else {
+    cart.splice(index, 1);
+  }
+  saveCart();
+  renderCart();
+}
+
+// Show/hide QR and upload based on payment method
+const paymentRadios = document.querySelectorAll('input[name="payment_method"]');
+const qrDiv = document.getElementById('qr-payment');
+const proofDiv = document.getElementById('payment-evidence');
+
+paymentRadios.forEach(radio => {
+  radio.addEventListener('change', () => {
+    if(radio.value === 'QR' && radio.checked){
+      qrDiv.style.display = 'block';
+      proofDiv.style.display = 'block';
+    } else {
+      qrDiv.style.display = 'none';
+      proofDiv.style.display = 'none';
+    }
+    renderCart(); // update payment method in summary
+  });
+});
+
+// Initial render
+renderCart();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1145 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Theme | Sweet Bliss Cake</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="promo">✨ Get Your Cake Today | Same Day Delivery ✨</div>
+ <div class="top-bar-actions">
+<a href="cart.html" class="cart-btn">
+  <img src="https://img.icons8.com/?size=100&id=CHIch3K0zCjb&format=png&color=1A1A1A"
+       alt="Cart"
+       class="cart-icon">
+  <span class="cart-count" id="cart-count">0</span>
+</a>
+</div>
+</div>
+
+<header>
+  <div class="logo">
+    Sweet Bliss
+    <span>Ready-made Cakes</span>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li>
+        <a href="categories.html">Categories ▾</a>
+        <ul>
+          <li><a href="spongecake.html">Sponge Cake</a></li>
+          <li><a href="cupcake.html">Cupcake</a></li>
+          <li><a href="jellycake.html">Jelly Cake</a></li>
+          <li><a href="bentocake.html">Bento Cake</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="occasion.html">Occasion ▾</a>
+        <ul>
+          <li><a href="birthday.html">Birthday</a></li>
+          <li><a href="wedding.html">Wedding</a></li>
+          <li><a href="anniversary.html">Anniversary</a></li>
+          <li><a href="graduation.html">Graduation</a></li>
+          <li><a href="kids.html">Kids</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="theme.html">Theme ▾</a>
+        <ul>
+          <li><a href="sanrio.html">Sanrio & Friends</a></li>
+          <li><a href="disney.html">Disney</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="vintage.html">Vintage Cake</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="accessories.html">Accessories ▾</a>
+        <ul>
+          <li><a href="topper.html">Topper</a></li>
+          <li><a href="candle.html">Candle</a></li>
+          <li><a href="giftcard.html">Gift Card</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="occasion-hero">
+  <div class="hero-wrapper">
+
+    <div class="hero-content">
+      <h2>THEMED CAKES</h2>
+<p> Celebrate every special moment with our beautifully designed themed cakes. From cute cartoon characters to elegant vintage styles, each cake is handcrafted with premium ingredients to create unforgettable memories. .</p>
+
+    </div>
+
+<div class="hero-image">
+  <img src="theme0.jpg" alt="Themed Cakes by Sweet Bliss">
+</div>
+
+  </div>
+</section>
+
+<section class="occasion-section">
+    <h2>Popular Cake Themes</h2>
+    <p class="occasion-desc">
+      A delightful collection of themed cakes suitable for birthdays, parties, and special occasions.  
+    Designed to impress both kids and adults with creative details and delicious flavours.
+    </p>
+
+<!-- SORT DROPDOWN -->
+<div class="section clearfix">
+  <div class="four columns section_select medium-down--one-whole">
+    <select class="sort_by" id="sort-by" data-default-sort="manual">
+      <option value="manual">Featured</option>
+      <option value="price-ascending">Price: Low to High</option>
+      <option value="price-descending">Price: High to Low</option>
+    </select>
+  </div>
+</div>
+
+<div class="product-grid">
+
+<!-- Cake 1 -->
+<div class="product-card" onclick="openCakeDetail('vint1')" data-price="155.00">
+  <div class="product-image">
+    <img src="vint1.jpg" alt="Vintage Classic Lace Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Vintage Classic Lace Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(97 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 155.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 2 -->
+<div class="product-card" onclick="openCakeDetail('ney1')" data-price="96.90">
+  <div class="product-image">
+    <img src="ney1.jpg" alt="Minnie Blush Classic">
+  </div>
+  <div class="product-details">
+    <span class="title">Minnie Blush Classic</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(73 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 96.90</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 3 -->
+<div class="product-card" onclick="openCakeDetail('sanrio1')" data-price="80.00">
+  <div class="product-image">
+    <img src="sanrio1.jpg" alt="Kuromi Sweet Delight">
+  </div>
+  <div class="product-details">
+    <span class="title">Kuromi Sweet Delight</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(70 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 80.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 4 -->
+<div class="product-card" onclick="openCakeDetail('car3')" data-price="210.90">
+  <div class="product-image">
+    <img src="car3.jpeg" alt="Traffic Adventure Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Traffic Adventure Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(118 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 210.90</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 5 -->
+<div class="product-card" onclick="openCakeDetail('game5')" data-price="95.00">
+  <div class="product-image">
+    <img src="game5.jpg" alt="Squid Game Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Squid Game Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(94 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 95.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 6 -->
+<div class="product-card" onclick="openCakeDetail('game6')" data-price="163.00">
+  <div class="product-image">
+    <img src="game6.jpg" alt="Mobile Lagend Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Mobile Lagend Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(66 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 163.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 7 -->
+<div class="product-card" onclick="openCakeDetail('vint2')" data-price="170.00">
+  <div class="product-image">
+    <img src="vint2.jpeg" alt="Strawberry Cloud Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Strawberry Cloud Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(9 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 170.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 8 -->
+<div class="product-card" onclick="openCakeDetail('ney10')" data-price="110.00">
+  <div class="product-image">
+    <img src="ney10.jpg" alt="Pooh Honey Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Pooh Honey Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(106 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 110.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 9 -->
+<div class="product-card" onclick="openCakeDetail('game9')" data-price="92.00">
+  <div class="product-image">
+    <img src="game9.jpg" alt="Angry Bird Arcade Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Angry Bird Arcade Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(58 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 92.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 10 -->
+<div class="product-card" onclick="openCakeDetail('ney12')" data-price="450.00">
+  <div class="product-image">
+    <img src="ney12.jpg" alt="Frozen Snow Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Frozen Snow Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(94 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 450.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 11 -->
+<div class="product-card" onclick="openCakeDetail('sanrio3')" data-price="89.90">
+  <div class="product-image">
+    <img src="sanrio3.jpg" alt="Hello Kitty Double Delight">
+  </div>
+  <div class="product-details">
+    <span class="title">Hello Kitty Double Delight</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★★ <small>(90 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 120.90</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Cake 12 -->
+<div class="product-card" onclick="openCakeDetail('sanrio6')" data-price="115.00">
+  <div class="product-image">
+    <img src="sanrio6.png" alt="Sanrio Rainbow Cake">
+  </div>
+  <div class="product-details">
+    <span class="title">Sanrio Rainbow Cake</span>
+    <span class="brand">Sweet Bliss</span>
+    <div class="rating">★★★★☆ <small>(66 reviews)</small></div>
+    <div class="price"><small><em>from</em></small> RM 115.00</div>
+    <button class="add-cake">Add to Cart</button>
+  </div>
+</div>
+
+
+</div>
+
+  </section>
+  
+<section class="cake-description">
+  <div class="description-wrapper">
+    <h2>Beautiful Themed Cakes for Every Occasion</h2>
+
+    <p>Our themed cakes are carefully crafted to match your celebration style. Whether you prefer cute, elegant, or modern designs, Sweet Bliss offers cakes that look stunning and taste amazing.
+    </p>
+
+    <ul>
+      <li>Vintage Classic Lace Cake</li>
+      <li>Minnie Blush Classic</li>
+      <li>Kuromi Sweet Delight Cake</li>
+      <li>Traffic Adventure Cake</li>
+      <li>Squid Game Cake</li>
+      <li>Mobile Legend Cake</li>
+      <li>Strawberry Cloud Cake</li>
+      <li>Pooh Honey Cake</li>
+      <li>Angry Bird Arcade Cake</li>
+      <li>Frozen Snow Cake</li>
+      <li>Hello Kitty Double Delight</li>
+      <li>Snow Rainbow Cake</li>
+    </ul>
+
+    <p>
+      Choose your favourite theme, add a personal message, and let us handle the rest.  
+      Every cake is freshly baked with love.
+    </p>
+  </div>
+</section> 
+
+<div class="container collection-faq-wrap">
+  <h2 class="title faq--heading">Frequently Asked Questions</h2>
+
+  <dl class="faqAccordion">
+
+    <dt>
+      <button type="button" aria-controls="panel-01" aria-expanded="false">
+        What cake flavours are available for themed cakes?
+      </button>
+    </dt>
+    <dd id="panel-01" aria-hidden="true">
+      <p>
+        We offer a variety of flavours such as chocolate, vanilla, red velvet, strawberry, and caramel, suitable for all types of themed cake designs.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-02" aria-expanded="false">
+        Are themed cakes suitable for children and family celebrations?
+      </button>
+    </dt>
+    <dd id="panel-02" aria-hidden="true">
+      <p>
+        Yes! Our themed cakes are designed for all ages, making them perfect for birthdays, family gatherings, and special celebrations.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-03" aria-expanded="false">
+        What types of cake themes can I order?
+      </button>
+    </dt>
+    <dd id="panel-03" aria-hidden="true">
+      <p>
+        You can order a wide range of themes including cartoon characters, elegant pastel designs, vintage styles, cute animal themes, and custom celebration cakes.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-04" aria-expanded="false">
+        Can I customize the design of my themed cake?
+      </button>
+    </dt>
+    <dd id="panel-04" aria-hidden="true">
+      <p>
+        Absolutely! You may customize the colours, theme elements, and decorations to match your event or personal preference.
+      </p>
+    </dd>
+
+    <dt>
+      <button type="button" aria-controls="panel-05" aria-expanded="false">
+        How do I place an order for a themed cake?
+      </button>
+    </dt>
+    <dd id="panel-05" aria-hidden="true">
+      <p>
+        Simply choose your preferred theme, flavour, and size, then place your order through our website or contact us directly for assistance.
+      </p>
+    </dd>
+
+  </dl>
+</div>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What cake flavours are available for themed cakes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer a variety of flavours such as chocolate, vanilla, red velvet, strawberry, and caramel, suitable for all types of themed cake designs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are themed cakes suitable for children and family celebrations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Our themed cakes are designed for all ages, making them perfect for birthdays, family gatherings, and special celebrations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of cake themes can I order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can order a wide range of themes including cartoon characters, elegant pastel designs, vintage styles, cute animal themes, and custom celebration cakes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize the design of my themed cake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! You may customize the colours, theme elements, and decorations to match your event or personal preference."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I place an order for a themed cake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simply choose your preferred theme, flavour, and size, then place your order through our website or contact us directly for assistance."
+      }
+    }
+  ]
+}
+</script>
+
+
+
+<section class="info-bar">
+  <div class="info-bar-inner">
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-sameday.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Same-Day Delivery</strong>
+        <small>Order before 5PM</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-calendar.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Choose Your Slot</strong>
+        <small>Flexible delivery</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-thumbsup.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Trusted Sellers</strong>
+        <small>Top-rated bakers</small>
+      </span>
+    </div>
+
+    <div class="info-divider"></div>
+
+    <div class="info-item">
+      <span class="info-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0320/1672/8123/files/cr-cake.svg?v=1684376072">
+      </span>
+      <span class="info-text">
+        <strong>Premium Cakes</strong>
+        <small>Fresh & quality</small>
+      </span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================== CAKE DETAIL PAGE (Add-on) ================== -->
+<section class="cake-detail" id="cakesDetail">
+  <div class="detail-layout">
+
+    <div><img id="detailImg" src="" alt="Cake Image"></div>
+
+    <div>
+      <h3 id="detailTitle"></h3>
+      <p id="detailPrice"></p>
+
+      <div class="acc_title" id="descToggle">
+  <span>Product Description</span>
+  <span class="acc_icon">+</span>
+</div>
+
+<div class="description bottom des_slide" id="descContent">
+  <p class="desc-main">
+    Six layers of pastel rainbow-colored vanilla cake filled high with a sweet and sour strawberry mousseline.
+  </p>
+
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Mixed Berry Spread, Berry Yoghurt, White Chocolate, Permitted Flavoring and Coloring</p>
+  </div>
+
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>Large – 1.5 kg – 9" × 2.7"</p>
+  </div>
+</div>
+
+
+      <!-- DELIVERY DATE -->
+      <div class="option-group">
+        <h4>SELECT YOUR DELIVERY DATE</h4>
+        <div class="date-grid" id="dateButtons">
+          <button class="date-box" data-offset="0"></button>
+          <button class="date-box active" data-offset="1"></button>
+          <button class="date-box" data-offset="2"></button>
+        </div>
+
+        <button class="full-calendar-btn" onclick="toggleCalendar()">VIEW FULL CALENDAR</button>
+        <input type="date" id="calendarInput">
+      </div>
+
+      <!-- CANDLES -->
+      <div class="option-group">
+        <h4>NUMBER OF CANDLES</h4>
+        <select>
+          <option>No Candle</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+      </div>
+
+      <!-- WISH CARD -->
+      <div class="option-group">
+        <h4>WISH CARD MESSAGE</h4>
+        <div class="wish-grid" id="wishBoxes">
+          <div class="wish-box" data-msg="Happy Birthday! 🎂 Wishing you joy, laughter and lots of cake on your special day.">🎂 Birthday</div>
+          <div class="wish-box" data-msg="Congratulations on your wedding day 💍 May your love grow stronger every year.">💍 Wedding</div>
+          <div class="wish-box" data-msg="Happy Anniversary ❤️ Wishing you many more years of love and happiness together.">❤️ Anniversary</div>
+          <div class="wish-box" data-msg="Congratulations! 🎉 Wishing you success and happiness always.">🎉 Congratulations</div>
+        </div>
+        <textarea id="cardMessage" rows="4"></textarea>
+      </div>
+
+     <button class="full-calendar-btn" style="background:#fb3eb9;margin-top:20px;" onclick="addToCartDetail()">ADD TO CART</button>
+
+      <div class="back-btn" onclick="backToGallery()">← Back</div>
+    </div>
+
+<!-- ================== CUSTOMER REVIEWS ================== -->
+<div class="review-section">
+  <h3>Customer Reviews</h3>
+
+  <div class="review-summary">
+    <!-- SCORE -->
+<div class="review-score">
+  <div class="stars" id="avgStars">★★★★★</div>
+
+  <p><strong><span id="avgRating">0.00</span> out of 5</strong></p>
+  <small>Based on <span id="totalReviews">0</span> reviews</small>
+</div>
+
+
+<!-- BARS -->
+<div class="review-bars" id="reviewBars">
+  <div class="bar-row">
+    <span>5★</span>
+    <div class="bar"><div class="fill" id="bar5"></div></div>
+    <span id="count5">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>4★</span>
+    <div class="bar"><div class="fill" id="bar4"></div></div>
+    <span id="count4">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>3★</span>
+    <div class="bar"><div class="fill" id="bar3"></div></div>
+    <span id="count3">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>2★</span>
+    <div class="bar"><div class="fill" id="bar2"></div></div>
+    <span id="count2">0</span>
+  </div>
+
+  <div class="bar-row">
+    <span>1★</span>
+    <div class="bar"><div class="fill" id="bar1"></div></div>
+    <span id="count1">0</span>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  /* ===== CART ===== */
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function updateCartCount() {
+    const cartCount = document.getElementById("cart-count");
+    if(cartCount) cartCount.textContent = cart.length;
+  }
+  updateCartCount();
+
+  /* ===== REVIEW BARS FUNCTION ===== */
+function updateReviewBars(reviews){
+  const c5 = reviews[5] || 0;
+  const c4 = reviews[4] || 0;
+  const c3 = reviews[3] || 0;
+  const c2 = reviews[2] || 0;
+  const c1 = reviews[1] || 0;
+
+  const total = c5 + c4 + c3 + c2 + c1;
+
+  // ===== UPDATE BAR WIDTH + COUNT =====
+  const safeTotal = total || 1;
+
+  for(let star = 5; star >= 1; star--){
+    const count = reviews[star] || 0;
+    const percent = Math.round((count / safeTotal) * 100);
+
+    const bar = document.getElementById(`bar${star}`);
+    const label = document.getElementById(`count${star}`);
+
+    if(bar) bar.style.width = percent + "%";
+    if(label) label.textContent = count;
+  }
+
+  // ===== CALCULATE AVERAGE RATING =====
+  const avg = total
+    ? ((5*c5 + 4*c4 + 3*c3 + 2*c2 + 1*c1) / total)
+    : 0;
+
+  // ===== UPDATE TEXT =====
+  const avgRatingEl = document.getElementById("avgRating");
+  const totalReviewsEl = document.getElementById("totalReviews");
+  if(avgRatingEl) avgRatingEl.textContent = avg.toFixed(2);
+  if(totalReviewsEl) totalReviewsEl.textContent = total;
+
+  // ===== UPDATE STARS DISPLAY (FULL/EMPTY) =====
+  const avgStarsEl = document.getElementById("avgStars");
+  if(avgStarsEl){
+    const full = Math.round(avg); // contoh: 4.86 -> 5
+    avgStarsEl.textContent = "★★★★★☆☆☆☆☆".slice(5 - full, 10 - full);
+  }
+}
+
+  /* ===== SORT PRODUCTS ===== */
+  const select = document.getElementById('sort-by');
+  const grid = document.querySelector('.product-grid');
+
+  if(select && grid){
+    select.addEventListener('change', function() {
+      const value = this.value;
+      const cards = Array.from(grid.querySelectorAll('.product-card'));
+      let sorted;
+
+      if(value === 'price-ascending'){
+        sorted = cards.sort((a,b)=>
+          parseFloat(a.dataset.price.replace(/[^0-9.]/g,'')) -
+          parseFloat(b.dataset.price.replace(/[^0-9.]/g,''))
+        );
+      } else if(value === 'price-descending'){
+        sorted = cards.sort((a,b)=>
+          parseFloat(b.dataset.price.replace(/[^0-9.]/g,'')) -
+          parseFloat(a.dataset.price.replace(/[^0-9.]/g,''))
+        );
+      } else {
+        sorted = cards;
+      }
+
+      grid.innerHTML = '';
+      sorted.forEach(card => grid.appendChild(card));
+    });
+  }
+
+  /* ===== CAKE DETAIL POPUP ===== */
+  const detailSection = document.getElementById('cakesDetail');
+  const detailImg = document.getElementById('detailImg');
+  const detailTitle = document.getElementById('detailTitle');
+  const detailPrice = document.getElementById('detailPrice');
+
+  window.openCakeDetail = function(cakeId) {
+    const cake = cakeData.find(c => c.id === cakeId);
+    if (!cake) return;
+
+    detailImg.src = cake.img;
+    detailTitle.textContent = cake.title;
+    detailPrice.textContent = cake.price;
+    document.getElementById('descContent').innerHTML = cake.description;
+
+    /* ✅ UPDATE REVIEW BARS ikut cake yang diklik */
+    updateReviewBars(cake.reviews || {5:0,4:0,3:0,2:0,1:0});
+
+    detailSection.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+    // Reset accordion
+    const acc = document.getElementById('descToggle');
+    const content = document.getElementById('descContent');
+    acc.classList.remove('active');
+    content.style.display = 'none';
+  };
+
+  window.backToGallery = function() {
+    detailSection.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  };
+
+  /* ===== ACCORDION TOGGLE ===== */
+  const accToggle = document.getElementById('descToggle');
+  const accContent = document.getElementById('descContent');
+  if (accToggle && accContent) {
+    accToggle.addEventListener('click', () => {
+      accToggle.classList.toggle('active');
+      accContent.style.display = accContent.style.display === 'block' ? 'none' : 'block';
+    });
+  }
+
+  /* ===== DELIVERY DATE LOGIC (AUTO) ===== */
+  const dateButtons = document.querySelectorAll('.date-box');
+  const calendarInput = document.getElementById('calendarInput');
+
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
+  dateButtons.forEach((btn, index) => {
+    const offset = parseInt(btn.dataset.offset);
+    const date = new Date(today);
+    date.setDate(today.getDate() + offset);
+
+    // LABEL AUTO
+    let label = '';
+    if(offset === 0) label = 'TODAY';
+    else if(offset === 1) label = 'TOMORROW';
+    else label = `IN ${offset} DAYS`;
+
+    // FORMAT TARIKH
+    const dateText = date.toLocaleDateString('en-GB', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    }).toUpperCase();
+
+    btn.innerHTML = `
+      <span class="label">${label}</span>
+      <span class="date">${dateText}</span>
+    `;
+    btn.dataset.date = date.toISOString().split('T')[0];
+
+    btn.addEventListener('click', () => {
+      dateButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      if(calendarInput) calendarInput.value = btn.dataset.date;
+    });
+
+    // AUTO SELECT FIRST DATE
+    if(index === 0){
+      btn.classList.add('active');
+      if(calendarInput) calendarInput.value = btn.dataset.date;
+    }
+  });
+
+  if(calendarInput){
+    calendarInput.addEventListener('change', () => {
+      dateButtons.forEach(b => b.classList.remove('active'));
+    });
+  }
+
+  window.toggleCalendar = function(){
+    if(!calendarInput) return;
+    calendarInput.style.display =
+      calendarInput.style.display === 'block' ? 'none' : 'block';
+  };
+
+  /* ===== WISH CARD MESSAGE ===== */
+  const wishBoxes = document.querySelectorAll('.wish-box');
+  const cardMessage = document.getElementById('cardMessage');
+
+  wishBoxes.forEach(box=>{
+    box.addEventListener('click', ()=>{
+      wishBoxes.forEach(b=>b.classList.remove('active'));
+      box.classList.add('active');
+      if(cardMessage) cardMessage.value = box.dataset.msg;
+    });
+  });
+
+});
+</script>
+
+<script>
+/* ===== CAKE DATA (12 KIDS CAKES) + REVIEWS ===== */
+const cakeData = [
+  {
+   id: "vint1",
+    title: "Vintage Classic Lace Cake",
+    price: "RM 155.00",
+    img: "vint1.jpg",
+    description: `
+      <p class="desc-main"> A timeless vintage-inspired cake in soft ivory tones, finished with elegant lace piping for a classic look.</p>
+      <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Sugar, Eggs, Butter, Fresh cream, Vanilla essence, Food colouring, Edible decorations </p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>8 kg – 12"</p>
+  </div>
+    `,
+    reviews: {5: 52, 4: 12, 3: 2, 2: 1, 1: 0}
+  },
+  {
+    id: "ney1",
+    title: "Minnie Blush Classic",
+    price: "RM 96.90",
+    img: "ney1.jpg",
+    description: `
+      <p class="desc-main"> 
+        A sweet and charming Minnie Mouse–themed cake in soft pink tones, perfect for kids’ birthdays and joyful celebrations. 
+        Designed with cute details that bring smiles to every moment.</p>
+      <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Sugar, Eggs, Butter, Fresh cream, Vanilla essence, Food colouring, Text topper and Edible decorations (Minnie and etc)
+
+Food-grade coloring </p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>3kg – 7"</p>
+  </div>
+    `,
+    reviews: {5: 33, 4: 14, 3: 4, 2: 1, 1: 0}
+  },
+  {
+   id: "sanrio1",
+    title: "Kuromi Sweet Delight",
+    price: "RM 80.00",
+    img: "sanrio1.jpg",
+    description: `
+      <p class="desc-main"> This one-layer cake features a handcrafted Kuromi topper, soft lavender buttercream piping, heart decorations, and elegant black accents.</p>
+      <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Premium buttercream frosting and Fondant decorations (Kuromi topper, hearts, plaque)
+
+Food-grade coloring </p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.4 kg – 6"</p>
+  </div>
+    `,
+    reviews: {5: 61, 4: 18, 3: 5, 2: 1, 1: 0}
+  },
+  {
+   id: "car3",
+    title: "Traffic Adventure Cake",
+    price: "RM 210.90",
+    img: "car3.jpeg",
+    description: `
+  <p class="desc-main">
+   A fun two-layer cake featuring cars, roads, and traffic lights, perfect for kids who love city adventures.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, sugar, eggs, butter, milk, chocolate, fondant, food colorin(edible & safe)</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>7kg – 9"</p>
+  </div>
+    `,
+    reviews: {5: 45, 4: 16, 3: 3, 2: 1, 1: 0}
+  },
+  {
+    id: "game5",
+    title: "Squid Game Cake",
+    price: "RM 95.00",
+    img: "game5.jpg",
+    description: `
+        <p class="desc-main">
+     A bold Squid Game–inspired cake featuring iconic symbols and colors from the popular survival game series.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Vanilla sponge, strawberry cream, chocolate chips and fondant topper</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>6 kg – 10"</p>
+  </div>
+    `,
+    reviews: {5: 72, 4: 14, 3: 4, 2: 0, 1: 1}
+  },
+  {
+    id: "game6",
+    title: "Mobile Lagend Cake",
+    price: "RM 163.00",
+    img: "game6.jpg",
+    description: `
+    <p class="desc-main">
+    A bold gaming-themed cake designed for action and battle game fans.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Chocolate sponge, mocha buttercream, cookie crumble, edible printr</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>3kg – 7"</p>
+  </div>
+    `,
+    reviews: {5: 28, 4: 12, 3: 4, 2: 2, 1: 0}
+  },
+  {
+    id: "vint2",
+    title: "Strawberry Cloud Cake",
+    price: "RM 170.00",
+    img: "vint2.jpeg",
+    description: `
+       <p class="desc-main">
+    A charming vintage cake topped with fresh strawberry-style decorations, offering a soft and romantic appearance.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Sugar, Eggs, Butter, Fresh cream, Vanilla essence, Food colouring, Edible decorations </p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>1.5 kg – 6"</p>
+  </div>
+    `,
+    reviews: {5: 40, 4: 15, 3: 6, 2: 1, 1: 1}
+  },
+  {
+    id: "ney10",
+    title: "Pooh Honey Cake",
+    price: "RM 110.00",
+    img: "ney10.jpg",
+    description: `
+        <p class="desc-main">
+    A sweet Disney Winnie the Pooh–themed cake inspired by warm honey tones, perfect for cheerful and cozy celebrations.</p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Vanilla, Baking powder, Fondant or Pooh toppers , balloons, number topper, and buttercream </p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>2 kg – 6"</p>
+  </div>
+    `,
+    reviews: {5: 24, 4: 10, 3: 4, 2: 1, 1: 0}
+  },
+  {
+    id: "game9",
+    title: "Angry Birds Arcade Cakee",
+    price: "RM 92.00",
+    img: "game9.jpg",
+    description: `
+  <p class="desc-main">
+    A vibrant gaming cake inspired by classic arcade action, perfect for fun-filled celebrations.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Vanilla sponge, chocolate buttercream, strawberry jam filling and edible image topper</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>2.5 kg – 6"</p>
+  </div>
+    `,
+    reviews: {5: 39, 4: 13, 3: 4, 2: 1, 1: 1}
+  },
+  {
+id: "ney12",
+    title: "Frozen Snow Cake",
+    price: "RM 450.00",
+    img: "ney12.jpg",
+    description: `
+    <p class="desc-main">
+      A magical two-layer Disney Frozen themed cake inspired by icy blue and snowy white tones, perfect for an elegant and enchanting celebration.
+    </p>
+    <div class="desc-section">
+      <h4>Ingredients</h4>
+      <p>Vanilla sponge cake, Fresh cream frosting, Sugar, Eggs, Butter, Milk, Food coloring (edible)</P>
+</p>
+    </div>
+    <div class="desc-section">
+      <h4>Weight & Dimensions</h4>
+      <p>8kg – 9"</p>
+    </div>
+    `,
+    reviews: {5: 26, 4: 11, 3: 2, 2: 1, 1: 1}
+  },
+  {
+   id: "sanrio3",
+    title: "Hello kitty Double Delight",
+    price: "RM 89.90",
+    img: "sanrio3.jpg",
+    description: `
+  <p class="desc-main">
+    A charming two-tier birthday cake featuring beloved Hello Kitty characters with a sweet pastel rainbow design..
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Vanilla Cream, Fresh cream frosting, Fondant decorations and Food coloring (edible & safe)</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>2.5 kg – 7"</p>
+  </div>
+    `,
+    reviews: {5: 18, 4: 9, 3: 4, 2: 1, 1: 1}
+  },
+  {
+     id: "sanrio6",
+    title: "Sanrio Rainbow Cake",
+    price: "RM 115.00",
+    img: "sanrio6.png",
+    description: `
+    <p class="desc-main">
+    A colorful Sanrio-themed birthday cake featuring adorable fondant characters, a bright rainbow centerpiece, pastel stars, and balloon details.
+  </p>
+  <div class="desc-section">
+    <h4>Ingredients</h4>
+    <p>Flour, Eggs, Sugar, Butter, Milk, Vanilla extract, Baking powder, Buttercream frosting, Fondant and Food coloring (pastel & rainbow colors)</p>
+  </div>
+  <div class="desc-section">
+    <h4>Weight & Dimensions</h4>
+    <p>3 kg – 8"</p>
+  </div>
+    `,
+    reviews: {5: 80, 4: 16, 3: 4, 2: 1, 1: 1}
+  }
+];
+</script>
+
+
+<script>
+function addToCartDetail() {
+  const title = document.getElementById("detailTitle").textContent;
+  const price = document.getElementById("detailPrice").textContent;
+  const img = document.getElementById("detailImg").src;
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Check if item already exists
+  const existing = cart.find(item => item.title === title);
+
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({
+      title,
+      price,
+      img,
+      qty: 1
+    });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  // Update cart counter
+  const cartCount = document.getElementById("cart-count");
+  if (cartCount) cartCount.textContent = cart.length;
+
+  alert("Added to cart! Your Sweet Bliss moment just got sweeter 🌸");
+}
+</script>
+
+
+<footer>
+© 2025 Sweet Bliss Cake | Recommended Browser: Google Chrome |
+Resolution: 1920 × 1080 <br>
+Last Updated: January 2026
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const faqButtons = document.querySelectorAll(".faqAccordion dt button");
+
+  faqButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const panelId = button.getAttribute("aria-controls");
+      const panel = document.getElementById(panelId);
+
+      const isOpen = button.getAttribute("aria-expanded") === "true";
+
+      // close all first
+      faqButtons.forEach(btn => {
+        btn.setAttribute("aria-expanded", "false");
+        const p = document.getElementById(btn.getAttribute("aria-controls"));
+        if (p){
+          p.style.display = "none";
+          p.setAttribute("aria-hidden", "true");
+        }
+      });
+
+      // if it was closed, open it (if it was open, it stays closed)
+      if (!isOpen) {
+        button.setAttribute("aria-expanded", "true");
+        panel.style.display = "block";
+        panel.setAttribute("aria-hidden", "false");
+      }
+    });
+  });
+});
+</script>
+
+
+</body>
+</html>
+
+  

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us | Sweet Bliss Cake</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Main Website CSS -->
+<link rel="stylesheet" href="style.css">
+
+<style>
+.contact-section{
+  padding:80px 20px;
+  background:linear-gradient(135deg,#fff0f6,#f3e5f5);
+}
+
+.form-container{
+  max-width:680px;
+  margin:0 auto 40px;
+  background:#fff;
+  padding:40px;
+  border-radius:22px;
+  box-shadow:0 20px 45px rgba(179,157,219,0.35);
+}
+
+h2{
+  text-align:center;
+  color:#7e57c2;
+  margin-bottom:8px;
+}
+
+.subtitle{
+  text-align:center;
+  font-size:14px;
+  color:#9c27b0;
+  margin-bottom:30px;
+}
+
+label{
+  display:block;
+  margin-top:18px;
+  font-weight:500;
+  color:#6a1b9a;
+}
+
+input, textarea{
+  width:100%;
+  padding:12px;
+  margin-top:6px;
+  border-radius:12px;
+  border:1px solid #e1bee7;
+  font-size:14px;
+}
+
+textarea{
+  resize:vertical;
+  min-height:100px;
+}
+
+input:focus,
+textarea:focus{
+  outline:none;
+  border-color:#ec407a;
+  box-shadow:0 0 0 2px rgba(236,64,122,0.15);
+}
+
+button{
+  margin-top:30px;
+  width:100%;
+  background:linear-gradient(135deg,#ec407a,#f06292);
+  color:#fff;
+  border:none;
+  padding:16px;
+  font-size:16px;
+  border-radius:18px;
+  cursor:pointer;
+}
+
+/* GET IN TOUCH */
+.contact-info{
+  max-width:680px;
+  margin:0 auto;
+  background:rgba(255,255,255,0.8);
+  padding:30px;
+  border-radius:22px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+.contact-info h3{
+  color:#de5ec1;
+  margin-bottom:20px;
+  font-size:22px;
+}
+
+.contact-info a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  text-decoration:none;
+  color:#444;
+  font-size:15px;
+  margin-bottom:14px;
+  transition:0.3s ease;
+}
+
+.contact-info i{
+  font-size:20px;
+  color:#de5ec1;
+}
+
+.contact-info a:hover{
+  color:#de5ec1;
+  transform:translateY(-2px);
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+✨ Get Your Cake Today | Same Day Delivery ✨
+</div>
+
+<header>
+  <div class="logo">
+    Sweet Bliss
+    <span>Ready-made Cakes</span>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li>
+        <a href="categories.html">Categories ▾</a>
+        <ul>
+          <li><a href="spongecake.html">Sponge Cake</a></li>
+          <li><a href="cupcake.html">Cupcake</a></li>
+          <li><a href="jellycake.html">Jelly Cake</a></li>
+          <li><a href="bentocake.html">Bento Cake</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="occasion.html">Occasion ▾</a>
+        <ul>
+          <li><a href="birthday.html">Birthday</a></li>
+          <li><a href="wedding.html">Wedding</a></li>
+          <li><a href="anniversary.html">Anniversary</a></li>
+          <li><a href="celebration.html">Celebration</a></li>
+          <li><a href="graduation.html">Graduation</a></li>
+          <li><a href="kids.html">Kids</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="theme.html">Theme ▾</a>
+        <ul>
+          <li><a href="sanrio.html">Sanrio & Friends</a></li>
+          <li><a href="disney.html">Disney</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="vintage.html">Vintage Cake</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="accessories.html">Accessories ▾</a>
+        <ul>
+          <li><a href="topper.html">Topper</a></li>
+          <li><a href="candle.html">Candle</a></li>
+          <li><a href="giftcard.html">Gift Card</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="contact-section">
+
+  <!-- FEEDBACK FORM -->
+  <div class="form-container">
+    <form id="feedbackForm">
+
+      <h2>Contact Us & Feedback</h2>
+      <p class="subtitle">Your feedback helps us bake sweeter moments 💜</p>
+
+      <input type="hidden" name="access_key" value="23a21b30-3246-4a7a-9c82-c9cbd12deac2">
+
+      <label>Name</label>
+      <input type="text" name="name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Message</label>
+      <textarea name="message" required></textarea>
+
+      <button type="submit">Send Message 💗</button>
+    </form>
+  </div>
+
+  <!-- GET IN TOUCH (DI BAWAH FORM) -->
+  <div class="contact-info">
+    <h3>Get In Touch With Us 💗</h3>
+
+    <a href="tel:+601110595447">
+      <i class="fas fa-phone"></i>
+      +60 111 059 5447
+    </a>
+
+    <a href="https://www.instagram.com/sweetbliss7654?igsh=cGdjcjBya3NhN3Fv" target="_blank">
+      <i class="fab fa-instagram"></i>
+      sweetbliss7654
+    </a>
+
+    <a href="https://www.facebook.com/share/1D8ev3iKwh/" target="_blank">
+      <i class="fab fa-facebook"></i>
+      Sweet Bliss Cake
+    </a>
+
+    <a href="https://www.tiktok.com/@sweet.bliss35" target="_blank">
+      <i class="fab fa-tiktok"></i>
+      @sweet.bliss35
+    </a>
+  </div>
+
+</section>
+</main>
+
+<footer>
+© 2025 Sweet Bliss Cake | Recommended Browser: Google Chrome |
+Resolution: 1920 × 1080 <br>
+Last Updated: January 2026
+</footer>
+
+<script>
+document.getElementById("feedbackForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  fetch("https://api.web3forms.com/submit", {
+    method:"POST",
+    body:new FormData(this)
+  }).then(()=>{
+    alert("Thank you! Your message has been sent 💜");
+    this.reset();
+  });
+});
+</script>
+
+</body>
+</html>
